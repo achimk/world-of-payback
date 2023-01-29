@@ -48,6 +48,7 @@
 		2721BA1A2986A50300FB68D2 /* MockTransactionItemRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA192986A50300FB68D2 /* MockTransactionItemRepository.swift */; };
 		2721BA1C2986A5D800FB68D2 /* MockTransactionItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA1B2986A5D800FB68D2 /* MockTransactionItemBuilder.swift */; };
 		2721BA1E2986B74200FB68D2 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA1D2986B74200FB68D2 /* Optional+Extensions.swift */; };
+		2721BA202986B89B00FB68D2 /* SumOfAllTransactionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA1F2986B89B00FB68D2 /* SumOfAllTransactionsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		2721BA192986A50300FB68D2 /* MockTransactionItemRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTransactionItemRepository.swift; sourceTree = "<group>"; };
 		2721BA1B2986A5D800FB68D2 /* MockTransactionItemBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTransactionItemBuilder.swift; sourceTree = "<group>"; };
 		2721BA1D2986B74200FB68D2 /* Optional+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
+		2721BA1F2986B89B00FB68D2 /* SumOfAllTransactionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumOfAllTransactionsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -409,6 +411,7 @@
 		2721BA1529869E6C00FB68D2 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
+				2721BA1F2986B89B00FB68D2 /* SumOfAllTransactionsTests.swift */,
 				2721BA1629869E7C00FB68D2 /* FetchAndSumTransactionsHandlerTests.swift */,
 			);
 			path = Handlers;
@@ -595,6 +598,7 @@
 				2721B9F4298690B200FB68D2 /* MoneyTests.swift in Sources */,
 				2721BA1A2986A50300FB68D2 /* MockTransactionItemRepository.swift in Sources */,
 				2721BA1C2986A5D800FB68D2 /* MockTransactionItemBuilder.swift in Sources */,
+				2721BA202986B89B00FB68D2 /* SumOfAllTransactionsTests.swift in Sources */,
 				2721BA1729869E7C00FB68D2 /* FetchAndSumTransactionsHandlerTests.swift in Sources */,
 				2721B9A9298687AA00FB68D2 /* WorldOfPAYBACKTests.swift in Sources */,
 			);
