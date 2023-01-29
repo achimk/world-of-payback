@@ -51,6 +51,24 @@
 		2721BA202986B89B00FB68D2 /* SumOfAllTransactionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA1F2986B89B00FB68D2 /* SumOfAllTransactionsTests.swift */; };
 		2721BA232986BA2A00FB68D2 /* TransactionsSumByCurrencyCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA222986BA2A00FB68D2 /* TransactionsSumByCurrencyCalculatorTests.swift */; };
 		2721BA252986BB4D00FB68D2 /* TransactionItemQueryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA242986BB4D00FB68D2 /* TransactionItemQueryTests.swift */; };
+		2721BA292986BDF700FB68D2 /* TransactionItemsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA282986BDF600FB68D2 /* TransactionItemsPresenter.swift */; };
+		2721BA2B2986C2A000FB68D2 /* TransactionItemViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA2A2986C2A000FB68D2 /* TransactionItemViewData.swift */; };
+		2721BA2D2986C2B200FB68D2 /* TransactionItemsFlowCoordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA2C2986C2B200FB68D2 /* TransactionItemsFlowCoordinating.swift */; };
+		2721BA2F2986C2C100FB68D2 /* TransactionItemsEventHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA2E2986C2C100FB68D2 /* TransactionItemsEventHandling.swift */; };
+		2721BA312986C2D200FB68D2 /* TransactionItemsViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA302986C2D200FB68D2 /* TransactionItemsViewInterface.swift */; };
+		2721BA342986C34500FB68D2 /* TransactionItemViewDataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA332986C34500FB68D2 /* TransactionItemViewDataBuilder.swift */; };
+		2721BA382986C52900FB68D2 /* DateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA372986C52900FB68D2 /* DateFormatting.swift */; };
+		2721BA3A2986C57B00FB68D2 /* CurrencyFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA392986C57B00FB68D2 /* CurrencyFormatting.swift */; };
+		2721BA3D2986C71D00FB68D2 /* TransactionItemsQueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA3C2986C71D00FB68D2 /* TransactionItemsQueryBuilder.swift */; };
+		2721BA402986D92D00FB68D2 /* TransactionItemsQueryViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA3F2986D92D00FB68D2 /* TransactionItemsQueryViewData.swift */; };
+		2721BA422986D94900FB68D2 /* TransactionItemsQueryViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA412986D94900FB68D2 /* TransactionItemsQueryViewInterface.swift */; };
+		2721BA442986D96800FB68D2 /* TransactionItemsQueryEventHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA432986D96800FB68D2 /* TransactionItemsQueryEventHandling.swift */; };
+		2721BA482986D99000FB68D2 /* TransactionItemsQueryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA472986D99000FB68D2 /* TransactionItemsQueryPresenter.swift */; };
+		2721BA4A2986DB4200FB68D2 /* TransactionItemsQueryViewDataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA492986DB4200FB68D2 /* TransactionItemsQueryViewDataBuilder.swift */; };
+		2721BA4D2986DFBD00FB68D2 /* TransactionItemsQueryLocalisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA4C2986DFBD00FB68D2 /* TransactionItemsQueryLocalisation.swift */; };
+		2721BA4F2986E03800FB68D2 /* TransactionItemsQueryFlowCoordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA4E2986E03800FB68D2 /* TransactionItemsQueryFlowCoordinating.swift */; };
+		2721BA552986E80100FB68D2 /* MockTransactionItemsQueryLocalisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA542986E80100FB68D2 /* MockTransactionItemsQueryLocalisation.swift */; };
+		2721BA572986E87900FB68D2 /* TransactionItemsQueryPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA562986E87900FB68D2 /* TransactionItemsQueryPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +137,24 @@
 		2721BA1F2986B89B00FB68D2 /* SumOfAllTransactionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumOfAllTransactionsTests.swift; sourceTree = "<group>"; };
 		2721BA222986BA2A00FB68D2 /* TransactionsSumByCurrencyCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsSumByCurrencyCalculatorTests.swift; sourceTree = "<group>"; };
 		2721BA242986BB4D00FB68D2 /* TransactionItemQueryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemQueryTests.swift; sourceTree = "<group>"; };
+		2721BA282986BDF600FB68D2 /* TransactionItemsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsPresenter.swift; sourceTree = "<group>"; };
+		2721BA2A2986C2A000FB68D2 /* TransactionItemViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemViewData.swift; sourceTree = "<group>"; };
+		2721BA2C2986C2B200FB68D2 /* TransactionItemsFlowCoordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsFlowCoordinating.swift; sourceTree = "<group>"; };
+		2721BA2E2986C2C100FB68D2 /* TransactionItemsEventHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsEventHandling.swift; sourceTree = "<group>"; };
+		2721BA302986C2D200FB68D2 /* TransactionItemsViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsViewInterface.swift; sourceTree = "<group>"; };
+		2721BA332986C34500FB68D2 /* TransactionItemViewDataBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemViewDataBuilder.swift; sourceTree = "<group>"; };
+		2721BA372986C52900FB68D2 /* DateFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatting.swift; sourceTree = "<group>"; };
+		2721BA392986C57B00FB68D2 /* CurrencyFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatting.swift; sourceTree = "<group>"; };
+		2721BA3C2986C71D00FB68D2 /* TransactionItemsQueryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsQueryBuilder.swift; sourceTree = "<group>"; };
+		2721BA3F2986D92D00FB68D2 /* TransactionItemsQueryViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsQueryViewData.swift; sourceTree = "<group>"; };
+		2721BA412986D94900FB68D2 /* TransactionItemsQueryViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsQueryViewInterface.swift; sourceTree = "<group>"; };
+		2721BA432986D96800FB68D2 /* TransactionItemsQueryEventHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsQueryEventHandling.swift; sourceTree = "<group>"; };
+		2721BA472986D99000FB68D2 /* TransactionItemsQueryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsQueryPresenter.swift; sourceTree = "<group>"; };
+		2721BA492986DB4200FB68D2 /* TransactionItemsQueryViewDataBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsQueryViewDataBuilder.swift; sourceTree = "<group>"; };
+		2721BA4C2986DFBD00FB68D2 /* TransactionItemsQueryLocalisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsQueryLocalisation.swift; sourceTree = "<group>"; };
+		2721BA4E2986E03800FB68D2 /* TransactionItemsQueryFlowCoordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsQueryFlowCoordinating.swift; sourceTree = "<group>"; };
+		2721BA542986E80100FB68D2 /* MockTransactionItemsQueryLocalisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTransactionItemsQueryLocalisation.swift; sourceTree = "<group>"; };
+		2721BA562986E87900FB68D2 /* TransactionItemsQueryPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsQueryPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +334,8 @@
 		2721B9E729868F4000FB68D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2721BA362986C4F600FB68D2 /* DateFormatter */,
+				2721BA352986C4ED00FB68D2 /* CurrencyFormatter */,
 				2721B9EA29868F5600FB68D2 /* Money */,
 			);
 			path = Models;
@@ -349,6 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				2721B9F9298692D900FB68D2 /* Domain */,
+				2721BA262986BD5100FB68D2 /* Presentation */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -406,9 +445,8 @@
 		2721BA1429869E5F00FB68D2 /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
-				2721BA182986A4E800FB68D2 /* Mocks */,
-				2721BA212986BA1D00FB68D2 /* Models */,
-				2721BA1529869E6C00FB68D2 /* Handlers */,
+				2721BA502986E7C700FB68D2 /* Domain */,
+				2721BA512986E7D300FB68D2 /* Presentation */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -438,6 +476,118 @@
 				2721BA242986BB4D00FB68D2 /* TransactionItemQueryTests.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2721BA262986BD5100FB68D2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA3B2986C70A00FB68D2 /* TransactionItemsQuery */,
+				2721BA272986BD7100FB68D2 /* TransactionItems */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2721BA272986BD7100FB68D2 /* TransactionItems */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA322986C2E500FB68D2 /* ViewData */,
+				2721BA2C2986C2B200FB68D2 /* TransactionItemsFlowCoordinating.swift */,
+				2721BA2E2986C2C100FB68D2 /* TransactionItemsEventHandling.swift */,
+				2721BA302986C2D200FB68D2 /* TransactionItemsViewInterface.swift */,
+				2721BA282986BDF600FB68D2 /* TransactionItemsPresenter.swift */,
+			);
+			path = TransactionItems;
+			sourceTree = "<group>";
+		};
+		2721BA322986C2E500FB68D2 /* ViewData */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA2A2986C2A000FB68D2 /* TransactionItemViewData.swift */,
+				2721BA332986C34500FB68D2 /* TransactionItemViewDataBuilder.swift */,
+			);
+			path = ViewData;
+			sourceTree = "<group>";
+		};
+		2721BA352986C4ED00FB68D2 /* CurrencyFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA392986C57B00FB68D2 /* CurrencyFormatting.swift */,
+			);
+			path = CurrencyFormatter;
+			sourceTree = "<group>";
+		};
+		2721BA362986C4F600FB68D2 /* DateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA372986C52900FB68D2 /* DateFormatting.swift */,
+			);
+			path = DateFormatter;
+			sourceTree = "<group>";
+		};
+		2721BA3B2986C70A00FB68D2 /* TransactionItemsQuery */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA4B2986DB6300FB68D2 /* Models */,
+				2721BA3E2986D7F400FB68D2 /* ViewData */,
+				2721BA4C2986DFBD00FB68D2 /* TransactionItemsQueryLocalisation.swift */,
+				2721BA4E2986E03800FB68D2 /* TransactionItemsQueryFlowCoordinating.swift */,
+				2721BA432986D96800FB68D2 /* TransactionItemsQueryEventHandling.swift */,
+				2721BA412986D94900FB68D2 /* TransactionItemsQueryViewInterface.swift */,
+				2721BA472986D99000FB68D2 /* TransactionItemsQueryPresenter.swift */,
+			);
+			path = TransactionItemsQuery;
+			sourceTree = "<group>";
+		};
+		2721BA3E2986D7F400FB68D2 /* ViewData */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA3F2986D92D00FB68D2 /* TransactionItemsQueryViewData.swift */,
+				2721BA492986DB4200FB68D2 /* TransactionItemsQueryViewDataBuilder.swift */,
+			);
+			path = ViewData;
+			sourceTree = "<group>";
+		};
+		2721BA4B2986DB6300FB68D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA3C2986C71D00FB68D2 /* TransactionItemsQueryBuilder.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2721BA502986E7C700FB68D2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA182986A4E800FB68D2 /* Mocks */,
+				2721BA212986BA1D00FB68D2 /* Models */,
+				2721BA1529869E6C00FB68D2 /* Handlers */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		2721BA512986E7D300FB68D2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA532986E7F500FB68D2 /* Mocks */,
+				2721BA522986E7E200FB68D2 /* TransactionItemsQuery */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2721BA522986E7E200FB68D2 /* TransactionItemsQuery */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA562986E87900FB68D2 /* TransactionItemsQueryPresenterTests.swift */,
+			);
+			path = TransactionItemsQuery;
+			sourceTree = "<group>";
+		};
+		2721BA532986E7F500FB68D2 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA542986E80100FB68D2 /* MockTransactionItemsQueryLocalisation.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -572,12 +722,18 @@
 			files = (
 				2721BA072986946C00FB68D2 /* SumOfAllTransactionsHandler.swift in Sources */,
 				2721B9EC29868F6B00FB68D2 /* Currency.swift in Sources */,
+				2721BA4D2986DFBD00FB68D2 /* TransactionItemsQueryLocalisation.swift in Sources */,
 				2721B9E329868DB500FB68D2 /* Completion.swift in Sources */,
+				2721BA402986D92D00FB68D2 /* TransactionItemsQueryViewData.swift in Sources */,
 				2721B9FE2986934200FB68D2 /* TransactionCategory.swift in Sources */,
+				2721BA312986C2D200FB68D2 /* TransactionItemsViewInterface.swift in Sources */,
 				2721B996298687A800FB68D2 /* ViewController.swift in Sources */,
 				2721B9EE29868F7800FB68D2 /* Amount.swift in Sources */,
+				2721BA442986D96800FB68D2 /* TransactionItemsQueryEventHandling.swift in Sources */,
 				2721B9F62986921E00FB68D2 /* Result+Extensions.swift in Sources */,
 				2721B9DD29868D2200FB68D2 /* AsyncTransformable+Pipeline.swift in Sources */,
+				2721BA3A2986C57B00FB68D2 /* CurrencyFormatting.swift in Sources */,
+				2721BA292986BDF700FB68D2 /* TransactionItemsPresenter.swift in Sources */,
 				2721B9E029868D2200FB68D2 /* NoopCancelable.swift in Sources */,
 				2721BA0D2986950C00FB68D2 /* TransactionItemsWithSum.swift in Sources */,
 				2721BA092986949B00FB68D2 /* CalculatedTransactions.swift in Sources */,
@@ -587,21 +743,31 @@
 				2721B9DE29868D2200FB68D2 /* Cancelable.swift in Sources */,
 				2721BA00298693B400FB68D2 /* TransactionItemRepository.swift in Sources */,
 				2721B9DB29868D2200FB68D2 /* AsyncTransformable.swift in Sources */,
+				2721BA2D2986C2B200FB68D2 /* TransactionItemsFlowCoordinating.swift in Sources */,
 				2721B9E929868F5100FB68D2 /* Money.swift in Sources */,
+				2721BA4F2986E03800FB68D2 /* TransactionItemsQueryFlowCoordinating.swift in Sources */,
 				2721B9CA29868AC300FB68D2 /* Support.swift in Sources */,
 				2721BA0B298694ED00FB68D2 /* FetchAndSumTransactionsHandling.swift in Sources */,
+				2721BA422986D94900FB68D2 /* TransactionItemsQueryViewInterface.swift in Sources */,
 				2721B9E529868E7E00FB68D2 /* ApplicationAssembly.swift in Sources */,
 				2721BA1E2986B74200FB68D2 /* Optional+Extensions.swift in Sources */,
 				2721BA112986963000FB68D2 /* TransactionsSumByCurrencyCalculator.swift in Sources */,
+				2721BA4A2986DB4200FB68D2 /* TransactionItemsQueryViewDataBuilder.swift in Sources */,
+				2721BA2B2986C2A000FB68D2 /* TransactionItemViewData.swift in Sources */,
 				2721B9FC2986931300FB68D2 /* TransactionItem.swift in Sources */,
 				2721B9DA29868D2200FB68D2 /* MapTrasformer.swift in Sources */,
 				2721B9C829868A3A00FB68D2 /* Container.swift in Sources */,
+				2721BA2F2986C2C100FB68D2 /* TransactionItemsEventHandling.swift in Sources */,
+				2721BA342986C34500FB68D2 /* TransactionItemViewDataBuilder.swift in Sources */,
 				2721B992298687A800FB68D2 /* AppDelegate.swift in Sources */,
 				2721B9D929868D2200FB68D2 /* AsyncTransformable+Factories.swift in Sources */,
+				2721BA382986C52900FB68D2 /* DateFormatting.swift in Sources */,
 				2721B9DC29868D2200FB68D2 /* AsyncTransformBlock.swift in Sources */,
+				2721BA482986D99000FB68D2 /* TransactionItemsQueryPresenter.swift in Sources */,
 				2721B9E129868D2200FB68D2 /* AnyCancelable.swift in Sources */,
 				2721BA0F298695A000FB68D2 /* FetchAndSumTransactionsHandler.swift in Sources */,
 				2721B9D829868D2200FB68D2 /* AsyncTransformer.swift in Sources */,
+				2721BA3D2986C71D00FB68D2 /* TransactionItemsQueryBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,11 +778,13 @@
 				2721BA252986BB4D00FB68D2 /* TransactionItemQueryTests.swift in Sources */,
 				2721B9F4298690B200FB68D2 /* MoneyTests.swift in Sources */,
 				2721BA232986BA2A00FB68D2 /* TransactionsSumByCurrencyCalculatorTests.swift in Sources */,
+				2721BA552986E80100FB68D2 /* MockTransactionItemsQueryLocalisation.swift in Sources */,
 				2721BA1A2986A50300FB68D2 /* MockTransactionItemRepository.swift in Sources */,
 				2721BA1C2986A5D800FB68D2 /* MockTransactionItemBuilder.swift in Sources */,
 				2721BA202986B89B00FB68D2 /* SumOfAllTransactionsTests.swift in Sources */,
 				2721BA1729869E7C00FB68D2 /* FetchAndSumTransactionsHandlerTests.swift in Sources */,
 				2721B9A9298687AA00FB68D2 /* WorldOfPAYBACKTests.swift in Sources */,
+				2721BA572986E87900FB68D2 /* TransactionItemsQueryPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

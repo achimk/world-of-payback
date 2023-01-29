@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TransactionItemQuery {
+struct TransactionItemQuery: Equatable {
     enum SortBy {
         case bookingDateAscending
         case bookingDateDescending
