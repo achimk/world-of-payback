@@ -10,7 +10,7 @@ import Foundation
 struct TransactionItemViewData {
     let bookingDate: String
     let partnerName: String
-    let summary: String?
+    let summary: String
     let amount: String
     let onSelectHandler: () -> Void
 }
