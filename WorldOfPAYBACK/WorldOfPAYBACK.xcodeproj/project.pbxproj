@@ -14,6 +14,20 @@
 		2721B9A9298687AA00FB68D2 /* WorldOfPAYBACKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9A8298687AA00FB68D2 /* WorldOfPAYBACKTests.swift */; };
 		2721B9B3298687AA00FB68D2 /* WorldOfPAYBACKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9B2298687AA00FB68D2 /* WorldOfPAYBACKUITests.swift */; };
 		2721B9B5298687AA00FB68D2 /* WorldOfPAYBACKUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9B4298687AA00FB68D2 /* WorldOfPAYBACKUITestsLaunchTests.swift */; };
+		2721B9C829868A3A00FB68D2 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9C729868A3A00FB68D2 /* Container.swift */; };
+		2721B9CA29868AC300FB68D2 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9C929868AC300FB68D2 /* Support.swift */; };
+		2721B9D829868D2200FB68D2 /* AsyncTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9CD29868D2200FB68D2 /* AsyncTransformer.swift */; };
+		2721B9D929868D2200FB68D2 /* AsyncTransformable+Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9CE29868D2200FB68D2 /* AsyncTransformable+Factories.swift */; };
+		2721B9DA29868D2200FB68D2 /* MapTrasformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9CF29868D2200FB68D2 /* MapTrasformer.swift */; };
+		2721B9DB29868D2200FB68D2 /* AsyncTransformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9D029868D2200FB68D2 /* AsyncTransformable.swift */; };
+		2721B9DC29868D2200FB68D2 /* AsyncTransformBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9D129868D2200FB68D2 /* AsyncTransformBlock.swift */; };
+		2721B9DD29868D2200FB68D2 /* AsyncTransformable+Pipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9D229868D2200FB68D2 /* AsyncTransformable+Pipeline.swift */; };
+		2721B9DE29868D2200FB68D2 /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9D429868D2200FB68D2 /* Cancelable.swift */; };
+		2721B9DF29868D2200FB68D2 /* CancelableBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9D529868D2200FB68D2 /* CancelableBag.swift */; };
+		2721B9E029868D2200FB68D2 /* NoopCancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9D629868D2200FB68D2 /* NoopCancelable.swift */; };
+		2721B9E129868D2200FB68D2 /* AnyCancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9D729868D2200FB68D2 /* AnyCancelable.swift */; };
+		2721B9E329868DB500FB68D2 /* Completion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9E229868DB500FB68D2 /* Completion.swift */; };
+		2721B9E529868E7E00FB68D2 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9E429868E7E00FB68D2 /* ApplicationAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +59,20 @@
 		2721B9AE298687AA00FB68D2 /* WorldOfPAYBACKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldOfPAYBACKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2721B9B2298687AA00FB68D2 /* WorldOfPAYBACKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfPAYBACKUITests.swift; sourceTree = "<group>"; };
 		2721B9B4298687AA00FB68D2 /* WorldOfPAYBACKUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfPAYBACKUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2721B9C729868A3A00FB68D2 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		2721B9C929868AC300FB68D2 /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
+		2721B9CD29868D2200FB68D2 /* AsyncTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTransformer.swift; sourceTree = "<group>"; };
+		2721B9CE29868D2200FB68D2 /* AsyncTransformable+Factories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AsyncTransformable+Factories.swift"; sourceTree = "<group>"; };
+		2721B9CF29868D2200FB68D2 /* MapTrasformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTrasformer.swift; sourceTree = "<group>"; };
+		2721B9D029868D2200FB68D2 /* AsyncTransformable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTransformable.swift; sourceTree = "<group>"; };
+		2721B9D129868D2200FB68D2 /* AsyncTransformBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTransformBlock.swift; sourceTree = "<group>"; };
+		2721B9D229868D2200FB68D2 /* AsyncTransformable+Pipeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AsyncTransformable+Pipeline.swift"; sourceTree = "<group>"; };
+		2721B9D429868D2200FB68D2 /* Cancelable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cancelable.swift; sourceTree = "<group>"; };
+		2721B9D529868D2200FB68D2 /* CancelableBag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelableBag.swift; sourceTree = "<group>"; };
+		2721B9D629868D2200FB68D2 /* NoopCancelable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoopCancelable.swift; sourceTree = "<group>"; };
+		2721B9D729868D2200FB68D2 /* AnyCancelable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyCancelable.swift; sourceTree = "<group>"; };
+		2721B9E229868DB500FB68D2 /* Completion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Completion.swift; sourceTree = "<group>"; };
+		2721B9E429868E7E00FB68D2 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +123,9 @@
 		2721B990298687A800FB68D2 /* WorldOfPAYBACK */ = {
 			isa = PBXGroup;
 			children = (
+				2721B9C32986897F00FB68D2 /* Shared */,
+				2721B9C22986897500FB68D2 /* Application */,
+				2721B9C12986896700FB68D2 /* Features */,
 				2721B991298687A800FB68D2 /* AppDelegate.swift */,
 				2721B995298687A800FB68D2 /* ViewController.swift */,
 				2721B99A298687AA00FB68D2 /* Assets.xcassets */,
@@ -119,6 +150,89 @@
 				2721B9B4298687AA00FB68D2 /* WorldOfPAYBACKUITestsLaunchTests.swift */,
 			);
 			path = WorldOfPAYBACKUITests;
+			sourceTree = "<group>";
+		};
+		2721B9C12986896700FB68D2 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		2721B9C22986897500FB68D2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2721B9E429868E7E00FB68D2 /* ApplicationAssembly.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2721B9C32986897F00FB68D2 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2721B9C52986898C00FB68D2 /* Extensions */,
+				2721B9C42986898500FB68D2 /* Utilities */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2721B9C42986898500FB68D2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2721B9CB29868CF200FB68D2 /* AsyncTransformer */,
+				2721B9C629868A2B00FB68D2 /* DI */,
+				2721B9C929868AC300FB68D2 /* Support.swift */,
+				2721B9E229868DB500FB68D2 /* Completion.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2721B9C52986898C00FB68D2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2721B9C629868A2B00FB68D2 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				2721B9C729868A3A00FB68D2 /* Container.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		2721B9CB29868CF200FB68D2 /* AsyncTransformer */ = {
+			isa = PBXGroup;
+			children = (
+				2721B9D329868D2200FB68D2 /* Cancelables */,
+				2721B9CC29868D2200FB68D2 /* Transforms */,
+			);
+			path = AsyncTransformer;
+			sourceTree = "<group>";
+		};
+		2721B9CC29868D2200FB68D2 /* Transforms */ = {
+			isa = PBXGroup;
+			children = (
+				2721B9CD29868D2200FB68D2 /* AsyncTransformer.swift */,
+				2721B9CE29868D2200FB68D2 /* AsyncTransformable+Factories.swift */,
+				2721B9CF29868D2200FB68D2 /* MapTrasformer.swift */,
+				2721B9D029868D2200FB68D2 /* AsyncTransformable.swift */,
+				2721B9D129868D2200FB68D2 /* AsyncTransformBlock.swift */,
+				2721B9D229868D2200FB68D2 /* AsyncTransformable+Pipeline.swift */,
+			);
+			path = Transforms;
+			sourceTree = "<group>";
+		};
+		2721B9D329868D2200FB68D2 /* Cancelables */ = {
+			isa = PBXGroup;
+			children = (
+				2721B9D429868D2200FB68D2 /* Cancelable.swift */,
+				2721B9D529868D2200FB68D2 /* CancelableBag.swift */,
+				2721B9D629868D2200FB68D2 /* NoopCancelable.swift */,
+				2721B9D729868D2200FB68D2 /* AnyCancelable.swift */,
+			);
+			path = Cancelables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,8 +365,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2721B9E329868DB500FB68D2 /* Completion.swift in Sources */,
 				2721B996298687A800FB68D2 /* ViewController.swift in Sources */,
+				2721B9DD29868D2200FB68D2 /* AsyncTransformable+Pipeline.swift in Sources */,
+				2721B9E029868D2200FB68D2 /* NoopCancelable.swift in Sources */,
+				2721B9DF29868D2200FB68D2 /* CancelableBag.swift in Sources */,
+				2721B9DE29868D2200FB68D2 /* Cancelable.swift in Sources */,
+				2721B9DB29868D2200FB68D2 /* AsyncTransformable.swift in Sources */,
+				2721B9CA29868AC300FB68D2 /* Support.swift in Sources */,
+				2721B9E529868E7E00FB68D2 /* ApplicationAssembly.swift in Sources */,
+				2721B9DA29868D2200FB68D2 /* MapTrasformer.swift in Sources */,
+				2721B9C829868A3A00FB68D2 /* Container.swift in Sources */,
 				2721B992298687A800FB68D2 /* AppDelegate.swift in Sources */,
+				2721B9D929868D2200FB68D2 /* AsyncTransformable+Factories.swift in Sources */,
+				2721B9DC29868D2200FB68D2 /* AsyncTransformBlock.swift in Sources */,
+				2721B9E129868D2200FB68D2 /* AnyCancelable.swift in Sources */,
+				2721B9D829868D2200FB68D2 /* AsyncTransformer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
