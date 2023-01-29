@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum TransactionCategory: Equatable, Hashable {
+enum TransactionCategory: Equatable, Hashable, CaseIterable {
     case shopping
     case travel
     case savings

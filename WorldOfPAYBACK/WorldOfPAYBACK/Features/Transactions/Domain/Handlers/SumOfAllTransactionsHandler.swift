@@ -23,7 +23,7 @@ class SumOfAllTransactionsHandler: SumOfAllTransactionsHandling {
     
     private func fetchAllTransactionItems() -> AsyncTransformBlock<Void, [TransactionItem]> {
         return { [repository] (_, completion) in
-            repository.allTransactionItems(with: .default, completion: completion)
+            repository.allTransactionItems(completion: completion)
         }
     }
     

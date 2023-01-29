@@ -45,6 +45,9 @@
 		2721BA0F298695A000FB68D2 /* FetchAndSumCategoryTransactionsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA0E298695A000FB68D2 /* FetchAndSumCategoryTransactionsHandler.swift */; };
 		2721BA112986963000FB68D2 /* TransactionsSumByCurrencyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA102986963000FB68D2 /* TransactionsSumByCurrencyCalculator.swift */; };
 		2721BA1729869E7C00FB68D2 /* FetchAndSumCategoryTransactionsHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA1629869E7C00FB68D2 /* FetchAndSumCategoryTransactionsHandlerTests.swift */; };
+		2721BA1A2986A50300FB68D2 /* MockTransactionItemRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA192986A50300FB68D2 /* MockTransactionItemRepository.swift */; };
+		2721BA1C2986A5D800FB68D2 /* MockTransactionItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA1B2986A5D800FB68D2 /* MockTransactionItemBuilder.swift */; };
+		2721BA1E2986B74200FB68D2 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA1D2986B74200FB68D2 /* Optional+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +110,9 @@
 		2721BA0E298695A000FB68D2 /* FetchAndSumCategoryTransactionsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAndSumCategoryTransactionsHandler.swift; sourceTree = "<group>"; };
 		2721BA102986963000FB68D2 /* TransactionsSumByCurrencyCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsSumByCurrencyCalculator.swift; sourceTree = "<group>"; };
 		2721BA1629869E7C00FB68D2 /* FetchAndSumCategoryTransactionsHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAndSumCategoryTransactionsHandlerTests.swift; sourceTree = "<group>"; };
+		2721BA192986A50300FB68D2 /* MockTransactionItemRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTransactionItemRepository.swift; sourceTree = "<group>"; };
+		2721BA1B2986A5D800FB68D2 /* MockTransactionItemBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTransactionItemBuilder.swift; sourceTree = "<group>"; };
+		2721BA1D2986B74200FB68D2 /* Optional+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				2721B9F52986921E00FB68D2 /* Result+Extensions.swift */,
+				2721BA1D2986B74200FB68D2 /* Optional+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -393,6 +400,7 @@
 		2721BA1429869E5F00FB68D2 /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
+				2721BA182986A4E800FB68D2 /* Mocks */,
 				2721BA1529869E6C00FB68D2 /* Handlers */,
 			);
 			path = Transactions;
@@ -404,6 +412,15 @@
 				2721BA1629869E7C00FB68D2 /* FetchAndSumCategoryTransactionsHandlerTests.swift */,
 			);
 			path = Handlers;
+			sourceTree = "<group>";
+		};
+		2721BA182986A4E800FB68D2 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA192986A50300FB68D2 /* MockTransactionItemRepository.swift */,
+				2721BA1B2986A5D800FB68D2 /* MockTransactionItemBuilder.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -557,6 +574,7 @@
 				2721B9CA29868AC300FB68D2 /* Support.swift in Sources */,
 				2721BA0B298694ED00FB68D2 /* FetchAndSumCategoryTransactionsHandling.swift in Sources */,
 				2721B9E529868E7E00FB68D2 /* ApplicationAssembly.swift in Sources */,
+				2721BA1E2986B74200FB68D2 /* Optional+Extensions.swift in Sources */,
 				2721BA112986963000FB68D2 /* TransactionsSumByCurrencyCalculator.swift in Sources */,
 				2721B9FC2986931300FB68D2 /* TransactionItem.swift in Sources */,
 				2721B9DA29868D2200FB68D2 /* MapTrasformer.swift in Sources */,
@@ -575,6 +593,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2721B9F4298690B200FB68D2 /* MoneyTests.swift in Sources */,
+				2721BA1A2986A50300FB68D2 /* MockTransactionItemRepository.swift in Sources */,
+				2721BA1C2986A5D800FB68D2 /* MockTransactionItemBuilder.swift in Sources */,
 				2721BA1729869E7C00FB68D2 /* FetchAndSumCategoryTransactionsHandlerTests.swift in Sources */,
 				2721B9A9298687AA00FB68D2 /* WorldOfPAYBACKTests.swift in Sources */,
 			);

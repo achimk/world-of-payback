@@ -16,19 +16,39 @@ class FetchAndSumCategoryTransactionsHandler: FetchAndSumCategoryTransactionsHan
     }
 
     func allTransactions(with query: TransactionItemQuery, shouldSumTransactions: Bool, completion: @escaping Completion<TransactionItemsWithSum>) -> Cancelable {
-        return make(fetchAllTransactionItems(with: query))
-            .then(shouldIncludeTransactionSum(shouldSumTransactions))
+        return make(fetchAllTransactionItems())
+            .then(filterTransactionItems(with: query))
+            .then(sortTransactionItems(with: query))
+            .then(enrichTransactionSum(shouldSumTransactions))
             .transform(completion: completion)
     }
     
-    private func fetchAllTransactionItems(with query: TransactionItemQuery) -> AsyncTransformBlock<Void, [TransactionItem]> {
+    private func fetchAllTransactionItems() -> AsyncTransformBlock<Void, [TransactionItem]> {
         return { [repository] (_, completion) in
-            repository.allTransactionItems(with: query, completion: completion)
+            repository.allTransactionItems(completion: completion)
         }
     }
     
-    private func shouldIncludeTransactionSum(_ shouldSum: Bool) -> AsyncTransformer<[TransactionItem], TransactionItemsWithSum> {
-        guard shouldSum else {
+    private func filterTransactionItems(with query: TransactionItemQuery) -> AsyncTransformer<[TransactionItem], [TransactionItem]> {
+        guard !query.filterCategories.isEmpty else {
+            return MapTransformer { $0 }
+        }
+        return MapTransformer {
+            $0.filter {
+                query.filterCategories.contains($0.category)
+            }
+        }
+    }
+    
+    private func sortTransactionItems(with query: TransactionItemQuery) -> AsyncTransformer<[TransactionItem], [TransactionItem]> {
+        let sortOrder = query.sortBy.asSortOrderStrategy()
+        return MapTransformer {
+            $0.sorted(by: { sortOrder($0.bookingDate, $1.bookingDate) })
+        }
+    }
+    
+    private func enrichTransactionSum(_ shouldSumTransactions: Bool) -> AsyncTransformer<[TransactionItem], TransactionItemsWithSum> {
+        guard shouldSumTransactions else {
             return MapTransformer { TransactionItemsWithSum(sum: nil, items: $0) }
         }
         

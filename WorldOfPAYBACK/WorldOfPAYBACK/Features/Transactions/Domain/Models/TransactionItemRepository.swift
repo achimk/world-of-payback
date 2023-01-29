@@ -8,5 +8,5 @@
 import Foundation
 
 protocol TransactionItemRepository {
-    func allTransactionItems(with query: TransactionItemQuery, completion: Completion<[TransactionItem]>) -> Cancelable
+    func allTransactionItems(completion: @escaping Completion<[TransactionItem]>) -> Cancelable
 }

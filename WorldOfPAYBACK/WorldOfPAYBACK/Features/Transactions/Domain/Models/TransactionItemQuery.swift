@@ -11,13 +11,22 @@ struct TransactionItemQuery {
     enum SortBy {
         case bookingDateAscending
         case bookingDateDescending
+        
+        func asSortOrderStrategy() -> (Date, Date) -> Bool {
+            switch self {
+            case .bookingDateAscending:
+                return { $0 < $1 }
+            case .bookingDateDescending:
+                return { $0 > $1 }
+            }
+        }
     }
     
     let sortBy: SortBy
     let filterCategories: Set<TransactionCategory>
     
     static let `default`: TransactionItemQuery = TransactionItemQuery(
-        sortBy: .bookingDateAscending,
+        sortBy: .bookingDateDescending,
         filterCategories: [])
     
     init(sortBy: TransactionItemQuery.SortBy, filterCategories: Set<TransactionCategory>) {
