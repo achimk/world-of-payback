@@ -28,6 +28,11 @@
 		2721B9E129868D2200FB68D2 /* AnyCancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9D729868D2200FB68D2 /* AnyCancelable.swift */; };
 		2721B9E329868DB500FB68D2 /* Completion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9E229868DB500FB68D2 /* Completion.swift */; };
 		2721B9E529868E7E00FB68D2 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9E429868E7E00FB68D2 /* ApplicationAssembly.swift */; };
+		2721B9E929868F5100FB68D2 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9E829868F5100FB68D2 /* Money.swift */; };
+		2721B9EC29868F6B00FB68D2 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9EB29868F6B00FB68D2 /* Currency.swift */; };
+		2721B9EE29868F7800FB68D2 /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9ED29868F7800FB68D2 /* Amount.swift */; };
+		2721B9F4298690B200FB68D2 /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9F3298690B200FB68D2 /* MoneyTests.swift */; };
+		2721B9F62986921E00FB68D2 /* Result+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9F52986921E00FB68D2 /* Result+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +78,11 @@
 		2721B9D729868D2200FB68D2 /* AnyCancelable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyCancelable.swift; sourceTree = "<group>"; };
 		2721B9E229868DB500FB68D2 /* Completion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Completion.swift; sourceTree = "<group>"; };
 		2721B9E429868E7E00FB68D2 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
+		2721B9E829868F5100FB68D2 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		2721B9EB29868F6B00FB68D2 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		2721B9ED29868F7800FB68D2 /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
+		2721B9F3298690B200FB68D2 /* MoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTests.swift; sourceTree = "<group>"; };
+		2721B9F52986921E00FB68D2 /* Result+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +148,7 @@
 		2721B9A7298687AA00FB68D2 /* WorldOfPAYBACKTests */ = {
 			isa = PBXGroup;
 			children = (
+				2721B9EF2986907800FB68D2 /* Application */,
 				2721B9A8298687AA00FB68D2 /* WorldOfPAYBACKTests.swift */,
 			);
 			path = WorldOfPAYBACKTests;
@@ -162,6 +173,7 @@
 		2721B9C22986897500FB68D2 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				2721B9E629868F3500FB68D2 /* Core */,
 				2721B9E429868E7E00FB68D2 /* ApplicationAssembly.swift */,
 			);
 			path = Application;
@@ -190,6 +202,7 @@
 		2721B9C52986898C00FB68D2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2721B9F52986921E00FB68D2 /* Result+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -233,6 +246,64 @@
 				2721B9D729868D2200FB68D2 /* AnyCancelable.swift */,
 			);
 			path = Cancelables;
+			sourceTree = "<group>";
+		};
+		2721B9E629868F3500FB68D2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2721B9E729868F4000FB68D2 /* Models */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2721B9E729868F4000FB68D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2721B9EA29868F5600FB68D2 /* Money */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2721B9EA29868F5600FB68D2 /* Money */ = {
+			isa = PBXGroup;
+			children = (
+				2721B9ED29868F7800FB68D2 /* Amount.swift */,
+				2721B9EB29868F6B00FB68D2 /* Currency.swift */,
+				2721B9E829868F5100FB68D2 /* Money.swift */,
+			);
+			path = Money;
+			sourceTree = "<group>";
+		};
+		2721B9EF2986907800FB68D2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2721B9F02986909100FB68D2 /* Core */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2721B9F02986909100FB68D2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2721B9F12986909A00FB68D2 /* Models */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2721B9F12986909A00FB68D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2721B9F2298690A400FB68D2 /* Money */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2721B9F2298690A400FB68D2 /* Money */ = {
+			isa = PBXGroup;
+			children = (
+				2721B9F3298690B200FB68D2 /* MoneyTests.swift */,
+			);
+			path = Money;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,13 +436,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2721B9EC29868F6B00FB68D2 /* Currency.swift in Sources */,
 				2721B9E329868DB500FB68D2 /* Completion.swift in Sources */,
 				2721B996298687A800FB68D2 /* ViewController.swift in Sources */,
+				2721B9EE29868F7800FB68D2 /* Amount.swift in Sources */,
+				2721B9F62986921E00FB68D2 /* Result+Extensions.swift in Sources */,
 				2721B9DD29868D2200FB68D2 /* AsyncTransformable+Pipeline.swift in Sources */,
 				2721B9E029868D2200FB68D2 /* NoopCancelable.swift in Sources */,
 				2721B9DF29868D2200FB68D2 /* CancelableBag.swift in Sources */,
 				2721B9DE29868D2200FB68D2 /* Cancelable.swift in Sources */,
 				2721B9DB29868D2200FB68D2 /* AsyncTransformable.swift in Sources */,
+				2721B9E929868F5100FB68D2 /* Money.swift in Sources */,
 				2721B9CA29868AC300FB68D2 /* Support.swift in Sources */,
 				2721B9E529868E7E00FB68D2 /* ApplicationAssembly.swift in Sources */,
 				2721B9DA29868D2200FB68D2 /* MapTrasformer.swift in Sources */,
@@ -388,6 +463,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2721B9F4298690B200FB68D2 /* MoneyTests.swift in Sources */,
 				2721B9A9298687AA00FB68D2 /* WorldOfPAYBACKTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
