@@ -8,7 +8,8 @@
 import Foundation
 
 protocol TransactionItemsViewInterface: AnyObject {
+    func presentInitial()
     func presentProgress()
-    func presentTransactionItems(_ items: [TransactionItemViewData])
+    func presentTransactionsViewData(_ viewData: CurrencyTransactionItemsViewData)
     func presentErrorMessage(_ errorMessage: String)
 }

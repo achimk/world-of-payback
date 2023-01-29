@@ -30,3 +30,11 @@ struct MockTransactionItemBuilder {
             amount: amountGeneator(index))
     }
 }
+
+func makeTransactionsWithDates(_ dates: [Date]) -> [TransactionItem] {
+    var builder = MockTransactionItemBuilder()
+    builder.bookingDateGenerator = { index in
+        return dates[index]
+    }
+    return builder.build(count: dates.count)
+}

@@ -7,23 +7,23 @@
 
 import Foundation
 
-struct TransactionItemViewDataBuilder {
+class TransactionItemViewDataBuilder {
     private let dateFormatter: DateFormatting
     private let currencyFormatter: CurrencyFormatting
-    private var onSelectHandler: () -> Void = { }
+    private var onSelectHandler: (TransactionItem) -> Void = { _ in }
     
     init(
         dateFormatter: DateFormatting,
-        currencyFormatter: CurrencyFormatting)
-    {
+        currencyFormatter: CurrencyFormatting
+    ) {
         self.dateFormatter = dateFormatter
         self.currencyFormatter = currencyFormatter
     }
     
-    func set(selectHandler: @escaping () -> Void) -> Self {
-        return performOnCopy { builder in
-            builder.onSelectHandler = selectHandler
-        }
+    @discardableResult
+    func set(selectHandler: @escaping (TransactionItem) -> Void) -> Self {
+        onSelectHandler = selectHandler
+        return self
     }
     
     func build(for item: TransactionItem) -> TransactionItemViewData {
@@ -32,12 +32,7 @@ struct TransactionItemViewDataBuilder {
             partnerName: item.partnerName,
             summary: item.summary,
             amount: currencyFormatter.string(from: item.amount),
-            onSelectHandler: onSelectHandler)
+            onSelectHandler: { [onSelectHandler] in onSelectHandler(item) })
     }
     
-    private func performOnCopy(_ action: (inout TransactionItemViewDataBuilder) -> Void) -> Self {
-        var builder = self
-        action(&builder)
-        return builder
-    }
 }

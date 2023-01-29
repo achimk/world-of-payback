@@ -10,6 +10,4 @@ import Foundation
 protocol TransactionItemsEventHandling {
     func viewLoaded()
     func refreshContent()
-    func filterBy(category: TransactionCategory)
-    func clearFilters()
 }
