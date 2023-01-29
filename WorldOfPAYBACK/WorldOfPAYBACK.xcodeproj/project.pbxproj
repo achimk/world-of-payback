@@ -33,6 +33,17 @@
 		2721B9EE29868F7800FB68D2 /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9ED29868F7800FB68D2 /* Amount.swift */; };
 		2721B9F4298690B200FB68D2 /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9F3298690B200FB68D2 /* MoneyTests.swift */; };
 		2721B9F62986921E00FB68D2 /* Result+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9F52986921E00FB68D2 /* Result+Extensions.swift */; };
+		2721B9FC2986931300FB68D2 /* TransactionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9FB2986931300FB68D2 /* TransactionItem.swift */; };
+		2721B9FE2986934200FB68D2 /* TransactionCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9FD2986934200FB68D2 /* TransactionCategory.swift */; };
+		2721BA00298693B400FB68D2 /* TransactionItemRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9FF298693B400FB68D2 /* TransactionItemRepository.swift */; };
+		2721BA02298693D300FB68D2 /* TransactionItemQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA01298693D300FB68D2 /* TransactionItemQuery.swift */; };
+		2721BA052986943300FB68D2 /* SumOfAllTransactionsHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA042986943300FB68D2 /* SumOfAllTransactionsHandling.swift */; };
+		2721BA072986946C00FB68D2 /* SumOfAllTransactionsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA062986946C00FB68D2 /* SumOfAllTransactionsHandler.swift */; };
+		2721BA092986949B00FB68D2 /* CalculatedTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA082986949B00FB68D2 /* CalculatedTransactions.swift */; };
+		2721BA0B298694ED00FB68D2 /* FetchAndSumCategoryTransactionsHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA0A298694ED00FB68D2 /* FetchAndSumCategoryTransactionsHandling.swift */; };
+		2721BA0D2986950C00FB68D2 /* TransactionItemsWithSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA0C2986950C00FB68D2 /* TransactionItemsWithSum.swift */; };
+		2721BA0F298695A000FB68D2 /* FetchAndSumCategoryTransactionsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA0E298695A000FB68D2 /* FetchAndSumCategoryTransactionsHandler.swift */; };
+		2721BA112986963000FB68D2 /* TransactionsSumByCurrencyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA102986963000FB68D2 /* TransactionsSumByCurrencyCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +94,17 @@
 		2721B9ED29868F7800FB68D2 /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
 		2721B9F3298690B200FB68D2 /* MoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTests.swift; sourceTree = "<group>"; };
 		2721B9F52986921E00FB68D2 /* Result+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Extensions.swift"; sourceTree = "<group>"; };
+		2721B9FB2986931300FB68D2 /* TransactionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItem.swift; sourceTree = "<group>"; };
+		2721B9FD2986934200FB68D2 /* TransactionCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCategory.swift; sourceTree = "<group>"; };
+		2721B9FF298693B400FB68D2 /* TransactionItemRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemRepository.swift; sourceTree = "<group>"; };
+		2721BA01298693D300FB68D2 /* TransactionItemQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemQuery.swift; sourceTree = "<group>"; };
+		2721BA042986943300FB68D2 /* SumOfAllTransactionsHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumOfAllTransactionsHandling.swift; sourceTree = "<group>"; };
+		2721BA062986946C00FB68D2 /* SumOfAllTransactionsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumOfAllTransactionsHandler.swift; sourceTree = "<group>"; };
+		2721BA082986949B00FB68D2 /* CalculatedTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatedTransactions.swift; sourceTree = "<group>"; };
+		2721BA0A298694ED00FB68D2 /* FetchAndSumCategoryTransactionsHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAndSumCategoryTransactionsHandling.swift; sourceTree = "<group>"; };
+		2721BA0C2986950C00FB68D2 /* TransactionItemsWithSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsWithSum.swift; sourceTree = "<group>"; };
+		2721BA0E298695A000FB68D2 /* FetchAndSumCategoryTransactionsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAndSumCategoryTransactionsHandler.swift; sourceTree = "<group>"; };
+		2721BA102986963000FB68D2 /* TransactionsSumByCurrencyCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsSumByCurrencyCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +188,7 @@
 		2721B9C12986896700FB68D2 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				2721B9F7298692BB00FB68D2 /* Transactions */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -306,6 +329,56 @@
 			path = Money;
 			sourceTree = "<group>";
 		};
+		2721B9F7298692BB00FB68D2 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				2721B9F9298692D900FB68D2 /* Domain */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		2721B9F9298692D900FB68D2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2721B9FA298692F500FB68D2 /* Models */,
+				2721BA032986940500FB68D2 /* Handlers */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		2721B9FA298692F500FB68D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA12298698A400FB68D2 /* Calculators */,
+				2721B9FD2986934200FB68D2 /* TransactionCategory.swift */,
+				2721B9FB2986931300FB68D2 /* TransactionItem.swift */,
+				2721BA0C2986950C00FB68D2 /* TransactionItemsWithSum.swift */,
+				2721BA01298693D300FB68D2 /* TransactionItemQuery.swift */,
+				2721B9FF298693B400FB68D2 /* TransactionItemRepository.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2721BA032986940500FB68D2 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA042986943300FB68D2 /* SumOfAllTransactionsHandling.swift */,
+				2721BA062986946C00FB68D2 /* SumOfAllTransactionsHandler.swift */,
+				2721BA0A298694ED00FB68D2 /* FetchAndSumCategoryTransactionsHandling.swift */,
+				2721BA0E298695A000FB68D2 /* FetchAndSumCategoryTransactionsHandler.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		2721BA12298698A400FB68D2 /* Calculators */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA082986949B00FB68D2 /* CalculatedTransactions.swift */,
+				2721BA102986963000FB68D2 /* TransactionsSumByCurrencyCalculator.swift */,
+			);
+			path = Calculators;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -436,25 +509,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2721BA072986946C00FB68D2 /* SumOfAllTransactionsHandler.swift in Sources */,
 				2721B9EC29868F6B00FB68D2 /* Currency.swift in Sources */,
 				2721B9E329868DB500FB68D2 /* Completion.swift in Sources */,
+				2721B9FE2986934200FB68D2 /* TransactionCategory.swift in Sources */,
 				2721B996298687A800FB68D2 /* ViewController.swift in Sources */,
 				2721B9EE29868F7800FB68D2 /* Amount.swift in Sources */,
 				2721B9F62986921E00FB68D2 /* Result+Extensions.swift in Sources */,
 				2721B9DD29868D2200FB68D2 /* AsyncTransformable+Pipeline.swift in Sources */,
 				2721B9E029868D2200FB68D2 /* NoopCancelable.swift in Sources */,
+				2721BA0D2986950C00FB68D2 /* TransactionItemsWithSum.swift in Sources */,
+				2721BA092986949B00FB68D2 /* CalculatedTransactions.swift in Sources */,
+				2721BA02298693D300FB68D2 /* TransactionItemQuery.swift in Sources */,
+				2721BA052986943300FB68D2 /* SumOfAllTransactionsHandling.swift in Sources */,
 				2721B9DF29868D2200FB68D2 /* CancelableBag.swift in Sources */,
 				2721B9DE29868D2200FB68D2 /* Cancelable.swift in Sources */,
+				2721BA00298693B400FB68D2 /* TransactionItemRepository.swift in Sources */,
 				2721B9DB29868D2200FB68D2 /* AsyncTransformable.swift in Sources */,
 				2721B9E929868F5100FB68D2 /* Money.swift in Sources */,
 				2721B9CA29868AC300FB68D2 /* Support.swift in Sources */,
+				2721BA0B298694ED00FB68D2 /* FetchAndSumCategoryTransactionsHandling.swift in Sources */,
 				2721B9E529868E7E00FB68D2 /* ApplicationAssembly.swift in Sources */,
+				2721BA112986963000FB68D2 /* TransactionsSumByCurrencyCalculator.swift in Sources */,
+				2721B9FC2986931300FB68D2 /* TransactionItem.swift in Sources */,
 				2721B9DA29868D2200FB68D2 /* MapTrasformer.swift in Sources */,
 				2721B9C829868A3A00FB68D2 /* Container.swift in Sources */,
 				2721B992298687A800FB68D2 /* AppDelegate.swift in Sources */,
 				2721B9D929868D2200FB68D2 /* AsyncTransformable+Factories.swift in Sources */,
 				2721B9DC29868D2200FB68D2 /* AsyncTransformBlock.swift in Sources */,
 				2721B9E129868D2200FB68D2 /* AnyCancelable.swift in Sources */,
+				2721BA0F298695A000FB68D2 /* FetchAndSumCategoryTransactionsHandler.swift in Sources */,
 				2721B9D829868D2200FB68D2 /* AsyncTransformer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
