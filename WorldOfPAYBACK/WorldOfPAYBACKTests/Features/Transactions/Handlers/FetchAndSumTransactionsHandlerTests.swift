@@ -1,5 +1,5 @@
 //
-//  FetchAndSumCategoryTransactionsHandlerTests.swift
+//  FetchAndSumTransactionsHandlerTests.swift
 //  WorldOfPAYBACKTests
 //
 //  Created by Joachim Kret on 29/01/2023.
@@ -9,7 +9,7 @@ import Foundation
 import XCTest
 @testable import WorldOfPAYBACK
 
-class FetchAndSumCategoryTransactionsHandlerTests: XCTestCase {
+class FetchAndSumTransactionsHandlerTests: XCTestCase {
     
     private enum Const {
         static let oneDay = 86400
@@ -167,16 +167,16 @@ class FetchAndSumCategoryTransactionsHandlerTests: XCTestCase {
     }
 }
 
-extension FetchAndSumCategoryTransactionsHandlerTests {
+extension FetchAndSumTransactionsHandlerTests {
     
     private struct TestComponents {
-        let handler: FetchAndSumCategoryTransactionsHandler
+        let handler: FetchAndSumTransactionsHandler
         let repository: MockTransactionItemRepository
     }
     
     private func makeTestComponents() -> TestComponents {
         let repository = MockTransactionItemRepository()
-        let handler = FetchAndSumCategoryTransactionsHandler(
+        let handler = FetchAndSumTransactionsHandler(
             repository: repository)
         
         return .init(

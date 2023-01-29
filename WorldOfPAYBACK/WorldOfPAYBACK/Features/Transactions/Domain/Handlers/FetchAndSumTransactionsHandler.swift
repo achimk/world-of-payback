@@ -1,5 +1,5 @@
 //
-//  FetchAndSumCategoryTransactionsHandler.swift
+//  FetchAndSumTransactionsHandler.swift
 //  WorldOfPAYBACK
 //
 //  Created by Joachim Kret on 29/01/2023.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class FetchAndSumCategoryTransactionsHandler: FetchAndSumCategoryTransactionsHandling {
+class FetchAndSumTransactionsHandler: FetchAndSumTransactionsHandling {
     private let repository: TransactionItemRepository
     private let calculator = TransactionsSumByCurrencyCalculator()
     
