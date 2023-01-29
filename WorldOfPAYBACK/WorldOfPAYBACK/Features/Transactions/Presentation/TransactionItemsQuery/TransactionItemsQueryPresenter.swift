@@ -16,13 +16,11 @@ class TransactionItemsQueryPresenter {
     init(
         coordinator: TransactionItemsQueryFlowCoordinating,
         localisation: TransactionItemsQueryLocalisation,
-        query: TransactionItemQuery
+        queryBuilder: TransactionItemsQueryBuilder
     ) {
         self.coordinator = coordinator
         self.viewDataBuilder = TransactionItemsQueryViewDataBuilder(localisation: localisation)
-        self.queryBuilder = TransactionItemsQueryBuilder(
-            sortBy: query.sortBy,
-            filterCategories: query.filterCategories)
+        self.queryBuilder = queryBuilder
         
         let onClearFilters: () -> Void = { [weak self] in self?.clearFilters() }
         let onAcceptQuery: () -> Void = { [weak self] in self?.acceptQuery() }

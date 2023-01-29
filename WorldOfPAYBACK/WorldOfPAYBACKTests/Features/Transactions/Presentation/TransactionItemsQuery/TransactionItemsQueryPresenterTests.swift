@@ -162,13 +162,20 @@ extension TransactionItemsQueryPresenterTests {
     }
     
     private func makeTestComponents(query: TransactionItemQuery = .default) -> TestComponents {
+        let queryBuilder = MultiTransactionCategoriesQueryBuilder(
+            sortBy: query.sortBy,
+            filterCategories: query.filterCategories)
+        return makeTestComponents(queryBuilder: queryBuilder)
+    }
+    
+    private func makeTestComponents(queryBuilder: TransactionItemsQueryBuilder) -> TestComponents {
         let coordinator = MockTransactionItemsQueryFlowCoordinator()
         let localisation = MockTransactionItemsQueryLocalisation()
         let view = MockTransactionItemsQueryView()
         let presenter = TransactionItemsQueryPresenter(
             coordinator: coordinator,
             localisation: localisation,
-            query: query)
+            queryBuilder: queryBuilder)
         
         presenter.attach(view)
         

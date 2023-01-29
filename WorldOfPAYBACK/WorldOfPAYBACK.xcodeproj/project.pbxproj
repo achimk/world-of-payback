@@ -69,6 +69,10 @@
 		2721BA4F2986E03800FB68D2 /* TransactionItemsQueryFlowCoordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA4E2986E03800FB68D2 /* TransactionItemsQueryFlowCoordinating.swift */; };
 		2721BA552986E80100FB68D2 /* MockTransactionItemsQueryLocalisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA542986E80100FB68D2 /* MockTransactionItemsQueryLocalisation.swift */; };
 		2721BA572986E87900FB68D2 /* TransactionItemsQueryPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA562986E87900FB68D2 /* TransactionItemsQueryPresenterTests.swift */; };
+		2721BA592987029400FB68D2 /* MultiTransactionCategoriesQueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA582987029400FB68D2 /* MultiTransactionCategoriesQueryBuilder.swift */; };
+		2721BA5B298702AB00FB68D2 /* OneTransactionCategoryQueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA5A298702AB00FB68D2 /* OneTransactionCategoryQueryBuilder.swift */; };
+		2721BA5E2987030000FB68D2 /* MultiTransactionCategoriesQueryBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA5D2987030000FB68D2 /* MultiTransactionCategoriesQueryBuilderTests.swift */; };
+		2721BA60298703BC00FB68D2 /* OneTransactionCategoryQueryBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA5F298703BC00FB68D2 /* OneTransactionCategoryQueryBuilderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +159,10 @@
 		2721BA4E2986E03800FB68D2 /* TransactionItemsQueryFlowCoordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsQueryFlowCoordinating.swift; sourceTree = "<group>"; };
 		2721BA542986E80100FB68D2 /* MockTransactionItemsQueryLocalisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTransactionItemsQueryLocalisation.swift; sourceTree = "<group>"; };
 		2721BA562986E87900FB68D2 /* TransactionItemsQueryPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsQueryPresenterTests.swift; sourceTree = "<group>"; };
+		2721BA582987029400FB68D2 /* MultiTransactionCategoriesQueryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiTransactionCategoriesQueryBuilder.swift; sourceTree = "<group>"; };
+		2721BA5A298702AB00FB68D2 /* OneTransactionCategoryQueryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTransactionCategoryQueryBuilder.swift; sourceTree = "<group>"; };
+		2721BA5D2987030000FB68D2 /* MultiTransactionCategoriesQueryBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiTransactionCategoriesQueryBuilderTests.swift; sourceTree = "<group>"; };
+		2721BA5F298703BC00FB68D2 /* OneTransactionCategoryQueryBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTransactionCategoryQueryBuilderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -551,6 +559,8 @@
 			isa = PBXGroup;
 			children = (
 				2721BA3C2986C71D00FB68D2 /* TransactionItemsQueryBuilder.swift */,
+				2721BA582987029400FB68D2 /* MultiTransactionCategoriesQueryBuilder.swift */,
+				2721BA5A298702AB00FB68D2 /* OneTransactionCategoryQueryBuilder.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -577,6 +587,7 @@
 		2721BA522986E7E200FB68D2 /* TransactionItemsQuery */ = {
 			isa = PBXGroup;
 			children = (
+				2721BA5C298702F200FB68D2 /* Models */,
 				2721BA562986E87900FB68D2 /* TransactionItemsQueryPresenterTests.swift */,
 			);
 			path = TransactionItemsQuery;
@@ -588,6 +599,15 @@
 				2721BA542986E80100FB68D2 /* MockTransactionItemsQueryLocalisation.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		2721BA5C298702F200FB68D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA5D2987030000FB68D2 /* MultiTransactionCategoriesQueryBuilderTests.swift */,
+				2721BA5F298703BC00FB68D2 /* OneTransactionCategoryQueryBuilderTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -743,6 +763,7 @@
 				2721B9DE29868D2200FB68D2 /* Cancelable.swift in Sources */,
 				2721BA00298693B400FB68D2 /* TransactionItemRepository.swift in Sources */,
 				2721B9DB29868D2200FB68D2 /* AsyncTransformable.swift in Sources */,
+				2721BA5B298702AB00FB68D2 /* OneTransactionCategoryQueryBuilder.swift in Sources */,
 				2721BA2D2986C2B200FB68D2 /* TransactionItemsFlowCoordinating.swift in Sources */,
 				2721B9E929868F5100FB68D2 /* Money.swift in Sources */,
 				2721BA4F2986E03800FB68D2 /* TransactionItemsQueryFlowCoordinating.swift in Sources */,
@@ -764,6 +785,7 @@
 				2721BA382986C52900FB68D2 /* DateFormatting.swift in Sources */,
 				2721B9DC29868D2200FB68D2 /* AsyncTransformBlock.swift in Sources */,
 				2721BA482986D99000FB68D2 /* TransactionItemsQueryPresenter.swift in Sources */,
+				2721BA592987029400FB68D2 /* MultiTransactionCategoriesQueryBuilder.swift in Sources */,
 				2721B9E129868D2200FB68D2 /* AnyCancelable.swift in Sources */,
 				2721BA0F298695A000FB68D2 /* FetchAndSumTransactionsHandler.swift in Sources */,
 				2721B9D829868D2200FB68D2 /* AsyncTransformer.swift in Sources */,
@@ -779,11 +801,13 @@
 				2721B9F4298690B200FB68D2 /* MoneyTests.swift in Sources */,
 				2721BA232986BA2A00FB68D2 /* TransactionsSumByCurrencyCalculatorTests.swift in Sources */,
 				2721BA552986E80100FB68D2 /* MockTransactionItemsQueryLocalisation.swift in Sources */,
+				2721BA5E2987030000FB68D2 /* MultiTransactionCategoriesQueryBuilderTests.swift in Sources */,
 				2721BA1A2986A50300FB68D2 /* MockTransactionItemRepository.swift in Sources */,
 				2721BA1C2986A5D800FB68D2 /* MockTransactionItemBuilder.swift in Sources */,
 				2721BA202986B89B00FB68D2 /* SumOfAllTransactionsTests.swift in Sources */,
 				2721BA1729869E7C00FB68D2 /* FetchAndSumTransactionsHandlerTests.swift in Sources */,
 				2721B9A9298687AA00FB68D2 /* WorldOfPAYBACKTests.swift in Sources */,
+				2721BA60298703BC00FB68D2 /* OneTransactionCategoryQueryBuilderTests.swift in Sources */,
 				2721BA572986E87900FB68D2 /* TransactionItemsQueryPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
