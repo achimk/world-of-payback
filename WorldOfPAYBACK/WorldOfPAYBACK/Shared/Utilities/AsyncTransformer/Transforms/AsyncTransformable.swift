@@ -13,3 +13,8 @@ protocol AsyncTransformable {
     func transform(_ value: Input, completion: @escaping Completion<Output>) -> Cancelable
 }
 
+extension AsyncTransformable {
+    func transform(completion: @escaping Completion<Output>) -> Cancelable where Input == Void {
+        return transform((), completion: completion)
+    }
+}

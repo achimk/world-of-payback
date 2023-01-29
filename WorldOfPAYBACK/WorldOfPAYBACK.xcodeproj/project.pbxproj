@@ -44,6 +44,7 @@
 		2721BA0D2986950C00FB68D2 /* TransactionItemsWithSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA0C2986950C00FB68D2 /* TransactionItemsWithSum.swift */; };
 		2721BA0F298695A000FB68D2 /* FetchAndSumCategoryTransactionsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA0E298695A000FB68D2 /* FetchAndSumCategoryTransactionsHandler.swift */; };
 		2721BA112986963000FB68D2 /* TransactionsSumByCurrencyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA102986963000FB68D2 /* TransactionsSumByCurrencyCalculator.swift */; };
+		2721BA1729869E7C00FB68D2 /* FetchAndSumCategoryTransactionsHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA1629869E7C00FB68D2 /* FetchAndSumCategoryTransactionsHandlerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		2721BA0C2986950C00FB68D2 /* TransactionItemsWithSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsWithSum.swift; sourceTree = "<group>"; };
 		2721BA0E298695A000FB68D2 /* FetchAndSumCategoryTransactionsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAndSumCategoryTransactionsHandler.swift; sourceTree = "<group>"; };
 		2721BA102986963000FB68D2 /* TransactionsSumByCurrencyCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsSumByCurrencyCalculator.swift; sourceTree = "<group>"; };
+		2721BA1629869E7C00FB68D2 /* FetchAndSumCategoryTransactionsHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAndSumCategoryTransactionsHandlerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				2721B9EF2986907800FB68D2 /* Application */,
+				2721BA1329869E1F00FB68D2 /* Features */,
 				2721B9A8298687AA00FB68D2 /* WorldOfPAYBACKTests.swift */,
 			);
 			path = WorldOfPAYBACKTests;
@@ -379,6 +382,30 @@
 			path = Calculators;
 			sourceTree = "<group>";
 		};
+		2721BA1329869E1F00FB68D2 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA1429869E5F00FB68D2 /* Transactions */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		2721BA1429869E5F00FB68D2 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA1529869E6C00FB68D2 /* Handlers */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		2721BA1529869E6C00FB68D2 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA1629869E7C00FB68D2 /* FetchAndSumCategoryTransactionsHandlerTests.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -548,6 +575,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2721B9F4298690B200FB68D2 /* MoneyTests.swift in Sources */,
+				2721BA1729869E7C00FB68D2 /* FetchAndSumCategoryTransactionsHandlerTests.swift in Sources */,
 				2721B9A9298687AA00FB68D2 /* WorldOfPAYBACKTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
