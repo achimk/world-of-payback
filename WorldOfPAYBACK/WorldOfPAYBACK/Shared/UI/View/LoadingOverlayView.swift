@@ -12,13 +12,15 @@ class LoadingOverlayView: UIView {
     private lazy var activityIndicator: UIActivityIndicatorView = {
         activityIndicator = UIActivityIndicatorView()
         // TODO: Theme!
-        activityIndicator.color = .white
+        activityIndicator.style = .whiteLarge
+        activityIndicator.color = .darkGray
         activityIndicator.startAnimating()
         return activityIndicator
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setupViews()
     }
     
     required init?(coder: NSCoder) {
@@ -28,6 +30,8 @@ class LoadingOverlayView: UIView {
     private func setupViews() {
         backgroundColor = .clear
         
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(activityIndicator)
         NSLayoutConstraint.activate([
             activityIndicator.centerXAnchor.constraint(equalTo: centerXAnchor),
             activityIndicator.centerYAnchor.constraint(equalTo: centerYAnchor)

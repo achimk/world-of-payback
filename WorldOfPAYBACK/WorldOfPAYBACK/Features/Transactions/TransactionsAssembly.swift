@@ -21,7 +21,7 @@ class TransactionsAssembly {
     
     private func makeTransactionItemRepository() -> TransactionItemRepository {
         let repository = JSONFileBasedTransactionItemRepository()
-        repository.set(delay: 0)
+        repository.set(delay: 0.750)
         repository.set(errorCondition: { false })
         return repository
     }
