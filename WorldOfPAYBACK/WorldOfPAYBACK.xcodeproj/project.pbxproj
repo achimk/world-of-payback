@@ -113,6 +113,14 @@
 		2721BAC92987E5AD00FB68D2 /* TransactionItemsMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAC82987E5AD00FB68D2 /* TransactionItemsMapperTests.swift */; };
 		2721BACB2987E8AA00FB68D2 /* TransactionCategoryMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BACA2987E8AA00FB68D2 /* TransactionCategoryMapperTests.swift */; };
 		2721BACD2987E9D000FB68D2 /* CurrencyMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BACC2987E9D000FB68D2 /* CurrencyMapperTests.swift */; };
+		2721BAD02987F01800FB68D2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BACF2987F01800FB68D2 /* TableViewController.swift */; };
+		2721BAD42987F2E100FB68D2 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAD32987F2E100FB68D2 /* AlertViewController.swift */; };
+		2721BAD72987F82B00FB68D2 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAD62987F82B00FB68D2 /* Reusable.swift */; };
+		2721BAD92987F88C00FB68D2 /* UITableVIew+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAD82987F88C00FB68D2 /* UITableVIew+Reusable.swift */; };
+		2721BADD2987FB7400FB68D2 /* ApplicationLocalisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BADC2987FB7400FB68D2 /* ApplicationLocalisation.swift */; };
+		2721BADF2987FC1E00FB68D2 /* ApplicationLocalisation+AlertLocalisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BADE2987FC1E00FB68D2 /* ApplicationLocalisation+AlertLocalisation.swift */; };
+		2721BAE12987FD4F00FB68D2 /* ApplicationLocalisation+TransactionItemsLocalisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAE02987FD4F00FB68D2 /* ApplicationLocalisation+TransactionItemsLocalisation.swift */; };
+		2721BAE32987FDFD00FB68D2 /* ApplicationLocalisation+TransactionItemsQueryLocalisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAE22987FDFD00FB68D2 /* ApplicationLocalisation+TransactionItemsQueryLocalisation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -243,6 +251,14 @@
 		2721BAC82987E5AD00FB68D2 /* TransactionItemsMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsMapperTests.swift; sourceTree = "<group>"; };
 		2721BACA2987E8AA00FB68D2 /* TransactionCategoryMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCategoryMapperTests.swift; sourceTree = "<group>"; };
 		2721BACC2987E9D000FB68D2 /* CurrencyMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyMapperTests.swift; sourceTree = "<group>"; };
+		2721BACF2987F01800FB68D2 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		2721BAD32987F2E100FB68D2 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		2721BAD62987F82B00FB68D2 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		2721BAD82987F88C00FB68D2 /* UITableVIew+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableVIew+Reusable.swift"; sourceTree = "<group>"; };
+		2721BADC2987FB7400FB68D2 /* ApplicationLocalisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationLocalisation.swift; sourceTree = "<group>"; };
+		2721BADE2987FC1E00FB68D2 /* ApplicationLocalisation+AlertLocalisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationLocalisation+AlertLocalisation.swift"; sourceTree = "<group>"; };
+		2721BAE02987FD4F00FB68D2 /* ApplicationLocalisation+TransactionItemsLocalisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationLocalisation+TransactionItemsLocalisation.swift"; sourceTree = "<group>"; };
+		2721BAE22987FDFD00FB68D2 /* ApplicationLocalisation+TransactionItemsQueryLocalisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationLocalisation+TransactionItemsQueryLocalisation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,7 +352,8 @@
 		2721B9C22986897500FB68D2 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				2721B9E629868F3500FB68D2 /* Core */,
+				2721BADA2987FB5100FB68D2 /* Capabilities */,
+				2721B9E729868F4000FB68D2 /* Models */,
 				2721B9E429868E7E00FB68D2 /* ApplicationAssembly.swift */,
 			);
 			path = Application;
@@ -345,6 +362,7 @@
 		2721B9C32986897F00FB68D2 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2721BACE2987F00900FB68D2 /* Views */,
 				2721B9C52986898C00FB68D2 /* Extensions */,
 				2721B9C42986898500FB68D2 /* Utilities */,
 			);
@@ -361,6 +379,7 @@
 				2721BAA32987317900FB68D2 /* Decoders */,
 				2721B9C629868A2B00FB68D2 /* DI */,
 				2721BAC42987E50300FB68D2 /* JSONFileLoader */,
+				2721BAD52987F81D00FB68D2 /* Reusable */,
 				2721B9C929868AC300FB68D2 /* Support.swift */,
 				2721B9E229868DB500FB68D2 /* Completion.swift */,
 			);
@@ -418,14 +437,6 @@
 				2721B9D729868D2200FB68D2 /* AnyCancelable.swift */,
 			);
 			path = Cancelables;
-			sourceTree = "<group>";
-		};
-		2721B9E629868F3500FB68D2 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				2721B9E729868F4000FB68D2 /* Models */,
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 		2721B9E729868F4000FB68D2 /* Models */ = {
@@ -922,6 +933,43 @@
 			path = Mappers;
 			sourceTree = "<group>";
 		};
+		2721BACE2987F00900FB68D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2721BACF2987F01800FB68D2 /* TableViewController.swift */,
+				2721BAD32987F2E100FB68D2 /* AlertViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2721BAD52987F81D00FB68D2 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				2721BAD62987F82B00FB68D2 /* Reusable.swift */,
+				2721BAD82987F88C00FB68D2 /* UITableVIew+Reusable.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		2721BADA2987FB5100FB68D2 /* Capabilities */ = {
+			isa = PBXGroup;
+			children = (
+				2721BADB2987FB6600FB68D2 /* Localisation */,
+			);
+			path = Capabilities;
+			sourceTree = "<group>";
+		};
+		2721BADB2987FB6600FB68D2 /* Localisation */ = {
+			isa = PBXGroup;
+			children = (
+				2721BADC2987FB7400FB68D2 /* ApplicationLocalisation.swift */,
+				2721BADE2987FC1E00FB68D2 /* ApplicationLocalisation+AlertLocalisation.swift */,
+				2721BAE02987FD4F00FB68D2 /* ApplicationLocalisation+TransactionItemsLocalisation.swift */,
+				2721BAE22987FDFD00FB68D2 /* ApplicationLocalisation+TransactionItemsQueryLocalisation.swift */,
+			);
+			path = Localisation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1077,7 +1125,10 @@
 				2721BAAE2987A80100FB68D2 /* TransactionDetailsViewFactory.swift in Sources */,
 				2721BA3A2986C57B00FB68D2 /* CurrencyFormatting.swift in Sources */,
 				2721BA292986BDF700FB68D2 /* TransactionItemsPresenter.swift in Sources */,
+				2721BAD72987F82B00FB68D2 /* Reusable.swift in Sources */,
 				2721BA7F29872B8800FB68D2 /* TransactionDetailsViewInterface.swift in Sources */,
+				2721BADF2987FC1E00FB68D2 /* ApplicationLocalisation+AlertLocalisation.swift in Sources */,
+				2721BAE12987FD4F00FB68D2 /* ApplicationLocalisation+TransactionItemsLocalisation.swift in Sources */,
 				2721BAAC29873BC800FB68D2 /* TransactionItemsViewFactory.swift in Sources */,
 				2721B9E029868D2200FB68D2 /* NoopCancelable.swift in Sources */,
 				2721BA0D2986950C00FB68D2 /* TransactionItemsWithSum.swift in Sources */,
@@ -1091,12 +1142,14 @@
 				2721BA00298693B400FB68D2 /* TransactionItemRepository.swift in Sources */,
 				2721BA672987105300FB68D2 /* CurrencyTransactionItemsViewData.swift in Sources */,
 				2721B9DB29868D2200FB68D2 /* AsyncTransformable.swift in Sources */,
+				2721BADD2987FB7400FB68D2 /* ApplicationLocalisation.swift in Sources */,
 				2721BAA72987330F00FB68D2 /* Bundle+Current.swift in Sources */,
 				2721BA5B298702AB00FB68D2 /* OneTransactionCategoryQueryBuilder.swift in Sources */,
 				2721BA6B298716F900FB68D2 /* TransactionItemsLocalisation.swift in Sources */,
 				2721BAA5298731A800FB68D2 /* DecimalDecoder.swift in Sources */,
 				2721BAB42987A99100FB68D2 /* TransactionCategoryMapper.swift in Sources */,
 				2721BA2D2986C2B200FB68D2 /* TransactionItemsFlowCoordinating.swift in Sources */,
+				2721BAD92987F88C00FB68D2 /* UITableVIew+Reusable.swift in Sources */,
 				2721BABA2987B1E300FB68D2 /* DefaultCurrencyFormatter.swift in Sources */,
 				2721BA7D29872B7B00FB68D2 /* TransactionDetailsEventHandling.swift in Sources */,
 				2721B9E929868F5100FB68D2 /* Money.swift in Sources */,
@@ -1106,7 +1159,9 @@
 				2721BA422986D94900FB68D2 /* TransactionItemsQueryViewInterface.swift in Sources */,
 				2721B9E529868E7E00FB68D2 /* ApplicationAssembly.swift in Sources */,
 				2721BA1E2986B74200FB68D2 /* Optional+Extensions.swift in Sources */,
+				2721BAD02987F01800FB68D2 /* TableViewController.swift in Sources */,
 				2721BA112986963000FB68D2 /* TransactionsSumByCurrencyCalculator.swift in Sources */,
+				2721BAE32987FDFD00FB68D2 /* ApplicationLocalisation+TransactionItemsQueryLocalisation.swift in Sources */,
 				2721BA4A2986DB4200FB68D2 /* TransactionItemsQueryViewDataBuilder.swift in Sources */,
 				2721BA2B2986C2A000FB68D2 /* TransactionItemViewData.swift in Sources */,
 				2721B9FC2986931300FB68D2 /* TransactionItem.swift in Sources */,
@@ -1126,6 +1181,7 @@
 				2721BA7B29872B6A00FB68D2 /* TransactionDetailsViewData.swift in Sources */,
 				2721BA8E29872E3100FB68D2 /* TransactionDetailsViewController.swift in Sources */,
 				2721B9DC29868D2200FB68D2 /* AsyncTransformBlock.swift in Sources */,
+				2721BAD42987F2E100FB68D2 /* AlertViewController.swift in Sources */,
 				2721BA482986D99000FB68D2 /* TransactionItemsQueryPresenter.swift in Sources */,
 				2721BAB02987A84700FB68D2 /* TransactionItemsQueryViewFactory.swift in Sources */,
 				2721BA592987029400FB68D2 /* MultiTransactionCategoriesQueryBuilder.swift in Sources */,

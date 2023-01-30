@@ -69,26 +69,3 @@ extension UIViewController {
         container.setNeedsLayout()
     }
 }
-
-extension UIViewController {
-    
-    func presentError(message: String) {
-        
-        let alert = UIAlertController(
-            title: "Failed", // TODO: Localize
-            message: message,
-            preferredStyle: .alert)
-        
-        let dismiss = UIAlertAction(
-            title: "OK", // TODO: Localize
-            style: .default) { (_) in
-            alert.dismiss(animated: true, completion: nil)
-        }
-        
-        alert.addAction(dismiss)
-        
-        present(alert, animated: true, completion: nil)
-    }
-}
-
-

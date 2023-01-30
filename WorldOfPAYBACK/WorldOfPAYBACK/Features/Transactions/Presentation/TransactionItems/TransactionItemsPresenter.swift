@@ -87,7 +87,7 @@ extension TransactionItemsPresenter: TransactionItemsEventHandling {
         case .success(let result):
             view?.presentTransactionsViewData(viewDataBuilder.build(for: result))
         case .failure(let error):
-            view?.presentErrorMessage(localisation.localisedErrorMessage(for: error))
+            view?.presentErrorMessage(localisation.transactionItemsLoadingFailed(with: error))
         }
     }
 }

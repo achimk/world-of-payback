@@ -7,8 +7,12 @@
 
 import UIKit
 
-class TransactionItemsViewController: UIViewController {
+class TransactionItemsViewController: TableViewController {
     
+    @objc
+    override func refreshContent() {
+        
+    }
 }
 
 extension TransactionItemsViewController: TransactionItemsViewInterface {
@@ -27,5 +31,28 @@ extension TransactionItemsViewController: TransactionItemsViewInterface {
     
     func presentErrorMessage(_ errorMessage: String) {
         
+    }
+}
+
+class TransactionItemsDataSource: NSObject {
+    
+}
+
+extension TransactionItemsDataSource: UITableViewDelegate {
+    
+}
+
+extension TransactionItemsDataSource: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
     }
 }

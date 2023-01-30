@@ -8,7 +8,7 @@
 import Foundation
 
 protocol TransactionItemsQueryLocalisation {
-    func titleForTransactionCategory(_ category: TransactionCategory) -> String
-    func clearButtonTitle() -> String
-    func acceptButtonTitle() -> String
+    func transactionsQueryTitleForTransactionCategory(_ category: TransactionCategory) -> String
+    func transactionsQueryClearButtonTitle() -> String
+    func transactionsQueryAcceptButtonTitle() -> String
 }

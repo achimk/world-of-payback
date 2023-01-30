@@ -8,5 +8,5 @@
 import Foundation
 
 protocol TransactionItemsLocalisation {
-    func localisedErrorMessage(for error: Error) -> String
+    func transactionItemsLoadingFailed(with error: Error) -> String
 }
