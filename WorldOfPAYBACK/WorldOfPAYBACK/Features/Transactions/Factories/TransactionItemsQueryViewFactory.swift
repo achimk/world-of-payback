@@ -11,6 +11,8 @@ struct TransactionItemsQueryViewFactory {
     
     static func make(container: Container = .shared) -> UIViewController {
         // TODO: Implement!
-        fatalError()
+        let viewController = UIViewController()
+        viewController.view.backgroundColor = .red
+        return viewController
     }
 }

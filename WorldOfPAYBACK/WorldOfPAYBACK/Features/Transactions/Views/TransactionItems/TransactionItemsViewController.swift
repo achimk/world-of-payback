@@ -53,29 +53,25 @@ class TransactionItemsViewController: TableViewController {
     
     @objc
     private func presentFilters() {
-        
+        eventHandler.filterContent()
     }
 }
 
 extension TransactionItemsViewController: TransactionItemsViewInterface {
     
     func presentInitial() {
-        print("-> Initial")
     }
     
     func presentProgress() {
-        print("-> Progress")
         startProgress()
     }
     
     func presentTransactionsViewData(_ viewData: CurrencyTransactionItemsViewData) {
-        print("-> Success: \(viewData.items.count)")
         endProgress()
         dataSource.update(with: viewData)
     }
     
     func presentErrorMessage(_ errorMessage: String) {
-        print("-> Error: \(errorMessage)")
         endProgress()
         presentErrorView(message: errorMessage)
     }
