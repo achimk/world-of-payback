@@ -15,7 +15,7 @@ class FetchAndSumTransactionsHandler: FetchAndSumTransactionsHandling {
         self.repository = repository
     }
 
-    func allTransactions(with query: TransactionItemQuery, shouldSumTransactions: Bool, completion: @escaping Completion<TransactionItemsWithSum>) -> Cancelable {
+    func allTransactions(with query: TransactionItemsQuery, shouldSumTransactions: Bool, completion: @escaping Completion<TransactionItemsWithSum>) -> Cancelable {
         return make(fetchAllTransactionItems())
             .then(filterTransactionItems(with: query))
             .then(sortTransactionItems(with: query))
@@ -29,7 +29,7 @@ class FetchAndSumTransactionsHandler: FetchAndSumTransactionsHandling {
         }
     }
     
-    private func filterTransactionItems(with query: TransactionItemQuery) -> AsyncTransformer<[TransactionItem], [TransactionItem]> {
+    private func filterTransactionItems(with query: TransactionItemsQuery) -> AsyncTransformer<[TransactionItem], [TransactionItem]> {
         guard !query.filterCategories.isEmpty else {
             return MapTransformer { $0 }
         }
@@ -40,7 +40,7 @@ class FetchAndSumTransactionsHandler: FetchAndSumTransactionsHandling {
         }
     }
     
-    private func sortTransactionItems(with query: TransactionItemQuery) -> AsyncTransformer<[TransactionItem], [TransactionItem]> {
+    private func sortTransactionItems(with query: TransactionItemsQuery) -> AsyncTransformer<[TransactionItem], [TransactionItem]> {
         let sortOrder = query.sortBy.asSortOrderStrategy()
         return MapTransformer {
             $0.sorted(by: { sortOrder($0.bookingDate, $1.bookingDate) })

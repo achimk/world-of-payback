@@ -8,5 +8,5 @@
 import Foundation
 
 protocol FetchAndSumTransactionsHandling {
-    func allTransactions(with query: TransactionItemQuery, shouldSumTransactions: Bool, completion: @escaping Completion<TransactionItemsWithSum>) -> Cancelable
+    func allTransactions(with query: TransactionItemsQuery, shouldSumTransactions: Bool, completion: @escaping Completion<TransactionItemsWithSum>) -> Cancelable
 }

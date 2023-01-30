@@ -8,5 +8,5 @@
 import Foundation
 
 protocol TransactionItemsQueryFlowCoordinating {
-    func presentTransactionItems(for query: TransactionItemQuery)
+    func presentTransactionItems(for query: TransactionItemsQuery)
 }

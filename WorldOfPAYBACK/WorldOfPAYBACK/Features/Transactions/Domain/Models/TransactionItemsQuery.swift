@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TransactionItemQuery: Equatable {
+struct TransactionItemsQuery: Equatable {
     enum SortBy {
         case bookingDateAscending
         case bookingDateDescending
@@ -25,11 +25,11 @@ struct TransactionItemQuery: Equatable {
     let sortBy: SortBy
     let filterCategories: Set<TransactionCategory>
     
-    static let `default`: TransactionItemQuery = TransactionItemQuery(
+    static let `default`: TransactionItemsQuery = TransactionItemsQuery(
         sortBy: .bookingDateDescending,
         filterCategories: [])
     
-    init(sortBy: TransactionItemQuery.SortBy, filterCategories: Set<TransactionCategory>) {
+    init(sortBy: TransactionItemsQuery.SortBy, filterCategories: Set<TransactionCategory>) {
         self.sortBy = sortBy
         self.filterCategories = filterCategories
     }

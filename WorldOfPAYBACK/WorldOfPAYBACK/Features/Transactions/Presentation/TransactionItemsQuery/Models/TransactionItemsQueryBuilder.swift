@@ -10,5 +10,5 @@ import Foundation
 protocol TransactionItemsQueryBuilder {
     func toggle(category: TransactionCategory) -> Self
     func clear() -> Self
-    func build() -> TransactionItemQuery
+    func build() -> TransactionItemsQuery
 }

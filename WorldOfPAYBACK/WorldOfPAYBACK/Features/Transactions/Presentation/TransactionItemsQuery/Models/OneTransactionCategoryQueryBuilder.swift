@@ -8,11 +8,11 @@
 import Foundation
 
 struct OneTransactionCategoryQueryBuilder: TransactionItemsQueryBuilder {
-    private var sortBy: TransactionItemQuery.SortBy
+    private var sortBy: TransactionItemsQuery.SortBy
     private var filterCategories: Set<TransactionCategory>
     
     init(
-        sortBy: TransactionItemQuery.SortBy,
+        sortBy: TransactionItemsQuery.SortBy,
         filterCategory: TransactionCategory?
     ) {
         self.sortBy = sortBy
@@ -36,8 +36,8 @@ struct OneTransactionCategoryQueryBuilder: TransactionItemsQueryBuilder {
         }
     }
     
-    func build() -> TransactionItemQuery {
-        return TransactionItemQuery(
+    func build() -> TransactionItemsQuery {
+        return TransactionItemsQuery(
             sortBy: sortBy,
             filterCategories: filterCategories)
     }

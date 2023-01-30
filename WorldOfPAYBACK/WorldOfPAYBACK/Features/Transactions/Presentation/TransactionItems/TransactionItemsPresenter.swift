@@ -11,7 +11,7 @@ class TransactionItemsPresenter {
     private let activityPublisher: ActivityStatePublisher<TransactionItemsQueryParameters, TransactionItemsWithSum>
     private let localisation: TransactionItemsLocalisation
     private let viewDataBuilder: CurrencyTransactionItemsViewDataBuilder
-    private var query: TransactionItemQuery
+    private var query: TransactionItemsQuery
     private weak var view: TransactionItemsViewInterface?
     
     init(
@@ -20,7 +20,7 @@ class TransactionItemsPresenter {
         currencyFormatter: CurrencyFormatting,
         localisation: TransactionItemsLocalisation,
         transactionsHandler: FetchAndSumTransactionsHandling,
-        initialQuery query: TransactionItemQuery
+        initialQuery query: TransactionItemsQuery
     ) {
         self.activityPublisher = .init { (parameters, completion) in
             return transactionsHandler.allTransactions(
@@ -53,7 +53,7 @@ extension TransactionItemsPresenter {
         self.view = view
     }
     
-    func updateTransactionsQuery(_ query: TransactionItemQuery) {
+    func updateTransactionsQuery(_ query: TransactionItemsQuery) {
         self.query = query
         buildAndDispatch()
     }
@@ -95,6 +95,6 @@ extension TransactionItemsPresenter: TransactionItemsEventHandling {
 // MARK: - Private
 
 private struct TransactionItemsQueryParameters {
-    let query: TransactionItemQuery
+    let query: TransactionItemsQuery
     let shouldSumTransactions: Bool
 }

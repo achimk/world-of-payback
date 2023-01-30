@@ -37,14 +37,14 @@ struct TransactionItemsQueryViewDataBuilder {
         }
     }
     
-    func build(for query: TransactionItemQuery) -> TransactionItemsQueryViewData {
+    func build(for query: TransactionItemsQuery) -> TransactionItemsQueryViewData {
         return TransactionItemsQueryViewData(
             filters: makeFilters(for: query),
             clearButton: makeClearButton(for: query),
             acceptButton: makeAcceptButton(for: query))
     }
     
-    private func makeClearButton(for query: TransactionItemQuery) -> ButtonViewData {
+    private func makeClearButton(for query: TransactionItemsQuery) -> ButtonViewData {
         let isEnabled = !query.filterCategories.isEmpty
         return .init(
             title: localisation.clearButtonTitle(),
@@ -52,14 +52,14 @@ struct TransactionItemsQueryViewDataBuilder {
             onSelectHandler: onSelectClearHandler)
     }
     
-    private func makeAcceptButton(for query: TransactionItemQuery) -> ButtonViewData {
+    private func makeAcceptButton(for query: TransactionItemsQuery) -> ButtonViewData {
         return .init(
             title: localisation.acceptButtonTitle(),
             isEnabled: true,
             onSelectHandler: onSelectAcceptHandler)
     }
     
-    private func makeFilters(for query: TransactionItemQuery) -> [FilterViewData] {
+    private func makeFilters(for query: TransactionItemsQuery) -> [FilterViewData] {
         return TransactionCategory.allCases.map { makeFilter(for: $0, in: query.filterCategories) }
     }
     

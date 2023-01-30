@@ -12,7 +12,7 @@ import XCTest
 class TransactionItemsQueryPresenterTests: XCTestCase {
     
     func test_initialiseWithCustomQuery_shouldPresentCorrectState() {
-        let query = TransactionItemQuery(
+        let query = TransactionItemsQuery(
             sortBy: .bookingDateDescending,
             filterCategories: [.shopping, .savings])
         let components = makeTestComponents(query: query)
@@ -134,7 +134,7 @@ class TransactionItemsQueryPresenterTests: XCTestCase {
     }
     
     func test_acceptQueryWithChanges_shouldNotifyCoordinatorWithQuery() {
-        let expectation = TransactionItemQuery(
+        let expectation = TransactionItemsQuery(
             sortBy: .bookingDateDescending,
             filterCategories: [.shopping, .savings])
         let components = makeTestComponents()
@@ -161,7 +161,7 @@ extension TransactionItemsQueryPresenterTests {
         let view: MockTransactionItemsQueryView
     }
     
-    private func makeTestComponents(query: TransactionItemQuery = .default) -> TestComponents {
+    private func makeTestComponents(query: TransactionItemsQuery = .default) -> TestComponents {
         let queryBuilder = MultiTransactionCategoriesQueryBuilder(
             sortBy: query.sortBy,
             filterCategories: query.filterCategories)
@@ -199,9 +199,9 @@ extension TransactionItemsQueryPresenterTests {
 
 private class MockTransactionItemsQueryFlowCoordinator: TransactionItemsQueryFlowCoordinating {
     private(set) var presentTransactionItemsInvoked = false
-    private(set) var lastQuery: TransactionItemQuery?
+    private(set) var lastQuery: TransactionItemsQuery?
     
-    func presentTransactionItems(for query: TransactionItemQuery) {
+    func presentTransactionItems(for query: TransactionItemsQuery) {
         presentTransactionItemsInvoked = true
         lastQuery = query
     }

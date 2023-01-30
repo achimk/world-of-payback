@@ -20,7 +20,7 @@ extension TransactionsFlowCoordinator: TransactionItemsFlowCoordinating {
 
 extension TransactionsFlowCoordinator: TransactionItemsQueryFlowCoordinating {
     
-    func presentTransactionItems(for query: TransactionItemQuery) {
+    func presentTransactionItems(for query: TransactionItemsQuery) {
         // TODO: Implement!
     }
 }

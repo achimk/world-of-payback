@@ -32,7 +32,7 @@ class TransactionItemQueryTests: XCTestCase {
             Date(timeIntervalSince1970: TimeInterval(5 * Const.oneDay))
         ]
         
-        let sortStrategy = TransactionItemQuery.SortBy.bookingDateAscending.asSortOrderStrategy()
+        let sortStrategy = TransactionItemsQuery.SortBy.bookingDateAscending.asSortOrderStrategy()
         let results = inputDates.sorted(by: sortStrategy)
         
         XCTAssertEqual(results, outputDates)
@@ -47,14 +47,14 @@ class TransactionItemQueryTests: XCTestCase {
             Date(timeIntervalSince1970: TimeInterval(1 * Const.oneDay))
         ]
         
-        let sortStrategy = TransactionItemQuery.SortBy.bookingDateDescending.asSortOrderStrategy()
+        let sortStrategy = TransactionItemsQuery.SortBy.bookingDateDescending.asSortOrderStrategy()
         let results = inputDates.sorted(by: sortStrategy)
         
         XCTAssertEqual(results, outputDates)
     }
     
     func test_createDefaultQuery_shouldMatchQueryParameters() {
-        let query = TransactionItemQuery.default
+        let query = TransactionItemsQuery.default
         XCTAssertEqual(query.sortBy, .bookingDateDescending)
         XCTAssertEqual(query.filterCategories, [])
     }

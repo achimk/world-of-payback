@@ -85,7 +85,7 @@ class FetchAndSumTransactionsHandlerTests: XCTestCase {
         components.repository.tranactionItemsGenerator = { builder.build(count: TransactionCategory.allCases.count * 3) }
         
         var result: Result<TransactionItemsWithSum, Error>?
-        let query = TransactionItemQuery(sortBy: .bookingDateDescending, filterCategories: [.other])
+        let query = TransactionItemsQuery(sortBy: .bookingDateDescending, filterCategories: [.other])
         _ = components.handler.allTransactions(with: query, shouldSumTransactions: false, completion: { result = $0 })
         
         XCTAssertTrue(result?.isSuccess == true)
@@ -104,7 +104,7 @@ class FetchAndSumTransactionsHandlerTests: XCTestCase {
         components.repository.tranactionItemsGenerator = { builder.build(count: TransactionCategory.allCases.count * 3) }
         
         var result: Result<TransactionItemsWithSum, Error>?
-        let query = TransactionItemQuery(sortBy: .bookingDateDescending, filterCategories: [.other, .savings])
+        let query = TransactionItemsQuery(sortBy: .bookingDateDescending, filterCategories: [.other, .savings])
         _ = components.handler.allTransactions(with: query, shouldSumTransactions: false, completion: { result = $0 })
         
         XCTAssertTrue(result?.isSuccess == true)
