@@ -127,6 +127,14 @@ class TransactionItemsPresenterTests: XCTestCase {
         XCTAssertEqual(components.view.viewDataSnapshots.last?.items.count, 3)
     }
     
+    func test_filterContent_shouldNavigateToFilters() {
+        let components = makeTestComponents()
+        
+        components.presenter.filterContent()
+        
+        XCTAssertTrue(components.coordinator.presentTransactionFiltersInvoked)
+    }
+    
     // As a user of the App, I want to see the sum of filtered transactions somewhere on the Transaction-list view.
     
     func test_fetchTransactionsByCategory_shouldPresentTransactionsSum() {
@@ -222,14 +230,24 @@ extension TransactionItemsPresenterTests {
 // MARK: - Mocks
 
 private class MockTransactionItemsFlowCoordinator: TransactionItemsFlowCoordinating {
+    private(set) var presentTransactionFiltersInvoked = false
     private(set) var presentTransactionDetailsInvoked = false
+    
+    func presentTransactionFilters(completion: @escaping (TransactionItemsQuery) -> Void) {
+        presentTransactionFiltersInvoked = true
+    }
+    
     func presentTransactionDetails(for item: TransactionItem) {
         presentTransactionDetailsInvoked = true
     }
 }
 
 private class MockTransactionItemsLocalisation: TransactionItemsLocalisation {
-    func localisedErrorMessage(for error: Error) -> String {
+    func transactionItemsTitle() -> String {
+        return "transactions"
+    }
+    
+    func transactionItemsLoadingFailed(with error: Error) -> String {
         return "error"
     }
 }

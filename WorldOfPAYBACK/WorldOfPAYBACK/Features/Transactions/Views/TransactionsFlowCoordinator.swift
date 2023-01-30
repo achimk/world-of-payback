@@ -13,6 +13,10 @@ class TransactionsFlowCoordinator {
 
 extension TransactionsFlowCoordinator: TransactionItemsFlowCoordinating {
     
+    func presentTransactionFilters(completion: @escaping (TransactionItemsQuery) -> Void) {
+        // TODO: Implement!
+    }
+    
     func presentTransactionDetails(for item: TransactionItem) {
         // TODO: Implement!
     }

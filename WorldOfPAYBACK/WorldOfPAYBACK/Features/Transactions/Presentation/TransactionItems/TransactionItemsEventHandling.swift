@@ -10,4 +10,5 @@ import Foundation
 protocol TransactionItemsEventHandling {
     func viewLoaded()
     func refreshContent()
+    func filterContent()
 }

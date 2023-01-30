@@ -9,6 +9,7 @@ import Foundation
 
 class TransactionItemsPresenter {
     private let activityPublisher: ActivityStatePublisher<TransactionItemsQueryParameters, TransactionItemsWithSum>
+    private let coordinator: TransactionItemsFlowCoordinating
     private let localisation: TransactionItemsLocalisation
     private let viewDataBuilder: CurrencyTransactionItemsViewDataBuilder
     private var query: TransactionItemsQuery
@@ -28,6 +29,7 @@ class TransactionItemsPresenter {
                 shouldSumTransactions: parameters.shouldSumTransactions,
                 completion: completion)
         }
+        self.coordinator = coordinator
         self.localisation = localisation
         let itemBuilder = TransactionItemViewDataBuilder(
             dateFormatter: dateFormatter,
@@ -68,6 +70,12 @@ extension TransactionItemsPresenter: TransactionItemsEventHandling {
     
     func refreshContent() {
         buildAndDispatch()
+    }
+    
+    func filterContent() {
+        coordinator.presentTransactionFilters { [weak self] in
+            self?.updateTransactionsQuery($0)
+        }
     }
     
     private func buildAndDispatch() {

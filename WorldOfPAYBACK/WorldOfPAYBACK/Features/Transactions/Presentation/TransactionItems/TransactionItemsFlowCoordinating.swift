@@ -8,5 +8,6 @@
 import Foundation
 
 protocol TransactionItemsFlowCoordinating {
+    func presentTransactionFilters(completion: @escaping (TransactionItemsQuery) -> Void)
     func presentTransactionDetails(for item: TransactionItem)
 }

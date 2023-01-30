@@ -10,7 +10,7 @@ import Foundation
 
 class MockTransactionItemsQueryLocalisation: TransactionItemsQueryLocalisation {
     
-    func titleForTransactionCategory(_ category: TransactionCategory) -> String {
+    func transactionsQueryTitleForTransactionCategory(_ category: TransactionCategory) -> String {
         switch category {
         case .shopping: return "shopping"
         case .travel: return "travel"
@@ -19,13 +19,11 @@ class MockTransactionItemsQueryLocalisation: TransactionItemsQueryLocalisation {
         }
     }
     
-    func clearButtonTitle() -> String {
+    func transactionsQueryClearButtonTitle() -> String {
         return "clear"
     }
     
-    func acceptButtonTitle() -> String {
+    func transactionsQueryAcceptButtonTitle() -> String {
         return "accept"
     }
-    
-    
 }
