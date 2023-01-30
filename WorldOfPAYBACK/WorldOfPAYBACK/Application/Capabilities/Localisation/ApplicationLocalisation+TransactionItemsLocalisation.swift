@@ -13,6 +13,10 @@ extension ApplicationLocalisation: TransactionItemsLocalisation {
         return "Transactions"
     }
     
+    func transactionItemsCurrencySumTitle() -> String {
+        return "Transactions sum:"
+    }
+    
     func transactionItemsLoadingFailed(with error: Error) -> String {
         return "Something went wrong!"
     }

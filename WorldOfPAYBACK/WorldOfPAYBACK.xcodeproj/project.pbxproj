@@ -136,6 +136,9 @@
 		2721BB0A2988396700FB68D2 /* TransactionItemsQueryFiltersSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB092988396700FB68D2 /* TransactionItemsQueryFiltersSection.swift */; };
 		2721BB0C2988398400FB68D2 /* TransactionItemsQueryButtonsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB0B2988398400FB68D2 /* TransactionItemsQueryButtonsSection.swift */; };
 		2721BB0E2988480B00FB68D2 /* CheckboxItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB0D2988480B00FB68D2 /* CheckboxItemList.swift */; };
+		2721BB112988578C00FB68D2 /* TitleValueItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB102988578C00FB68D2 /* TitleValueItemList.swift */; };
+		2721BB142988615A00FB68D2 /* TransactionCurrencySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB132988615A00FB68D2 /* TransactionCurrencySection.swift */; };
+		2721BB162988617100FB68D2 /* TransactionItemsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB152988617100FB68D2 /* TransactionItemsSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -289,6 +292,9 @@
 		2721BB092988396700FB68D2 /* TransactionItemsQueryFiltersSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsQueryFiltersSection.swift; sourceTree = "<group>"; };
 		2721BB0B2988398400FB68D2 /* TransactionItemsQueryButtonsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsQueryButtonsSection.swift; sourceTree = "<group>"; };
 		2721BB0D2988480B00FB68D2 /* CheckboxItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxItemList.swift; sourceTree = "<group>"; };
+		2721BB102988578C00FB68D2 /* TitleValueItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleValueItemList.swift; sourceTree = "<group>"; };
+		2721BB132988615A00FB68D2 /* TransactionCurrencySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCurrencySection.swift; sourceTree = "<group>"; };
+		2721BB152988617100FB68D2 /* TransactionItemsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -839,9 +845,9 @@
 		2721BA8729872DC300FB68D2 /* TransactionItems */ = {
 			isa = PBXGroup;
 			children = (
+				2721BB122988614900FB68D2 /* DataSource */,
 				2721BAE829880B6000FB68D2 /* Views */,
 				2721BA8929872DF800FB68D2 /* TransactionItemsViewController.swift */,
-				2721BAF82988273600FB68D2 /* TransactionItemsDataSource.swift */,
 			);
 			path = TransactionItems;
 			sourceTree = "<group>";
@@ -1030,6 +1036,7 @@
 				2721BAEC2988149000FB68D2 /* LoadingOverlayView.swift */,
 				2721BAF62988212C00FB68D2 /* SwitchItemList.swift */,
 				2721BB0D2988480B00FB68D2 /* CheckboxItemList.swift */,
+				2721BB102988578C00FB68D2 /* TitleValueItemList.swift */,
 				2721BAFC298828BC00FB68D2 /* PrimaryButton.swift */,
 			);
 			path = View;
@@ -1077,6 +1084,16 @@
 				2721BA6C2987181000FB68D2 /* TransactionsFlowCoordinator.swift */,
 			);
 			path = FlowCoordinators;
+			sourceTree = "<group>";
+		};
+		2721BB122988614900FB68D2 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				2721BAF82988273600FB68D2 /* TransactionItemsDataSource.swift */,
+				2721BB132988615A00FB68D2 /* TransactionCurrencySection.swift */,
+				2721BB152988617100FB68D2 /* TransactionItemsSection.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1248,6 +1265,7 @@
 				2721BA02298693D300FB68D2 /* TransactionItemsQuery.swift in Sources */,
 				2721BA052986943300FB68D2 /* SumOfAllTransactionsHandling.swift in Sources */,
 				2721B9DF29868D2200FB68D2 /* CancelableBag.swift in Sources */,
+				2721BB112988578C00FB68D2 /* TitleValueItemList.swift in Sources */,
 				2721B9DE29868D2200FB68D2 /* Cancelable.swift in Sources */,
 				2721BAB62987ADE300FB68D2 /* TransactionsAssembly.swift in Sources */,
 				2721BA00298693B400FB68D2 /* TransactionItemRepository.swift in Sources */,
@@ -1255,6 +1273,7 @@
 				2721BA672987105300FB68D2 /* CurrencyTransactionItemsViewData.swift in Sources */,
 				2721B9DB29868D2200FB68D2 /* AsyncTransformable.swift in Sources */,
 				2721BADD2987FB7400FB68D2 /* ApplicationLocalisation.swift in Sources */,
+				2721BB162988617100FB68D2 /* TransactionItemsSection.swift in Sources */,
 				2721BB0E2988480B00FB68D2 /* CheckboxItemList.swift in Sources */,
 				2721BAA72987330F00FB68D2 /* Bundle+Current.swift in Sources */,
 				2721BA5B298702AB00FB68D2 /* OneTransactionCategoryQueryBuilder.swift in Sources */,
@@ -1272,6 +1291,7 @@
 				2721B9CA29868AC300FB68D2 /* Support.swift in Sources */,
 				2721BA0B298694ED00FB68D2 /* FetchAndSumTransactionsHandling.swift in Sources */,
 				2721BAFB2988274D00FB68D2 /* TransactionItemsQueryDataSource.swift in Sources */,
+				2721BB142988615A00FB68D2 /* TransactionCurrencySection.swift in Sources */,
 				2721BA422986D94900FB68D2 /* TransactionItemsQueryViewInterface.swift in Sources */,
 				2721B9E529868E7E00FB68D2 /* ApplicationAssembly.swift in Sources */,
 				2721BA1E2986B74200FB68D2 /* Optional+Extensions.swift in Sources */,

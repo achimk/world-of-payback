@@ -9,5 +9,6 @@ import Foundation
 
 protocol TransactionItemsLocalisation {
     func transactionItemsTitle() -> String
+    func transactionItemsCurrencySumTitle() -> String
     func transactionItemsLoadingFailed(with error: Error) -> String
 }

@@ -36,7 +36,8 @@ class TransactionItemsPresenter {
             currencyFormatter: currencyFormatter)
         self.viewDataBuilder = CurrencyTransactionItemsViewDataBuilder(
             itemBuilder: itemBuilder,
-            currencyFormatter: currencyFormatter)
+            currencyFormatter: currencyFormatter,
+            localisation: localisation)
         self.query = query
         
         itemBuilder.set(selectHandler: { item in

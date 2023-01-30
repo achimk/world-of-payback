@@ -8,8 +8,12 @@
 import Foundation
 
 struct CurrencyTransactionItemsViewData {
-    let currencySums: [String]
-    let items: [TransactionItemViewData]
+    struct CurrencySumsViewData {
+        let title: String
+        let currencySums: [String]
+        let currencySumsJoined: String
+    }
     
-    static let empty = CurrencyTransactionItemsViewData(currencySums: [], items: [])
+    let sums: CurrencySumsViewData
+    let items: [TransactionItemViewData]
 }

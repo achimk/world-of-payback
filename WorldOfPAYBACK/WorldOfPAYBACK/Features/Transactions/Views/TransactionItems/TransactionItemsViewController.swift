@@ -40,10 +40,7 @@ class TransactionItemsViewController: TableViewController {
     }
     
     private func setupTableView() {
-        dataSource.reloadData = tableView.reloadData
-        tableView.delegate = dataSource
-        tableView.dataSource = dataSource
-        tableView.reloadData()
+        dataSource.setup(with: tableView)
     }
     
     @objc

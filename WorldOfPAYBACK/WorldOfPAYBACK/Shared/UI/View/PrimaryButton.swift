@@ -17,7 +17,8 @@ class PrimaryButton: UIView {
         button.setTitleColor(.black, for: .normal)
         button.setTitleColor(.black, for: .disabled)
         button.setTitleColor(.black, for: .highlighted)
-        button.setBackgroundWithColor(.red, for: .disabled)
+        button.setBackgroundWithColor(.red, for: .normal)
+        button.setBackgroundWithColor(.white, for: .disabled)
         button.setBackgroundWithColor(.red, for: .highlighted)
         button.titleLabel?.font = .systemFont(ofSize: 14)
         button.layer.cornerRadius = 5

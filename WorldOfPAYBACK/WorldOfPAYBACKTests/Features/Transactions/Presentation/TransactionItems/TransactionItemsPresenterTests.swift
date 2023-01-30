@@ -154,7 +154,7 @@ class TransactionItemsPresenterTests: XCTestCase {
         components.presenter.viewLoaded()
         components.presenter.updateTransactionsQuery(.init(sortBy: .bookingDateDescending, filterCategories: [.savings]))
         
-        XCTAssertEqual(components.view.viewDataSnapshots.last?.currencySums, ["3 EUR"])
+        XCTAssertEqual(components.view.viewDataSnapshots.last?.sums.currencySums, ["3 EUR"])
     }
     
     func test_fetchTransactionsWithoutCategory_shouldNotPresentTransactionsSum() {
@@ -174,7 +174,7 @@ class TransactionItemsPresenterTests: XCTestCase {
         components.presenter.viewLoaded()
         components.presenter.updateTransactionsQuery(.init(sortBy: .bookingDateDescending, filterCategories: []))
         
-        XCTAssertEqual(components.view.viewDataSnapshots.last?.currencySums, [])
+        XCTAssertEqual(components.view.viewDataSnapshots.last?.sums.currencySums, [])
     }
     
     // As a user of the App, I want to select a transaction and navigate to its details. The details-view should just display `partnerDisplayName` and `transactionDetail.description`.
@@ -243,6 +243,10 @@ private class MockTransactionItemsFlowCoordinator: TransactionItemsFlowCoordinat
 }
 
 private class MockTransactionItemsLocalisation: TransactionItemsLocalisation {
+    func transactionItemsCurrencySumTitle() -> String {
+        return "sum"
+    }
+    
     func transactionItemsTitle() -> String {
         return "transactions"
     }
