@@ -8,5 +8,6 @@
 import Foundation
 
 protocol TransactionItemsLocalisation {
+    func transactionItemsTitle() -> String
     func transactionItemsLoadingFailed(with error: Error) -> String
 }

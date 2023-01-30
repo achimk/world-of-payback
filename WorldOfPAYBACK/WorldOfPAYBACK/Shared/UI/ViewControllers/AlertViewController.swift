@@ -37,7 +37,7 @@ class AlertViewController: UIAlertController {
 
 extension UIViewController {
     
-    func presentError(message: String, container: Container = .shared) {
+    func presentErrorView(message: String, container: Container = .shared) {
         let localisation = container.resolve(AlertLocalisation.self)
         present(AlertViewController(message: message, localisation: localisation),
                 animated: true,

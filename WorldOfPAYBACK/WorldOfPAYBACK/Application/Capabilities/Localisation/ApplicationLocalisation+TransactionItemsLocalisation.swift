@@ -8,6 +8,11 @@
 import Foundation
 
 extension ApplicationLocalisation: TransactionItemsLocalisation {
+    
+    func transactionItemsTitle() -> String {
+        return "Transactions"
+    }
+    
     func transactionItemsLoadingFailed(with error: Error) -> String {
         return "Something went wrong!"
     }
