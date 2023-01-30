@@ -7,6 +7,11 @@
 
 import Foundation
 
+enum DateFormat {
+    case dateTime
+    case shortDate
+}
+
 protocol DateFormatting {
-    func string(from date: Date, dateFormat: String) -> String
+    func string(from date: Date, dateFormat: DateFormat) -> String
 }

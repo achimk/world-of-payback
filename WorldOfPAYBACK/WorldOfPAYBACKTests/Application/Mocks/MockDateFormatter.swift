@@ -10,7 +10,7 @@ import Foundation
 
 class MockDateFormatter: DateFormatting {
     var stringFromDateGenerator: (Date) -> String = { String(describing: $0) }
-    func string(from date: Date, dateFormat: String) -> String {
+    func string(from date: Date, dateFormat: DateFormat) -> String {
         return stringFromDateGenerator(date)
     }
 }

@@ -87,6 +87,32 @@
 		2721BA7D29872B7B00FB68D2 /* TransactionDetailsEventHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA7C29872B7B00FB68D2 /* TransactionDetailsEventHandling.swift */; };
 		2721BA7F29872B8800FB68D2 /* TransactionDetailsViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA7E29872B8800FB68D2 /* TransactionDetailsViewInterface.swift */; };
 		2721BA8229872C2400FB68D2 /* TransactionDetailsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA8129872C2400FB68D2 /* TransactionDetailsPresenterTests.swift */; };
+		2721BA8A29872DF800FB68D2 /* TransactionItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA8929872DF800FB68D2 /* TransactionItemsViewController.swift */; };
+		2721BA8C29872E1300FB68D2 /* TransactionItemsQueryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA8B29872E1300FB68D2 /* TransactionItemsQueryViewController.swift */; };
+		2721BA8E29872E3100FB68D2 /* TransactionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA8D29872E3100FB68D2 /* TransactionDetailsViewController.swift */; };
+		2721BA9029872ECA00FB68D2 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA8F29872ECA00FB68D2 /* UIView+Extensions.swift */; };
+		2721BA9229872EFC00FB68D2 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA9129872EFC00FB68D2 /* UIViewController+Extensions.swift */; };
+		2721BA9729872FD200FB68D2 /* JSONFileBasedTransactionItemRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA9629872FD200FB68D2 /* JSONFileBasedTransactionItemRepository.swift */; };
+		2721BA9929872FF100FB68D2 /* NetworkBasedTransactionItemRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA9829872FF100FB68D2 /* NetworkBasedTransactionItemRepository.swift */; };
+		2721BA9B298730AD00FB68D2 /* JSONFileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BA9A298730AD00FB68D2 /* JSONFileLoader.swift */; };
+		2721BA9D2987310200FB68D2 /* PBTransactions.json in Resources */ = {isa = PBXBuildFile; fileRef = 2721BA9C2987310200FB68D2 /* PBTransactions.json */; };
+		2721BAA22987315400FB68D2 /* TransactionItemsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAA12987315400FB68D2 /* TransactionItemsResponse.swift */; };
+		2721BAA5298731A800FB68D2 /* DecimalDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAA4298731A800FB68D2 /* DecimalDecoder.swift */; };
+		2721BAA72987330F00FB68D2 /* Bundle+Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAA62987330F00FB68D2 /* Bundle+Current.swift */; };
+		2721BAAA2987361200FB68D2 /* TransactionItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAA92987361200FB68D2 /* TransactionItemsMapper.swift */; };
+		2721BAAC29873BC800FB68D2 /* TransactionItemsViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAAB29873BC800FB68D2 /* TransactionItemsViewFactory.swift */; };
+		2721BAAE2987A80100FB68D2 /* TransactionDetailsViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAAD2987A80100FB68D2 /* TransactionDetailsViewFactory.swift */; };
+		2721BAB02987A84700FB68D2 /* TransactionItemsQueryViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAAF2987A84700FB68D2 /* TransactionItemsQueryViewFactory.swift */; };
+		2721BAB22987A88A00FB68D2 /* CurrencyMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAB12987A88A00FB68D2 /* CurrencyMapper.swift */; };
+		2721BAB42987A99100FB68D2 /* TransactionCategoryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAB32987A99100FB68D2 /* TransactionCategoryMapper.swift */; };
+		2721BAB62987ADE300FB68D2 /* TransactionsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAB52987ADE300FB68D2 /* TransactionsAssembly.swift */; };
+		2721BABA2987B1E300FB68D2 /* DefaultCurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAB92987B1E300FB68D2 /* DefaultCurrencyFormatter.swift */; };
+		2721BABC2987B1FB00FB68D2 /* DefaultDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BABB2987B1FB00FB68D2 /* DefaultDateFormatter.swift */; };
+		2721BAC12987DFA500FB68D2 /* JSONFileLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAC02987DFA400FB68D2 /* JSONFileLoaderTests.swift */; };
+		2721BAC32987E23A00FB68D2 /* test-transactions-response.json in Resources */ = {isa = PBXBuildFile; fileRef = 2721BAC22987E23A00FB68D2 /* test-transactions-response.json */; };
+		2721BAC92987E5AD00FB68D2 /* TransactionItemsMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAC82987E5AD00FB68D2 /* TransactionItemsMapperTests.swift */; };
+		2721BACB2987E8AA00FB68D2 /* TransactionCategoryMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BACA2987E8AA00FB68D2 /* TransactionCategoryMapperTests.swift */; };
+		2721BACD2987E9D000FB68D2 /* CurrencyMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BACC2987E9D000FB68D2 /* CurrencyMapperTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,6 +217,32 @@
 		2721BA7C29872B7B00FB68D2 /* TransactionDetailsEventHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsEventHandling.swift; sourceTree = "<group>"; };
 		2721BA7E29872B8800FB68D2 /* TransactionDetailsViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsViewInterface.swift; sourceTree = "<group>"; };
 		2721BA8129872C2400FB68D2 /* TransactionDetailsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsPresenterTests.swift; sourceTree = "<group>"; };
+		2721BA8929872DF800FB68D2 /* TransactionItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsViewController.swift; sourceTree = "<group>"; };
+		2721BA8B29872E1300FB68D2 /* TransactionItemsQueryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsQueryViewController.swift; sourceTree = "<group>"; };
+		2721BA8D29872E3100FB68D2 /* TransactionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsViewController.swift; sourceTree = "<group>"; };
+		2721BA8F29872ECA00FB68D2 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		2721BA9129872EFC00FB68D2 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		2721BA9629872FD200FB68D2 /* JSONFileBasedTransactionItemRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileBasedTransactionItemRepository.swift; sourceTree = "<group>"; };
+		2721BA9829872FF100FB68D2 /* NetworkBasedTransactionItemRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBasedTransactionItemRepository.swift; sourceTree = "<group>"; };
+		2721BA9A298730AD00FB68D2 /* JSONFileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileLoader.swift; sourceTree = "<group>"; };
+		2721BA9C2987310200FB68D2 /* PBTransactions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PBTransactions.json; sourceTree = "<group>"; };
+		2721BAA12987315400FB68D2 /* TransactionItemsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsResponse.swift; sourceTree = "<group>"; };
+		2721BAA4298731A800FB68D2 /* DecimalDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalDecoder.swift; sourceTree = "<group>"; };
+		2721BAA62987330F00FB68D2 /* Bundle+Current.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Current.swift"; sourceTree = "<group>"; };
+		2721BAA92987361200FB68D2 /* TransactionItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsMapper.swift; sourceTree = "<group>"; };
+		2721BAAB29873BC800FB68D2 /* TransactionItemsViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsViewFactory.swift; sourceTree = "<group>"; };
+		2721BAAD2987A80100FB68D2 /* TransactionDetailsViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsViewFactory.swift; sourceTree = "<group>"; };
+		2721BAAF2987A84700FB68D2 /* TransactionItemsQueryViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsQueryViewFactory.swift; sourceTree = "<group>"; };
+		2721BAB12987A88A00FB68D2 /* CurrencyMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyMapper.swift; sourceTree = "<group>"; };
+		2721BAB32987A99100FB68D2 /* TransactionCategoryMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCategoryMapper.swift; sourceTree = "<group>"; };
+		2721BAB52987ADE300FB68D2 /* TransactionsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsAssembly.swift; sourceTree = "<group>"; };
+		2721BAB92987B1E300FB68D2 /* DefaultCurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCurrencyFormatter.swift; sourceTree = "<group>"; };
+		2721BABB2987B1FB00FB68D2 /* DefaultDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDateFormatter.swift; sourceTree = "<group>"; };
+		2721BAC02987DFA400FB68D2 /* JSONFileLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFileLoaderTests.swift; sourceTree = "<group>"; };
+		2721BAC22987E23A00FB68D2 /* test-transactions-response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "test-transactions-response.json"; sourceTree = "<group>"; };
+		2721BAC82987E5AD00FB68D2 /* TransactionItemsMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsMapperTests.swift; sourceTree = "<group>"; };
+		2721BACA2987E8AA00FB68D2 /* TransactionCategoryMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCategoryMapperTests.swift; sourceTree = "<group>"; };
+		2721BACC2987E9D000FB68D2 /* CurrencyMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyMapperTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +308,7 @@
 		2721B9A7298687AA00FB68D2 /* WorldOfPAYBACKTests */ = {
 			isa = PBXGroup;
 			children = (
+				2721BAC52987E51C00FB68D2 /* Shared */,
 				2721B9EF2986907800FB68D2 /* Application */,
 				2721BA1329869E1F00FB68D2 /* Features */,
 				2721B9A8298687AA00FB68D2 /* WorldOfPAYBACKTests.swift */,
@@ -303,7 +356,11 @@
 			children = (
 				2721BA61298707B900FB68D2 /* Activity */,
 				2721B9CB29868CF200FB68D2 /* AsyncTransformer */,
+				2721BA352986C4ED00FB68D2 /* CurrencyFormatter */,
+				2721BA362986C4F600FB68D2 /* DateFormatter */,
+				2721BAA32987317900FB68D2 /* Decoders */,
 				2721B9C629868A2B00FB68D2 /* DI */,
+				2721BAC42987E50300FB68D2 /* JSONFileLoader */,
 				2721B9C929868AC300FB68D2 /* Support.swift */,
 				2721B9E229868DB500FB68D2 /* Completion.swift */,
 			);
@@ -313,8 +370,11 @@
 		2721B9C52986898C00FB68D2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				2721B9F52986921E00FB68D2 /* Result+Extensions.swift */,
+				2721BAA62987330F00FB68D2 /* Bundle+Current.swift */,
 				2721BA1D2986B74200FB68D2 /* Optional+Extensions.swift */,
+				2721B9F52986921E00FB68D2 /* Result+Extensions.swift */,
+				2721BA8F29872ECA00FB68D2 /* UIView+Extensions.swift */,
+				2721BA9129872EFC00FB68D2 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -371,8 +431,6 @@
 		2721B9E729868F4000FB68D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2721BA362986C4F600FB68D2 /* DateFormatter */,
-				2721BA352986C4ED00FB68D2 /* CurrencyFormatter */,
 				2721B9EA29868F5600FB68D2 /* Money */,
 			);
 			path = Models;
@@ -426,6 +484,10 @@
 			children = (
 				2721B9F9298692D900FB68D2 /* Domain */,
 				2721BA262986BD5100FB68D2 /* Presentation */,
+				2721BA8329872D3A00FB68D2 /* Views */,
+				2721BA8529872D6C00FB68D2 /* Infrastructure */,
+				2721BA8429872D4500FB68D2 /* Factories */,
+				2721BAB52987ADE300FB68D2 /* TransactionsAssembly.swift */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -486,6 +548,7 @@
 				2721BA182986A4E800FB68D2 /* Mocks */,
 				2721BA502986E7C700FB68D2 /* Domain */,
 				2721BA512986E7D300FB68D2 /* Presentation */,
+				2721BABD2987DF4F00FB68D2 /* Infrastructure */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -523,7 +586,6 @@
 				2721BA77298729DE00FB68D2 /* TransactionDetails */,
 				2721BA272986BD7100FB68D2 /* TransactionItems */,
 				2721BA3B2986C70A00FB68D2 /* TransactionItemsQuery */,
-				2721BA6C2987181000FB68D2 /* TransactionsFlowCoordinator.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -556,6 +618,7 @@
 			isa = PBXGroup;
 			children = (
 				2721BA392986C57B00FB68D2 /* CurrencyFormatting.swift */,
+				2721BAB92987B1E300FB68D2 /* DefaultCurrencyFormatter.swift */,
 			);
 			path = CurrencyFormatter;
 			sourceTree = "<group>";
@@ -564,6 +627,7 @@
 			isa = PBXGroup;
 			children = (
 				2721BA372986C52900FB68D2 /* DateFormatting.swift */,
+				2721BABB2987B1FB00FB68D2 /* DefaultDateFormatter.swift */,
 			);
 			path = DateFormatter;
 			sourceTree = "<group>";
@@ -692,6 +756,172 @@
 			path = TransactionDetails;
 			sourceTree = "<group>";
 		};
+		2721BA8329872D3A00FB68D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA8629872DBA00FB68D2 /* TransactionDetails */,
+				2721BA8729872DC300FB68D2 /* TransactionItems */,
+				2721BA8829872DCD00FB68D2 /* TransactionItemsQuery */,
+				2721BA6C2987181000FB68D2 /* TransactionsFlowCoordinator.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2721BA8429872D4500FB68D2 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				2721BAAB29873BC800FB68D2 /* TransactionItemsViewFactory.swift */,
+				2721BAAD2987A80100FB68D2 /* TransactionDetailsViewFactory.swift */,
+				2721BAAF2987A84700FB68D2 /* TransactionItemsQueryViewFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		2721BA8529872D6C00FB68D2 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA9329872FAB00FB68D2 /* Repositories */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		2721BA8629872DBA00FB68D2 /* TransactionDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA8D29872E3100FB68D2 /* TransactionDetailsViewController.swift */,
+			);
+			path = TransactionDetails;
+			sourceTree = "<group>";
+		};
+		2721BA8729872DC300FB68D2 /* TransactionItems */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA8929872DF800FB68D2 /* TransactionItemsViewController.swift */,
+			);
+			path = TransactionItems;
+			sourceTree = "<group>";
+		};
+		2721BA8829872DCD00FB68D2 /* TransactionItemsQuery */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA8B29872E1300FB68D2 /* TransactionItemsQueryViewController.swift */,
+			);
+			path = TransactionItemsQuery;
+			sourceTree = "<group>";
+		};
+		2721BA9329872FAB00FB68D2 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				2721BAA8298735F200FB68D2 /* Mappers */,
+				2721BA9E2987313700FB68D2 /* Responses */,
+				2721BA9529872FC100FB68D2 /* Network */,
+				2721BA9429872FBA00FB68D2 /* JSONFile */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		2721BA9429872FBA00FB68D2 /* JSONFile */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA9629872FD200FB68D2 /* JSONFileBasedTransactionItemRepository.swift */,
+				2721BA9C2987310200FB68D2 /* PBTransactions.json */,
+			);
+			path = JSONFile;
+			sourceTree = "<group>";
+		};
+		2721BA9529872FC100FB68D2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA9829872FF100FB68D2 /* NetworkBasedTransactionItemRepository.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2721BA9E2987313700FB68D2 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				2721BAA12987315400FB68D2 /* TransactionItemsResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		2721BAA32987317900FB68D2 /* Decoders */ = {
+			isa = PBXGroup;
+			children = (
+				2721BAA4298731A800FB68D2 /* DecimalDecoder.swift */,
+			);
+			path = Decoders;
+			sourceTree = "<group>";
+		};
+		2721BAA8298735F200FB68D2 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				2721BAA92987361200FB68D2 /* TransactionItemsMapper.swift */,
+				2721BAB32987A99100FB68D2 /* TransactionCategoryMapper.swift */,
+				2721BAB12987A88A00FB68D2 /* CurrencyMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		2721BABD2987DF4F00FB68D2 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				2721BABE2987DF7200FB68D2 /* Repositories */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		2721BABE2987DF7200FB68D2 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				2721BAC72987E54100FB68D2 /* Mappers */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		2721BABF2987DF8300FB68D2 /* JSONFileLoader */ = {
+			isa = PBXGroup;
+			children = (
+				2721BAC02987DFA400FB68D2 /* JSONFileLoaderTests.swift */,
+				2721BAC22987E23A00FB68D2 /* test-transactions-response.json */,
+			);
+			path = JSONFileLoader;
+			sourceTree = "<group>";
+		};
+		2721BAC42987E50300FB68D2 /* JSONFileLoader */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA9A298730AD00FB68D2 /* JSONFileLoader.swift */,
+			);
+			path = JSONFileLoader;
+			sourceTree = "<group>";
+		};
+		2721BAC52987E51C00FB68D2 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2721BAC62987E52200FB68D2 /* Utilities */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2721BAC62987E52200FB68D2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2721BABF2987DF8300FB68D2 /* JSONFileLoader */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2721BAC72987E54100FB68D2 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				2721BAC82987E5AD00FB68D2 /* TransactionItemsMapperTests.swift */,
+				2721BACA2987E8AA00FB68D2 /* TransactionCategoryMapperTests.swift */,
+				2721BACC2987E9D000FB68D2 /* CurrencyMapperTests.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -797,6 +1027,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2721B99E298687AA00FB68D2 /* LaunchScreen.storyboard in Resources */,
+				2721BA9D2987310200FB68D2 /* PBTransactions.json in Resources */,
 				2721B99B298687AA00FB68D2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -805,6 +1036,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2721BAC32987E23A00FB68D2 /* test-transactions-response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -822,23 +1054,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2721BA9929872FF100FB68D2 /* NetworkBasedTransactionItemRepository.swift in Sources */,
 				2721BA072986946C00FB68D2 /* SumOfAllTransactionsHandler.swift in Sources */,
+				2721BA8C29872E1300FB68D2 /* TransactionItemsQueryViewController.swift in Sources */,
+				2721BA9229872EFC00FB68D2 /* UIViewController+Extensions.swift in Sources */,
 				2721B9EC29868F6B00FB68D2 /* Currency.swift in Sources */,
 				2721BA4D2986DFBD00FB68D2 /* TransactionItemsQueryLocalisation.swift in Sources */,
 				2721B9E329868DB500FB68D2 /* Completion.swift in Sources */,
 				2721BA402986D92D00FB68D2 /* TransactionItemsQueryViewData.swift in Sources */,
+				2721BA9029872ECA00FB68D2 /* UIView+Extensions.swift in Sources */,
 				2721B9FE2986934200FB68D2 /* TransactionCategory.swift in Sources */,
 				2721BA312986C2D200FB68D2 /* TransactionItemsViewInterface.swift in Sources */,
 				2721B996298687A800FB68D2 /* ViewController.swift in Sources */,
+				2721BABC2987B1FB00FB68D2 /* DefaultDateFormatter.swift in Sources */,
+				2721BAAA2987361200FB68D2 /* TransactionItemsMapper.swift in Sources */,
 				2721B9EE29868F7800FB68D2 /* Amount.swift in Sources */,
 				2721BA442986D96800FB68D2 /* TransactionItemsQueryEventHandling.swift in Sources */,
 				2721B9F62986921E00FB68D2 /* Result+Extensions.swift in Sources */,
 				2721BA6D2987181000FB68D2 /* TransactionsFlowCoordinator.swift in Sources */,
 				2721BA69298713CA00FB68D2 /* CurrencyTransactionItemsViewDataBuilder.swift in Sources */,
 				2721B9DD29868D2200FB68D2 /* AsyncTransformable+Pipeline.swift in Sources */,
+				2721BAAE2987A80100FB68D2 /* TransactionDetailsViewFactory.swift in Sources */,
 				2721BA3A2986C57B00FB68D2 /* CurrencyFormatting.swift in Sources */,
 				2721BA292986BDF700FB68D2 /* TransactionItemsPresenter.swift in Sources */,
 				2721BA7F29872B8800FB68D2 /* TransactionDetailsViewInterface.swift in Sources */,
+				2721BAAC29873BC800FB68D2 /* TransactionItemsViewFactory.swift in Sources */,
 				2721B9E029868D2200FB68D2 /* NoopCancelable.swift in Sources */,
 				2721BA0D2986950C00FB68D2 /* TransactionItemsWithSum.swift in Sources */,
 				2721BA63298707CF00FB68D2 /* ActivityState.swift in Sources */,
@@ -847,12 +1087,17 @@
 				2721BA052986943300FB68D2 /* SumOfAllTransactionsHandling.swift in Sources */,
 				2721B9DF29868D2200FB68D2 /* CancelableBag.swift in Sources */,
 				2721B9DE29868D2200FB68D2 /* Cancelable.swift in Sources */,
+				2721BAB62987ADE300FB68D2 /* TransactionsAssembly.swift in Sources */,
 				2721BA00298693B400FB68D2 /* TransactionItemRepository.swift in Sources */,
 				2721BA672987105300FB68D2 /* CurrencyTransactionItemsViewData.swift in Sources */,
 				2721B9DB29868D2200FB68D2 /* AsyncTransformable.swift in Sources */,
+				2721BAA72987330F00FB68D2 /* Bundle+Current.swift in Sources */,
 				2721BA5B298702AB00FB68D2 /* OneTransactionCategoryQueryBuilder.swift in Sources */,
 				2721BA6B298716F900FB68D2 /* TransactionItemsLocalisation.swift in Sources */,
+				2721BAA5298731A800FB68D2 /* DecimalDecoder.swift in Sources */,
+				2721BAB42987A99100FB68D2 /* TransactionCategoryMapper.swift in Sources */,
 				2721BA2D2986C2B200FB68D2 /* TransactionItemsFlowCoordinating.swift in Sources */,
+				2721BABA2987B1E300FB68D2 /* DefaultCurrencyFormatter.swift in Sources */,
 				2721BA7D29872B7B00FB68D2 /* TransactionDetailsEventHandling.swift in Sources */,
 				2721B9E929868F5100FB68D2 /* Money.swift in Sources */,
 				2721BA4F2986E03800FB68D2 /* TransactionItemsQueryFlowCoordinating.swift in Sources */,
@@ -865,23 +1110,30 @@
 				2721BA4A2986DB4200FB68D2 /* TransactionItemsQueryViewDataBuilder.swift in Sources */,
 				2721BA2B2986C2A000FB68D2 /* TransactionItemViewData.swift in Sources */,
 				2721B9FC2986931300FB68D2 /* TransactionItem.swift in Sources */,
+				2721BAA22987315400FB68D2 /* TransactionItemsResponse.swift in Sources */,
 				2721B9DA29868D2200FB68D2 /* MapTrasformer.swift in Sources */,
+				2721BA9B298730AD00FB68D2 /* JSONFileLoader.swift in Sources */,
+				2721BAB22987A88A00FB68D2 /* CurrencyMapper.swift in Sources */,
 				2721B9C829868A3A00FB68D2 /* Container.swift in Sources */,
 				2721BA652987083C00FB68D2 /* ActivityStatePublisher.swift in Sources */,
 				2721BA2F2986C2C100FB68D2 /* TransactionItemsEventHandling.swift in Sources */,
+				2721BA8A29872DF800FB68D2 /* TransactionItemsViewController.swift in Sources */,
 				2721BA342986C34500FB68D2 /* TransactionItemViewDataBuilder.swift in Sources */,
 				2721B992298687A800FB68D2 /* AppDelegate.swift in Sources */,
 				2721BA7929872A0F00FB68D2 /* TransactionDetailsPresenter.swift in Sources */,
 				2721B9D929868D2200FB68D2 /* AsyncTransformable+Factories.swift in Sources */,
 				2721BA382986C52900FB68D2 /* DateFormatting.swift in Sources */,
 				2721BA7B29872B6A00FB68D2 /* TransactionDetailsViewData.swift in Sources */,
+				2721BA8E29872E3100FB68D2 /* TransactionDetailsViewController.swift in Sources */,
 				2721B9DC29868D2200FB68D2 /* AsyncTransformBlock.swift in Sources */,
 				2721BA482986D99000FB68D2 /* TransactionItemsQueryPresenter.swift in Sources */,
+				2721BAB02987A84700FB68D2 /* TransactionItemsQueryViewFactory.swift in Sources */,
 				2721BA592987029400FB68D2 /* MultiTransactionCategoriesQueryBuilder.swift in Sources */,
 				2721B9E129868D2200FB68D2 /* AnyCancelable.swift in Sources */,
 				2721BA0F298695A000FB68D2 /* FetchAndSumTransactionsHandler.swift in Sources */,
 				2721B9D829868D2200FB68D2 /* AsyncTransformer.swift in Sources */,
 				2721BA3D2986C71D00FB68D2 /* TransactionItemsQueryBuilder.swift in Sources */,
+				2721BA9729872FD200FB68D2 /* JSONFileBasedTransactionItemRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -892,18 +1144,22 @@
 				2721BA252986BB4D00FB68D2 /* TransactionItemQueryTests.swift in Sources */,
 				2721B9F4298690B200FB68D2 /* MoneyTests.swift in Sources */,
 				2721BA232986BA2A00FB68D2 /* TransactionsSumByCurrencyCalculatorTests.swift in Sources */,
+				2721BACD2987E9D000FB68D2 /* CurrencyMapperTests.swift in Sources */,
 				2721BA552986E80100FB68D2 /* MockTransactionItemsQueryLocalisation.swift in Sources */,
 				2721BA7529871B0900FB68D2 /* MockCurrencyFormatter.swift in Sources */,
 				2721BA7329871AA300FB68D2 /* MockDateFormatter.swift in Sources */,
 				2721BA5E2987030000FB68D2 /* MultiTransactionCategoriesQueryBuilderTests.swift in Sources */,
 				2721BA1A2986A50300FB68D2 /* MockTransactionItemRepository.swift in Sources */,
+				2721BAC92987E5AD00FB68D2 /* TransactionItemsMapperTests.swift in Sources */,
 				2721BA8229872C2400FB68D2 /* TransactionDetailsPresenterTests.swift in Sources */,
 				2721BA1C2986A5D800FB68D2 /* MockTransactionItemBuilder.swift in Sources */,
+				2721BACB2987E8AA00FB68D2 /* TransactionCategoryMapperTests.swift in Sources */,
 				2721BA202986B89B00FB68D2 /* SumOfAllTransactionsTests.swift in Sources */,
 				2721BA1729869E7C00FB68D2 /* FetchAndSumTransactionsHandlerTests.swift in Sources */,
 				2721BA70298718CA00FB68D2 /* TransactionItemsPresenterTests.swift in Sources */,
 				2721B9A9298687AA00FB68D2 /* WorldOfPAYBACKTests.swift in Sources */,
 				2721BA60298703BC00FB68D2 /* OneTransactionCategoryQueryBuilderTests.swift in Sources */,
+				2721BAC12987DFA500FB68D2 /* JSONFileLoaderTests.swift in Sources */,
 				2721BA572986E87900FB68D2 /* TransactionItemsQueryPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,7 +28,7 @@ class TransactionItemViewDataBuilder {
     
     func build(for item: TransactionItem) -> TransactionItemViewData {
         return TransactionItemViewData(
-            bookingDate: dateFormatter.string(from: item.bookingDate, dateFormat: ""), // TODO: Implement!
+            bookingDate: dateFormatter.string(from: item.bookingDate, dateFormat: .shortDate),
             partnerName: item.partnerName,
             summary: item.summary,
             amount: currencyFormatter.string(from: item.amount),

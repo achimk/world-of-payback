@@ -10,6 +10,12 @@ import Foundation
 class ApplicationAssembly {
     
     static func assembleDependencies(with container: Container) {
-        // TODO: Assemble dependencies here...
+        assembleUtilityDependencies(with: container)
+        TransactionsAssembly.assembleDependencies(with: container)
+    }
+    
+    private static func assembleUtilityDependencies(with container: Container) {
+        container.register(CurrencyFormatting.self, value: DefaultCurrencyFormatter())
+        container.register(DateFormatting.self, value: DefaultDateFormatter())
     }
 }
