@@ -10,6 +10,7 @@ import UIKit
 class TransactionsFlowCoordinator {
     private let navigationController: UINavigationController
     private var onAcceptQueryHandler: ((TransactionItemsQuery) -> Void)?
+    private var presentedViewController: UIViewController?
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -23,10 +24,12 @@ class TransactionsFlowCoordinator {
 
 extension TransactionsFlowCoordinator: TransactionItemsFlowCoordinating {
     
-    func presentTransactionFilters(completion: @escaping (TransactionItemsQuery) -> Void) {
+    func presentTransactionFilters(for currentQuery: TransactionItemsQuery, completion: @escaping (TransactionItemsQuery) -> Void) {
         onAcceptQueryHandler = completion
-        let viewController = TransactionItemsQueryViewFactory.make()
-        navigationController.present(viewController, animated: true, completion: nil)
+        let viewController = TransactionItemsQueryViewFactory.make(coordinator: self, query: currentQuery)
+        let navigation = embedIntoNavigation(viewController)
+        presentedViewController = navigation
+        navigationController.present(navigation, animated: true, completion: nil)
     }
     
     func presentTransactionDetails(for item: TransactionItem) {
@@ -39,5 +42,10 @@ extension TransactionsFlowCoordinator: TransactionItemsQueryFlowCoordinating {
     func presentTransactionItems(for query: TransactionItemsQuery) {
         onAcceptQueryHandler?(query)
         onAcceptQueryHandler = nil
+        presentedViewController?.dismiss(animated: true, completion: nil)
     }
+}
+
+private func embedIntoNavigation(_ viewController: UIViewController) -> UINavigationController {
+    return UINavigationController(rootViewController: viewController)
 }

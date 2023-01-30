@@ -11,12 +11,9 @@ struct OneTransactionCategoryQueryBuilder: TransactionItemsQueryBuilder {
     private var sortBy: TransactionItemsQuery.SortBy
     private var filterCategories: Set<TransactionCategory>
     
-    init(
-        sortBy: TransactionItemsQuery.SortBy,
-        filterCategory: TransactionCategory?
-    ) {
-        self.sortBy = sortBy
-        self.filterCategories = filterCategory.map { [$0] } ?? []
+    init(query: TransactionItemsQuery) {
+        self.sortBy = query.sortBy
+        self.filterCategories = query.filterCategories.first.map { [$0] } ?? []
     }
     
     func toggle(category: TransactionCategory) -> Self {

@@ -8,6 +8,11 @@
 import Foundation
 
 extension ApplicationLocalisation: TransactionItemsQueryLocalisation {
+    
+    func transactionsQueryViewTitle() -> String {
+        return "Filter"
+    }
+    
     func transactionsQueryTitleForTransactionCategory(_ category: TransactionCategory) -> String {
         switch category {
         case .shopping: return "Shopping"

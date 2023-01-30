@@ -11,10 +11,18 @@ import XCTest
 
 class OneTransactionCategoryQueryBuilderTests: XCTestCase {
     
-    func test_toggleMultipleCategories_shouldAggregateOnlyLast() {
-        let query = OneTransactionCategoryQueryBuilder(
+    func test_initialiseWithMultipleCategories_shouldSelectOnlyOne() {
+        let initialQuery = TransactionItemsQuery(
             sortBy: .bookingDateDescending,
-            filterCategory: nil)
+            filterCategories: [.other, .savings])
+        let query = OneTransactionCategoryQueryBuilder(query: initialQuery)
+            .build()
+        
+        XCTAssertEqual(query.filterCategories.count, 1)
+    }
+    
+    func test_toggleMultipleCategories_shouldAggregateOnlyLast() {
+        let query = OneTransactionCategoryQueryBuilder(query: .default)
             .toggle(category: .savings)
             .toggle(category: .other)
             .build()
@@ -24,9 +32,7 @@ class OneTransactionCategoryQueryBuilderTests: XCTestCase {
     }
     
     func test_clear_shouldBeEmpty() {
-        let query = OneTransactionCategoryQueryBuilder(
-            sortBy: .bookingDateDescending,
-            filterCategory: nil)
+        let query = OneTransactionCategoryQueryBuilder(query: .default)
             .toggle(category: .savings)
             .toggle(category: .other)
             .clear()
@@ -34,5 +40,4 @@ class OneTransactionCategoryQueryBuilderTests: XCTestCase {
         
         XCTAssertEqual(query.filterCategories.count, 0)
     }
-
 }

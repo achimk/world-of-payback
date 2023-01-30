@@ -233,7 +233,7 @@ private class MockTransactionItemsFlowCoordinator: TransactionItemsFlowCoordinat
     private(set) var presentTransactionFiltersInvoked = false
     private(set) var presentTransactionDetailsInvoked = false
     
-    func presentTransactionFilters(completion: @escaping (TransactionItemsQuery) -> Void) {
+    func presentTransactionFilters(for currentQuery: TransactionItemsQuery, completion: @escaping (TransactionItemsQuery) -> Void) {
         presentTransactionFiltersInvoked = true
     }
     

@@ -11,12 +11,9 @@ struct MultiTransactionCategoriesQueryBuilder: TransactionItemsQueryBuilder {
     private var sortBy: TransactionItemsQuery.SortBy
     private var filterCategories: Set<TransactionCategory>
 
-    init(
-        sortBy: TransactionItemsQuery.SortBy,
-        filterCategories: Set<TransactionCategory>
-    ) {
-        self.sortBy = sortBy
-        self.filterCategories = filterCategories
+    init(query: TransactionItemsQuery) {
+        self.sortBy = query.sortBy
+        self.filterCategories = query.filterCategories
     }
     
     func toggle(category: TransactionCategory) -> Self {

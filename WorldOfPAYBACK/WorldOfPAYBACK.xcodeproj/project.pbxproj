@@ -125,6 +125,17 @@
 		2721BAED2988149000FB68D2 /* LoadingOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAEC2988149000FB68D2 /* LoadingOverlayView.swift */; };
 		2721BAF02988172000FB68D2 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAEF2988172000FB68D2 /* Theme.swift */; };
 		2721BAF2298819C000FB68D2 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAF1298819C000FB68D2 /* ThemeManager.swift */; };
+		2721BAF72988212C00FB68D2 /* SwitchItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAF62988212C00FB68D2 /* SwitchItemList.swift */; };
+		2721BAF92988273600FB68D2 /* TransactionItemsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAF82988273600FB68D2 /* TransactionItemsDataSource.swift */; };
+		2721BAFB2988274D00FB68D2 /* TransactionItemsQueryDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAFA2988274D00FB68D2 /* TransactionItemsQueryDataSource.swift */; };
+		2721BAFD298828BC00FB68D2 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAFC298828BC00FB68D2 /* PrimaryButton.swift */; };
+		2721BAFF29882C5E00FB68D2 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BAFE29882C5E00FB68D2 /* UIButton+Extensions.swift */; };
+		2721BB0229882FC600FB68D2 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB0129882FC600FB68D2 /* TableViewDataSource.swift */; };
+		2721BB0429882FF000FB68D2 /* TableDataSourceSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB0329882FF000FB68D2 /* TableDataSourceSection.swift */; };
+		2721BB072988376D00FB68D2 /* ContainerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB062988376D00FB68D2 /* ContainerTableViewCell.swift */; };
+		2721BB0A2988396700FB68D2 /* TransactionItemsQueryFiltersSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB092988396700FB68D2 /* TransactionItemsQueryFiltersSection.swift */; };
+		2721BB0C2988398400FB68D2 /* TransactionItemsQueryButtonsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB0B2988398400FB68D2 /* TransactionItemsQueryButtonsSection.swift */; };
+		2721BB0E2988480B00FB68D2 /* CheckboxItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB0D2988480B00FB68D2 /* CheckboxItemList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -267,6 +278,17 @@
 		2721BAEC2988149000FB68D2 /* LoadingOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingOverlayView.swift; sourceTree = "<group>"; };
 		2721BAEF2988172000FB68D2 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		2721BAF1298819C000FB68D2 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		2721BAF62988212C00FB68D2 /* SwitchItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchItemList.swift; sourceTree = "<group>"; };
+		2721BAF82988273600FB68D2 /* TransactionItemsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsDataSource.swift; sourceTree = "<group>"; };
+		2721BAFA2988274D00FB68D2 /* TransactionItemsQueryDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsQueryDataSource.swift; sourceTree = "<group>"; };
+		2721BAFC298828BC00FB68D2 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		2721BAFE29882C5E00FB68D2 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		2721BB0129882FC600FB68D2 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		2721BB0329882FF000FB68D2 /* TableDataSourceSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSourceSection.swift; sourceTree = "<group>"; };
+		2721BB062988376D00FB68D2 /* ContainerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerTableViewCell.swift; sourceTree = "<group>"; };
+		2721BB092988396700FB68D2 /* TransactionItemsQueryFiltersSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsQueryFiltersSection.swift; sourceTree = "<group>"; };
+		2721BB0B2988398400FB68D2 /* TransactionItemsQueryButtonsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsQueryButtonsSection.swift; sourceTree = "<group>"; };
+		2721BB0D2988480B00FB68D2 /* CheckboxItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxItemList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -388,6 +410,7 @@
 				2721B9C629868A2B00FB68D2 /* DI */,
 				2721BAC42987E50300FB68D2 /* JSONFileLoader */,
 				2721BAD52987F81D00FB68D2 /* Reusable */,
+				2721BB0029882FB100FB68D2 /* TableViewDataSource */,
 				2721B9C929868AC300FB68D2 /* Support.swift */,
 				2721B9E229868DB500FB68D2 /* Completion.swift */,
 			);
@@ -402,6 +425,7 @@
 				2721B9F52986921E00FB68D2 /* Result+Extensions.swift */,
 				2721BA8F29872ECA00FB68D2 /* UIView+Extensions.swift */,
 				2721BA9129872EFC00FB68D2 /* UIViewController+Extensions.swift */,
+				2721BAFE29882C5E00FB68D2 /* UIButton+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -778,10 +802,10 @@
 		2721BA8329872D3A00FB68D2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2721BB0F29884CD300FB68D2 /* FlowCoordinators */,
 				2721BA8629872DBA00FB68D2 /* TransactionDetails */,
 				2721BA8729872DC300FB68D2 /* TransactionItems */,
 				2721BA8829872DCD00FB68D2 /* TransactionItemsQuery */,
-				2721BA6C2987181000FB68D2 /* TransactionsFlowCoordinator.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -817,6 +841,7 @@
 			children = (
 				2721BAE829880B6000FB68D2 /* Views */,
 				2721BA8929872DF800FB68D2 /* TransactionItemsViewController.swift */,
+				2721BAF82988273600FB68D2 /* TransactionItemsDataSource.swift */,
 			);
 			path = TransactionItems;
 			sourceTree = "<group>";
@@ -824,6 +849,7 @@
 		2721BA8829872DCD00FB68D2 /* TransactionItemsQuery */ = {
 			isa = PBXGroup;
 			children = (
+				2721BB082988395600FB68D2 /* DataSources */,
 				2721BA8B29872E1300FB68D2 /* TransactionItemsQueryViewController.swift */,
 			);
 			path = TransactionItemsQuery;
@@ -945,6 +971,7 @@
 		2721BACE2987F00900FB68D2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2721BB052988375700FB68D2 /* Cells */,
 				2721BAEE2988170B00FB68D2 /* Theme */,
 				2721BAEB2988147C00FB68D2 /* View */,
 				2721BAE5298803D800FB68D2 /* ViewControllers */,
@@ -1001,6 +1028,9 @@
 			isa = PBXGroup;
 			children = (
 				2721BAEC2988149000FB68D2 /* LoadingOverlayView.swift */,
+				2721BAF62988212C00FB68D2 /* SwitchItemList.swift */,
+				2721BB0D2988480B00FB68D2 /* CheckboxItemList.swift */,
+				2721BAFC298828BC00FB68D2 /* PrimaryButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1012,6 +1042,41 @@
 				2721BAF1298819C000FB68D2 /* ThemeManager.swift */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		2721BB0029882FB100FB68D2 /* TableViewDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				2721BB0329882FF000FB68D2 /* TableDataSourceSection.swift */,
+				2721BB0129882FC600FB68D2 /* TableViewDataSource.swift */,
+			);
+			path = TableViewDataSource;
+			sourceTree = "<group>";
+		};
+		2721BB052988375700FB68D2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2721BB062988376D00FB68D2 /* ContainerTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2721BB082988395600FB68D2 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				2721BAFA2988274D00FB68D2 /* TransactionItemsQueryDataSource.swift */,
+				2721BB092988396700FB68D2 /* TransactionItemsQueryFiltersSection.swift */,
+				2721BB0B2988398400FB68D2 /* TransactionItemsQueryButtonsSection.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		2721BB0F29884CD300FB68D2 /* FlowCoordinators */ = {
+			isa = PBXGroup;
+			children = (
+				2721BA6C2987181000FB68D2 /* TransactionsFlowCoordinator.swift */,
+			);
+			path = FlowCoordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1186,22 +1251,27 @@
 				2721B9DE29868D2200FB68D2 /* Cancelable.swift in Sources */,
 				2721BAB62987ADE300FB68D2 /* TransactionsAssembly.swift in Sources */,
 				2721BA00298693B400FB68D2 /* TransactionItemRepository.swift in Sources */,
+				2721BB0C2988398400FB68D2 /* TransactionItemsQueryButtonsSection.swift in Sources */,
 				2721BA672987105300FB68D2 /* CurrencyTransactionItemsViewData.swift in Sources */,
 				2721B9DB29868D2200FB68D2 /* AsyncTransformable.swift in Sources */,
 				2721BADD2987FB7400FB68D2 /* ApplicationLocalisation.swift in Sources */,
+				2721BB0E2988480B00FB68D2 /* CheckboxItemList.swift in Sources */,
 				2721BAA72987330F00FB68D2 /* Bundle+Current.swift in Sources */,
 				2721BA5B298702AB00FB68D2 /* OneTransactionCategoryQueryBuilder.swift in Sources */,
+				2721BB072988376D00FB68D2 /* ContainerTableViewCell.swift in Sources */,
 				2721BA6B298716F900FB68D2 /* TransactionItemsLocalisation.swift in Sources */,
 				2721BAA5298731A800FB68D2 /* DecimalDecoder.swift in Sources */,
 				2721BAB42987A99100FB68D2 /* TransactionCategoryMapper.swift in Sources */,
 				2721BA2D2986C2B200FB68D2 /* TransactionItemsFlowCoordinating.swift in Sources */,
 				2721BAD92987F88C00FB68D2 /* UITableVIew+Reusable.swift in Sources */,
 				2721BABA2987B1E300FB68D2 /* DefaultCurrencyFormatter.swift in Sources */,
+				2721BAF72988212C00FB68D2 /* SwitchItemList.swift in Sources */,
 				2721BA7D29872B7B00FB68D2 /* TransactionDetailsEventHandling.swift in Sources */,
 				2721B9E929868F5100FB68D2 /* Money.swift in Sources */,
 				2721BA4F2986E03800FB68D2 /* TransactionItemsQueryFlowCoordinating.swift in Sources */,
 				2721B9CA29868AC300FB68D2 /* Support.swift in Sources */,
 				2721BA0B298694ED00FB68D2 /* FetchAndSumTransactionsHandling.swift in Sources */,
+				2721BAFB2988274D00FB68D2 /* TransactionItemsQueryDataSource.swift in Sources */,
 				2721BA422986D94900FB68D2 /* TransactionItemsQueryViewInterface.swift in Sources */,
 				2721B9E529868E7E00FB68D2 /* ApplicationAssembly.swift in Sources */,
 				2721BA1E2986B74200FB68D2 /* Optional+Extensions.swift in Sources */,
@@ -1213,6 +1283,7 @@
 				2721B9FC2986931300FB68D2 /* TransactionItem.swift in Sources */,
 				2721BAA22987315400FB68D2 /* TransactionItemsResponse.swift in Sources */,
 				2721B9DA29868D2200FB68D2 /* MapTrasformer.swift in Sources */,
+				2721BAF92988273600FB68D2 /* TransactionItemsDataSource.swift in Sources */,
 				2721BA9B298730AD00FB68D2 /* JSONFileLoader.swift in Sources */,
 				2721BAB22987A88A00FB68D2 /* CurrencyMapper.swift in Sources */,
 				2721B9C829868A3A00FB68D2 /* Container.swift in Sources */,
@@ -1221,8 +1292,12 @@
 				2721BA2F2986C2C100FB68D2 /* TransactionItemsEventHandling.swift in Sources */,
 				2721BA8A29872DF800FB68D2 /* TransactionItemsViewController.swift in Sources */,
 				2721BA342986C34500FB68D2 /* TransactionItemViewDataBuilder.swift in Sources */,
+				2721BAFD298828BC00FB68D2 /* PrimaryButton.swift in Sources */,
 				2721B992298687A800FB68D2 /* AppDelegate.swift in Sources */,
+				2721BAFF29882C5E00FB68D2 /* UIButton+Extensions.swift in Sources */,
+				2721BB0A2988396700FB68D2 /* TransactionItemsQueryFiltersSection.swift in Sources */,
 				2721BA7929872A0F00FB68D2 /* TransactionDetailsPresenter.swift in Sources */,
+				2721BB0229882FC600FB68D2 /* TableViewDataSource.swift in Sources */,
 				2721B9D929868D2200FB68D2 /* AsyncTransformable+Factories.swift in Sources */,
 				2721BAED2988149000FB68D2 /* LoadingOverlayView.swift in Sources */,
 				2721BA382986C52900FB68D2 /* DateFormatting.swift in Sources */,
@@ -1235,6 +1310,7 @@
 				2721BA592987029400FB68D2 /* MultiTransactionCategoriesQueryBuilder.swift in Sources */,
 				2721B9E129868D2200FB68D2 /* AnyCancelable.swift in Sources */,
 				2721BA0F298695A000FB68D2 /* FetchAndSumTransactionsHandler.swift in Sources */,
+				2721BB0429882FF000FB68D2 /* TableDataSourceSection.swift in Sources */,
 				2721B9D829868D2200FB68D2 /* AsyncTransformer.swift in Sources */,
 				2721BA3D2986C71D00FB68D2 /* TransactionItemsQueryBuilder.swift in Sources */,
 				2721BA9729872FD200FB68D2 /* JSONFileBasedTransactionItemRepository.swift in Sources */,

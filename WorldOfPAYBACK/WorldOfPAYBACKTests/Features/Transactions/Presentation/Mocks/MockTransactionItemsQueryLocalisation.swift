@@ -10,6 +10,10 @@ import Foundation
 
 class MockTransactionItemsQueryLocalisation: TransactionItemsQueryLocalisation {
     
+    func transactionsQueryViewTitle() -> String {
+        return "filter"
+    }
+    
     func transactionsQueryTitleForTransactionCategory(_ category: TransactionCategory) -> String {
         switch category {
         case .shopping: return "shopping"

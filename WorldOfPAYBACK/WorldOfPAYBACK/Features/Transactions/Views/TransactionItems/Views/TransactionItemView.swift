@@ -9,11 +9,6 @@ import UIKit
 
 class TransactonItemView: UIView {
     
-    private lazy var iconImage: UIImageView = {
-        let imageView = UIImageView()
-        return imageView
-    }()
-    
     private lazy var partnerNameLabel: UILabel = {
         let label = UILabel()
         // TODO: Theme!

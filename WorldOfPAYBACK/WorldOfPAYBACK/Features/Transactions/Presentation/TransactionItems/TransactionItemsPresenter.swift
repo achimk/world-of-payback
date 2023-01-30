@@ -73,7 +73,7 @@ extension TransactionItemsPresenter: TransactionItemsEventHandling {
     }
     
     func filterContent() {
-        coordinator.presentTransactionFilters { [weak self] in
+        coordinator.presentTransactionFilters(for: query) { [weak self] in
             self?.updateTransactionsQuery($0)
         }
     }

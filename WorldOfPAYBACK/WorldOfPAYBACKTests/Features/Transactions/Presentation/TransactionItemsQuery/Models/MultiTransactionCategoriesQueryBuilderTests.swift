@@ -12,9 +12,7 @@ import XCTest
 class MultiTransactionCategoriesQueryBuilderTests: XCTestCase {
     
     func test_toggleMultipleCategories_shouldAggregateAll() {
-        let query = MultiTransactionCategoriesQueryBuilder(
-            sortBy: .bookingDateDescending,
-            filterCategories: [])
+        let query = MultiTransactionCategoriesQueryBuilder(query: .default)
             .toggle(category: .savings)
             .toggle(category: .other)
             .build()
@@ -25,9 +23,7 @@ class MultiTransactionCategoriesQueryBuilderTests: XCTestCase {
     }
     
     func test_clear_shouldBeEmpty() {
-        let query = MultiTransactionCategoriesQueryBuilder(
-            sortBy: .bookingDateDescending,
-            filterCategories: [])
+        let query = MultiTransactionCategoriesQueryBuilder(query: .default)
             .toggle(category: .savings)
             .toggle(category: .other)
             .clear()
