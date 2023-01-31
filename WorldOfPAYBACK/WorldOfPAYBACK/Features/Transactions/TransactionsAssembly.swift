@@ -21,8 +21,8 @@ class TransactionsAssembly {
     
     private func makeTransactionItemRepository() -> TransactionItemRepository {
         let repository = JSONFileBasedTransactionItemRepository()
-        repository.set(delay: 0.750)
-        repository.set(errorCondition: { false })
+        repository.set(delay: 0.750) // default delay
+        repository.set(errorCondition: { $0 % 3 == 2 }) // failure every 3 request
         return repository
     }
     

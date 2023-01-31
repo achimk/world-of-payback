@@ -13,15 +13,15 @@ class JSONFileBasedTransactionItemRepository: TransactionItemRepository {
         static let fileResource = FileResource(name: "PBTransactions", withExtension: "json")
     }
     
+    private let rateLimiter = RateLimiter<FileResource>()
     private let loadAndCache = JSONLoadAndCacheTransformer<TransactionItemsResponse>()
     private let mapResponse: AsyncTransformer<TransactionItemsResponse, [TransactionItem]> = MapTransformer {
         TransactionItemsMapper.map($0)
     }
-    private var errorCondition: () -> Bool = { false }
     private var timeInterval: TimeInterval = 0
 
-    func set(errorCondition: @escaping () -> Bool) {
-        self.errorCondition = errorCondition
+    func set(errorCondition: @escaping (Int) -> Bool) {
+        rateLimiter.errorCondition = errorCondition
     }
     
     func set(delay timeInterval: TimeInterval) {
@@ -31,6 +31,7 @@ class JSONFileBasedTransactionItemRepository: TransactionItemRepository {
     func allTransactionItems(completion: @escaping Completion<[TransactionItem]>) -> Cancelable {
         // TODO: Apply error condition!
         return makeDelay(timeInterval: timeInterval)
+            .then(rateLimiter)
             .then(loadAndCache)
             .then(mapResponse)
             .transform(Const.fileResource, completion: completion)
@@ -42,6 +43,26 @@ class JSONFileBasedTransactionItemRepository: TransactionItemRepository {
 }
 
 // MARK: - Private
+
+private class RateLimiter<T>: AsyncTransformer<T, T> {
+    private let error: Error
+    private var counter: Int = 0
+    var errorCondition: (Int) -> Bool = { _ in false }
+    
+    init(error: Error = NSError(domain: "RateLimit", code: 0, userInfo: nil)) {
+        self.error = error
+    }
+    
+    override func transform(_ value: T, completion: @escaping Completion<T>) -> Cancelable {
+        defer { counter += 1 }
+        if errorCondition(counter) {
+            completion(.failure(error))
+        } else {
+            completion(.success(value))
+        }
+        return NoopCancelable()
+    }
+}
 
 private class DelayTransformer<T>: AsyncTransformer<T, T> {
     private let timeInterval: TimeInterval
