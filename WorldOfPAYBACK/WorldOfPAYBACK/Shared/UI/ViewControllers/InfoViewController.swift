@@ -20,7 +20,7 @@ class InfoViewController: ViewController {
         let label = UILabel()
         // TODO: Theme!
         label.textColor = .black
-        label.font = .boldSystemFont(ofSize: 24)
+        label.font = .systemFont(ofSize: 20)
         label.textAlignment = .center
         label.numberOfLines = 0
         return label
@@ -29,8 +29,8 @@ class InfoViewController: ViewController {
     private lazy var subtitleLabel: UILabel = {
         let label = UILabel()
         // TODO: Theme!
-        label.textColor = .black
-        label.font = .systemFont(ofSize: 18)
+        label.textColor = .darkGray
+        label.font = .systemFont(ofSize: 16)
         label.textAlignment = .center
         label.numberOfLines = 0
         return label
@@ -97,10 +97,10 @@ class InfoViewController: ViewController {
         switch style {
         case .warning:
             imageView.image = theme.systemIcons.warning
-            imageView.tintColor = .yellow
+            imageView.tintColor = .systemOrange
         case .error:
             imageView.image = theme.systemIcons.error
-            imageView.tintColor = .red
+            imageView.tintColor = .systemPink
         }
     }
 }

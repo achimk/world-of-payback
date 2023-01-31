@@ -1,5 +1,5 @@
 //
-//  DeviceReachibilityService.swift
+//  DeviceReachabilityService.swift
 //  WorldOfPAYBACK
 //
 //  Created by Joachim Kret on 31/01/2023.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DeviceReachibilityService: ReachabilityService {
+class DeviceReachabilityService: ReachabilityService {
     private let reachabilityFactory: () throws -> Reachability
     private var reachability: Reachability?
     private var observers: [ReachabilityObserver] = []

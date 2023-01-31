@@ -35,6 +35,12 @@ class ApplicationAssembly {
         container.register(TransactionDetailsLocalisation.self, value: localisation)
         
         // Reachability
-        container.register(ReachabilityService.self, value: DeviceReachibilityService())
+        #if targetEnvironment(simulator)
+        let reachabilityService = SimulatorReachabilityService()
+        reachabilityService.setUnreachable(every: 5, duration: 5)
+        container.register(ReachabilityService.self, value: reachabilityService)
+        #else
+        container.register(ReachabilityService.self, value: DeviceReachabilityService())
+        #endif        
     }
 }

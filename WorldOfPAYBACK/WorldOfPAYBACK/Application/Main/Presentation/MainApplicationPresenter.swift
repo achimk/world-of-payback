@@ -38,8 +38,8 @@ extension MainApplicationPresenter: MainApplicationEventHandling {
     
     func viewLoaded() {
         screenState = .presentLoading
-        reachabilityService.start()
         view?.presentApplicationLoading()
+        reachabilityService.start()
     }
 }
 

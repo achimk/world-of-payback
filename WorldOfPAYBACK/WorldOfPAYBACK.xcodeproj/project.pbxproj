@@ -143,11 +143,11 @@
 		2721BB1C298936AB00FB68D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB1B298936AB00FB68D2 /* ViewController.swift */; };
 		2721BB1F29893AF800FB68D2 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB1E29893AF800FB68D2 /* ReachabilityService.swift */; };
 		2721BB2129893B4A00FB68D2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB2029893B4A00FB68D2 /* Reachability.swift */; };
-		2721BB2529894E6000FB68D2 /* DeviceReachibilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB2429894E6000FB68D2 /* DeviceReachibilityService.swift */; };
+		2721BB2529894E6000FB68D2 /* DeviceReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB2429894E6000FB68D2 /* DeviceReachabilityService.swift */; };
 		2721BB2729894E8200FB68D2 /* ReachabilityObserving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB2629894E8200FB68D2 /* ReachabilityObserving.swift */; };
 		2721BB2929894EAF00FB68D2 /* ReachabilityServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB2829894EAF00FB68D2 /* ReachabilityServiceError.swift */; };
 		2721BB2B29894ECE00FB68D2 /* ReachabilityStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB2A29894ECE00FB68D2 /* ReachabilityStatus.swift */; };
-		2721BB2F298954E900FB68D2 /* DeviceReachibilityServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB2E298954E900FB68D2 /* DeviceReachibilityServiceTests.swift */; };
+		2721BB2F298954E900FB68D2 /* DeviceReachabilityServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB2E298954E900FB68D2 /* DeviceReachabilityServiceTests.swift */; };
 		2721BB392989686700FB68D2 /* MainApplicationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB382989686700FB68D2 /* MainApplicationFlowCoordinator.swift */; };
 		2721BB3B2989687900FB68D2 /* MainApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB3A2989687900FB68D2 /* MainApplicationViewController.swift */; };
 		2721BB3F298974FD00FB68D2 /* MainApplicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB3E298974FD00FB68D2 /* MainApplicationPresenter.swift */; };
@@ -168,6 +168,7 @@
 		2721BB612989924600FB68D2 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB602989924600FB68D2 /* SecondaryButton.swift */; };
 		2721BB632989A57900FB68D2 /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB622989A57900FB68D2 /* DividerView.swift */; };
 		2721BB652989A9B200FB68D2 /* SeparatorTableDataSourceSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB642989A9B200FB68D2 /* SeparatorTableDataSourceSection.swift */; };
+		2721BB672989AA2F00FB68D2 /* SimulatorReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB662989AA2F00FB68D2 /* SimulatorReachabilityService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -328,11 +329,11 @@
 		2721BB1B298936AB00FB68D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2721BB1E29893AF800FB68D2 /* ReachabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
 		2721BB2029893B4A00FB68D2 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		2721BB2429894E6000FB68D2 /* DeviceReachibilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceReachibilityService.swift; sourceTree = "<group>"; };
+		2721BB2429894E6000FB68D2 /* DeviceReachabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceReachabilityService.swift; sourceTree = "<group>"; };
 		2721BB2629894E8200FB68D2 /* ReachabilityObserving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityObserving.swift; sourceTree = "<group>"; };
 		2721BB2829894EAF00FB68D2 /* ReachabilityServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityServiceError.swift; sourceTree = "<group>"; };
 		2721BB2A29894ECE00FB68D2 /* ReachabilityStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityStatus.swift; sourceTree = "<group>"; };
-		2721BB2E298954E900FB68D2 /* DeviceReachibilityServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceReachibilityServiceTests.swift; sourceTree = "<group>"; };
+		2721BB2E298954E900FB68D2 /* DeviceReachabilityServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceReachabilityServiceTests.swift; sourceTree = "<group>"; };
 		2721BB382989686700FB68D2 /* MainApplicationFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplicationFlowCoordinator.swift; sourceTree = "<group>"; };
 		2721BB3A2989687900FB68D2 /* MainApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplicationViewController.swift; sourceTree = "<group>"; };
 		2721BB3E298974FD00FB68D2 /* MainApplicationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplicationPresenter.swift; sourceTree = "<group>"; };
@@ -353,6 +354,7 @@
 		2721BB602989924600FB68D2 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		2721BB622989A57900FB68D2 /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
 		2721BB642989A9B200FB68D2 /* SeparatorTableDataSourceSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorTableDataSourceSection.swift; sourceTree = "<group>"; };
+		2721BB662989AA2F00FB68D2 /* SimulatorReachabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorReachabilityService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1176,7 +1178,8 @@
 				2721BB2829894EAF00FB68D2 /* ReachabilityServiceError.swift */,
 				2721BB2629894E8200FB68D2 /* ReachabilityObserving.swift */,
 				2721BB1E29893AF800FB68D2 /* ReachabilityService.swift */,
-				2721BB2429894E6000FB68D2 /* DeviceReachibilityService.swift */,
+				2721BB2429894E6000FB68D2 /* DeviceReachabilityService.swift */,
+				2721BB662989AA2F00FB68D2 /* SimulatorReachabilityService.swift */,
 			);
 			path = Reachability;
 			sourceTree = "<group>";
@@ -1184,7 +1187,7 @@
 		2721BB2D298954CA00FB68D2 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
-				2721BB2E298954E900FB68D2 /* DeviceReachibilityServiceTests.swift */,
+				2721BB2E298954E900FB68D2 /* DeviceReachabilityServiceTests.swift */,
 			);
 			path = Reachability;
 			sourceTree = "<group>";
@@ -1454,8 +1457,9 @@
 				2721BAA72987330F00FB68D2 /* Bundle+Current.swift in Sources */,
 				2721BA5B298702AB00FB68D2 /* OneTransactionCategoryQueryBuilder.swift in Sources */,
 				2721BB072988376D00FB68D2 /* ContainerTableViewCell.swift in Sources */,
-				2721BB2529894E6000FB68D2 /* DeviceReachibilityService.swift in Sources */,
+				2721BB2529894E6000FB68D2 /* DeviceReachabilityService.swift in Sources */,
 				2721BA6B298716F900FB68D2 /* TransactionItemsLocalisation.swift in Sources */,
+				2721BB672989AA2F00FB68D2 /* SimulatorReachabilityService.swift in Sources */,
 				2721BAA5298731A800FB68D2 /* DecimalDecoder.swift in Sources */,
 				2721BAB42987A99100FB68D2 /* TransactionCategoryMapper.swift in Sources */,
 				2721BB5929898CE000FB68D2 /* ApplicationLocalisation+TransactionDetailsLocalisation.swift in Sources */,
@@ -1541,7 +1545,7 @@
 				2721BACD2987E9D000FB68D2 /* CurrencyMapperTests.swift in Sources */,
 				2721BA552986E80100FB68D2 /* MockTransactionItemsQueryLocalisation.swift in Sources */,
 				2721BB5F29898E3900FB68D2 /* MockReachabilityService.swift in Sources */,
-				2721BB2F298954E900FB68D2 /* DeviceReachibilityServiceTests.swift in Sources */,
+				2721BB2F298954E900FB68D2 /* DeviceReachabilityServiceTests.swift in Sources */,
 				2721BA7529871B0900FB68D2 /* MockCurrencyFormatter.swift in Sources */,
 				2721BA7329871AA300FB68D2 /* MockDateFormatter.swift in Sources */,
 				2721BA5E2987030000FB68D2 /* MultiTransactionCategoriesQueryBuilderTests.swift in Sources */,

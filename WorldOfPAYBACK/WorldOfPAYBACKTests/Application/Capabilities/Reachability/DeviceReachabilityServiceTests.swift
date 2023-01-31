@@ -1,5 +1,5 @@
 //
-//  DeviceReachibilityServiceTests.swift
+//  DeviceReachabilityServiceTests.swift
 //  WorldOfPAYBACKTests
 //
 //  Created by Joachim Kret on 31/01/2023.
@@ -9,7 +9,7 @@ import Foundation
 import XCTest
 @testable import WorldOfPAYBACK
 
-class DeviceReachibilityServiceTests: XCTestCase {
+class DeviceReachabilityServiceTests: XCTestCase {
     
     func test_startWhenUnableToCreate_shouldNotifyError() {
         let components = makeTestComponents(shouldFailureOnCreate: true)
@@ -63,13 +63,13 @@ class DeviceReachibilityServiceTests: XCTestCase {
     }
 }
 
-extension DeviceReachibilityServiceTests {
+extension DeviceReachabilityServiceTests {
     
     private struct TestComponents {
         let reachabilityFactory: MockReachabilityFactory
         let observer: MockReachabilityObserver
         let observerCancelToken: Cancelable
-        let reachabilityService: DeviceReachibilityService
+        let reachabilityService: DeviceReachabilityService
     }
     
     private func makeTestComponents(shouldFailureOnCreate: Bool = false, shouldFailureOnStart: Bool = false) -> TestComponents {
@@ -78,7 +78,7 @@ extension DeviceReachibilityServiceTests {
         reachabilityFactory.cacheIfNeeded()
         reachabilityFactory.currentReachability?.shouldFailureOnStart = shouldFailureOnStart
         let observer = MockReachabilityObserver()
-        let reachabilityService = DeviceReachibilityService(reachabilityFactory: {
+        let reachabilityService = DeviceReachabilityService(reachabilityFactory: {
             try reachabilityFactory.make()
         })
         let observerCancelToken = reachabilityService.addObserver(observer)

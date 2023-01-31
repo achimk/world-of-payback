@@ -23,6 +23,8 @@ class LoadingViewController: ViewController {
     }
     
     private func setupView() {
+        // TODO: Theme!
+        view.backgroundColor = .white
         let loadingView = LoadingOverlayView()
         view.addAndFill(loadingView)
     }
