@@ -40,6 +40,11 @@ extension TransactionsFlowCoordinator: TransactionItemsFlowCoordinating {
 
 extension TransactionsFlowCoordinator: TransactionItemsQueryFlowCoordinating {
     
+    func dismissTransactionItemsQuery() {
+        presentedViewController?.dismiss(animated: true, completion: nil)
+        presentedViewController = nil
+    }
+    
     func presentTransactionItems(for query: TransactionItemsQuery) {
         onAcceptQueryHandler?(query)
         onAcceptQueryHandler = nil

@@ -45,6 +45,10 @@ extension TransactionItemsQueryPresenter: TransactionItemsQueryEventHandling {
         buildAndNotify()
     }
     
+    func cancel() {
+        coordinator.dismissTransactionItemsQuery()
+    }
+    
     private func buildAndNotify() {
         let query = queryBuilder.build()
         let viewData = viewDataBuilder.build(for: query)

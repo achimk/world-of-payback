@@ -9,4 +9,5 @@ import Foundation
 
 protocol TransactionItemsQueryEventHandling {
     func viewLoaded()
+    func cancel()
 }

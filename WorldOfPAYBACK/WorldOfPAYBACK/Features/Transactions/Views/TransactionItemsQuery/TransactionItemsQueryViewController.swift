@@ -45,7 +45,7 @@ class TransactionItemsQueryViewController: TableViewController {
     
     @objc
     private func closeSelected() {
-        
+        eventHandler.cancel()
     }
 }
 

@@ -9,4 +9,5 @@ import Foundation
 
 protocol TransactionItemsQueryFlowCoordinating {
     func presentTransactionItems(for query: TransactionItemsQuery)
+    func dismissTransactionItemsQuery()
 }
