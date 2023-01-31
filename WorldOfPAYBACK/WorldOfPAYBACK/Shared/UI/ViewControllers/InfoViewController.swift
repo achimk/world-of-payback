@@ -92,7 +92,7 @@ class InfoViewController: ViewController {
     }
     
     private func setupViewStyle() {
-        // TODO: Theme
+        // TODO: Theme!
         let theme = ThemeManager.currentTheme()
         switch style {
         case .warning:

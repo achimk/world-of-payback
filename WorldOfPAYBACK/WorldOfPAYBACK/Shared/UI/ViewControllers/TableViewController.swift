@@ -27,6 +27,7 @@ class TableViewController: ViewController {
     }
     
     private func setupTableView() {
+        tableView.separatorStyle = .none
         view.addAndFill(tableView)
     }
     

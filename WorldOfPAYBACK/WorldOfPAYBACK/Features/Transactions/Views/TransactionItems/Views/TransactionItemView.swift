@@ -45,6 +45,10 @@ class TransactonItemView: UIView {
         return label
     }()
     
+    private lazy var dividerView: DividerView = {
+        return DividerView()
+    }()
+    
     private lazy var mainStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
@@ -81,6 +85,7 @@ class TransactonItemView: UIView {
         mainStackView.addArrangedSubview(bookingDateLabel)
         
         addAndFill(mainStackView, insets: .init(top: 16, left: 16, bottom: 16, right: 16))
+        addAndPinBottom(dividerView, insets: .init(top: 0, left: 16, bottom: 0, right: 16))
     }
     
     func setup(with viewData: TransactionItemViewData) {

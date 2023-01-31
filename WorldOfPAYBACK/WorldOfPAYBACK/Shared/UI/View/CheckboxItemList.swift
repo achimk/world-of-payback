@@ -49,6 +49,10 @@ class CheckboxItemList: UIView {
         stackView.spacing = 5.0
         return stackView
     }()
+    
+    private lazy var dividerView: DividerView = {
+        return DividerView()
+    }()
 
     var isOn: Bool {
         set {
@@ -80,6 +84,7 @@ class CheckboxItemList: UIView {
         checkboxImageView.widthAnchor.constraint(equalToConstant: 30).isActive = true
         
         addAndFill(mainStackView, insets: .init(top: 16, left: 16, bottom: 16, right: 16))
+        addAndPinBottom(dividerView, insets: .init(top: 0, left: 16, bottom: 0, right: 16))
     }
     
     func setup(title: String, subtitle: String?, isOn: Bool) {

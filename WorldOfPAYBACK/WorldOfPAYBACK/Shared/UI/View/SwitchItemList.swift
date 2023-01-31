@@ -51,6 +51,10 @@ class SwitchItemList: UIView {
         return stackView
     }()
     
+    private lazy var dividerView: DividerView = {
+        return DividerView()
+    }()
+    
     private var onChangeHandler: (() -> Void)?
     
     override init(frame: CGRect) {
@@ -70,6 +74,7 @@ class SwitchItemList: UIView {
         mainStackView.addArrangedSubview(switchButton)
         
         addAndFill(mainStackView, insets: .init(top: 16, left: 16, bottom: 16, right: 16))
+        addAndPinBottom(dividerView, insets: .init(top: 0, left: 16, bottom: 0, right: 16))
     }
     
     func setup(

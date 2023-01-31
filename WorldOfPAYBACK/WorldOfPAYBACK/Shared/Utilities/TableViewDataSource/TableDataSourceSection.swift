@@ -25,5 +25,4 @@ extension TableDataSourceSection {
     func numberOfItems() -> Int {
         return 0
     }
-    
 }

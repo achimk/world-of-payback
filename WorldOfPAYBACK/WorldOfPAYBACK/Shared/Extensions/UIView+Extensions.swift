@@ -37,4 +37,21 @@ extension UIView {
         
         return anchors
     }
+    
+    func addAndPinBottom(_ subview: UIView, insets: UIEdgeInsets = .zero) {
+        subview.translatesAutoresizingMaskIntoConstraints = false
+
+        addSubview(subview)
+        
+        let anchors: Anchors
+        anchors.leading = subview.leadingAnchor.constraint(equalTo: leadingAnchor, constant: insets.left)
+        anchors.bottom = subview.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -insets.bottom)
+        anchors.trailing = subview.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -insets.right)
+        
+        NSLayoutConstraint.activate([
+            anchors.leading,
+            anchors.bottom,
+            anchors.trailing
+        ])
+    }
 }

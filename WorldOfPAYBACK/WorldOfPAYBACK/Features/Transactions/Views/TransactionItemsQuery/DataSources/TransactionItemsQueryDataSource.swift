@@ -9,11 +9,12 @@ import UIKit
 
 class TransactionItemsQueryDataSource: TableViewDataSource {
     private let filtersSection = TransactionItemsQueryFiltersSection()
+    private let separatorSection = SeparatorTableDataSourceSection(height: 44.0)
     private let buttonsSection = TransactionItemsQueryButtonsSection()
     
     override init() {
         super.init()
-        sections = [filtersSection, buttonsSection]
+        sections = [filtersSection, separatorSection, buttonsSection]
     }
     
     override func setup(with tableView: UITableView) {
@@ -22,7 +23,7 @@ class TransactionItemsQueryDataSource: TableViewDataSource {
     
     func update(with viewData: TransactionItemsQueryViewData) {
         filtersSection.update(with: viewData.filters)
-        buttonsSection.update(with: [viewData.clearButton, viewData.acceptButton])
+        buttonsSection.update(clearButton: viewData.clearButton, acceptButton: viewData.acceptButton)
         reloadData()
     }
 }

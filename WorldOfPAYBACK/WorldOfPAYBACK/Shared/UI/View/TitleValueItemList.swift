@@ -27,6 +27,10 @@ class TitleValueItemList: UIView {
         return label
     }()
     
+    private lazy var dividerView: DividerView = {
+        return DividerView()
+    }()
+    
     private lazy var labelsStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .horizontal
@@ -35,6 +39,7 @@ class TitleValueItemList: UIView {
         stackView.spacing = 5.0
         return stackView
     }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
@@ -49,6 +54,7 @@ class TitleValueItemList: UIView {
         labelsStackView.addArrangedSubview(valueLabel)
 
         addAndFill(labelsStackView, insets: .init(top: 16, left: 16, bottom: 16, right: 16))
+        addAndPinBottom(dividerView, insets: .init(top: 0, left: 16, bottom: 0, right: 16))
     }
     
     func setup(title: String, value: String?) {

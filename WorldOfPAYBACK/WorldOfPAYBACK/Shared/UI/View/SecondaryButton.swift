@@ -1,27 +1,29 @@
 //
-//  PrimaryButton.swift
+//  SecondaryButton.swift
 //  WorldOfPAYBACK
 //
-//  Created by Joachim Kret on 30/01/2023.
+//  Created by Joachim Kret on 31/01/2023.
 //
 
 import UIKit
 
-class PrimaryButton: UIView {
+class SecondaryButton: UIView {
     
     private lazy var button: UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         button.clipsToBounds = true
         button.addTarget(self, action: #selector(buttonSelected), for: .touchUpInside)
         // TODO: Theme!
         button.titleLabel?.font = .systemFont(ofSize: 14)
-        button.setBackgroundWithColor(.systemPink, for: .normal)
-        button.setBackgroundWithColor(.systemPink, for: .disabled)
-        button.setBackgroundWithColor(.systemPink, for: .highlighted)
-        button.setTitleColor(.white, for: .normal)
-        button.setTitleColor(.white, for: .disabled)
-        button.setTitleColor(.white, for: .highlighted)
+        button.setBackgroundWithColor(.white, for: .normal)
+        button.setBackgroundWithColor(.white, for: .disabled)
+        button.setBackgroundWithColor(.white, for: .highlighted)
+        button.setTitleColor(.darkGray, for: .normal)
+        button.setTitleColor(.lightGray, for: .disabled)
+        button.setTitleColor(.darkGray, for: .highlighted)
         button.layer.cornerRadius = 8
+        button.layer.borderColor = UIColor.lightGray.cgColor
+        button.layer.borderWidth = 0.8
         return button
     }()
     

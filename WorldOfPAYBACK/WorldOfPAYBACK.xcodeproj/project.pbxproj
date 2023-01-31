@@ -165,6 +165,9 @@
 		2721BB5929898CE000FB68D2 /* ApplicationLocalisation+TransactionDetailsLocalisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB5829898CE000FB68D2 /* ApplicationLocalisation+TransactionDetailsLocalisation.swift */; };
 		2721BB5D29898DBC00FB68D2 /* MainApplicationPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB5C29898DBC00FB68D2 /* MainApplicationPresenterTests.swift */; };
 		2721BB5F29898E3900FB68D2 /* MockReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB5E29898E3900FB68D2 /* MockReachabilityService.swift */; };
+		2721BB612989924600FB68D2 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB602989924600FB68D2 /* SecondaryButton.swift */; };
+		2721BB632989A57900FB68D2 /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB622989A57900FB68D2 /* DividerView.swift */; };
+		2721BB652989A9B200FB68D2 /* SeparatorTableDataSourceSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB642989A9B200FB68D2 /* SeparatorTableDataSourceSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -347,6 +350,9 @@
 		2721BB5829898CE000FB68D2 /* ApplicationLocalisation+TransactionDetailsLocalisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationLocalisation+TransactionDetailsLocalisation.swift"; sourceTree = "<group>"; };
 		2721BB5C29898DBC00FB68D2 /* MainApplicationPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplicationPresenterTests.swift; sourceTree = "<group>"; };
 		2721BB5E29898E3900FB68D2 /* MockReachabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockReachabilityService.swift; sourceTree = "<group>"; };
+		2721BB602989924600FB68D2 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		2721BB622989A57900FB68D2 /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		2721BB642989A9B200FB68D2 /* SeparatorTableDataSourceSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorTableDataSourceSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1101,6 +1107,8 @@
 				2721BB0D2988480B00FB68D2 /* CheckboxItemList.swift */,
 				2721BB102988578C00FB68D2 /* TitleValueItemList.swift */,
 				2721BAFC298828BC00FB68D2 /* PrimaryButton.swift */,
+				2721BB602989924600FB68D2 /* SecondaryButton.swift */,
+				2721BB622989A57900FB68D2 /* DividerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1118,6 +1126,7 @@
 			isa = PBXGroup;
 			children = (
 				2721BB0329882FF000FB68D2 /* TableDataSourceSection.swift */,
+				2721BB642989A9B200FB68D2 /* SeparatorTableDataSourceSection.swift */,
 				2721BB0129882FC600FB68D2 /* TableViewDataSource.swift */,
 			);
 			path = TableViewDataSource;
@@ -1487,6 +1496,7 @@
 				2721BA8A29872DF800FB68D2 /* TransactionItemsViewController.swift in Sources */,
 				2721BA342986C34500FB68D2 /* TransactionItemViewDataBuilder.swift in Sources */,
 				2721BB532989817600FB68D2 /* MainApplicationViewFactory.swift in Sources */,
+				2721BB652989A9B200FB68D2 /* SeparatorTableDataSourceSection.swift in Sources */,
 				2721BAFD298828BC00FB68D2 /* PrimaryButton.swift in Sources */,
 				2721B992298687A800FB68D2 /* AppDelegate.swift in Sources */,
 				2721BAFF29882C5E00FB68D2 /* UIButton+Extensions.swift in Sources */,
@@ -1496,6 +1506,7 @@
 				2721BB0229882FC600FB68D2 /* TableViewDataSource.swift in Sources */,
 				2721B9D929868D2200FB68D2 /* AsyncTransformable+Factories.swift in Sources */,
 				2721BAED2988149000FB68D2 /* LoadingOverlayView.swift in Sources */,
+				2721BB612989924600FB68D2 /* SecondaryButton.swift in Sources */,
 				2721BA382986C52900FB68D2 /* DateFormatting.swift in Sources */,
 				2721BA7B29872B6A00FB68D2 /* TransactionDetailsViewData.swift in Sources */,
 				2721BA8E29872E3100FB68D2 /* TransactionDetailsViewController.swift in Sources */,
@@ -1505,6 +1516,7 @@
 				2721BB2B29894ECE00FB68D2 /* ReachabilityStatus.swift in Sources */,
 				2721BA482986D99000FB68D2 /* TransactionItemsQueryPresenter.swift in Sources */,
 				2721BAB02987A84700FB68D2 /* TransactionItemsQueryViewFactory.swift in Sources */,
+				2721BB632989A57900FB68D2 /* DividerView.swift in Sources */,
 				2721BA592987029400FB68D2 /* MultiTransactionCategoriesQueryBuilder.swift in Sources */,
 				2721B9E129868D2200FB68D2 /* AnyCancelable.swift in Sources */,
 				2721BA0F298695A000FB68D2 /* FetchAndSumTransactionsHandler.swift in Sources */,
