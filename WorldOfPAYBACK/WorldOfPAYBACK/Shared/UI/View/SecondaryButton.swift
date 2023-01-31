@@ -14,10 +14,12 @@ class SecondaryButton: UIView {
         button.clipsToBounds = true
         button.addTarget(self, action: #selector(buttonSelected), for: .touchUpInside)
         // TODO: Theme!
+        let theme = ThemeManager.currentTheme()
+        let backgroundColor = theme.colors.buttonSecondaryBackground
         button.titleLabel?.font = .systemFont(ofSize: 14)
-        button.setBackgroundWithColor(.white, for: .normal)
-        button.setBackgroundWithColor(.white, for: .disabled)
-        button.setBackgroundWithColor(.white, for: .highlighted)
+        button.setBackgroundWithColor(backgroundColor, for: .normal)
+        button.setBackgroundWithColor(backgroundColor, for: .disabled)
+        button.setBackgroundWithColor(backgroundColor, for: .highlighted)
         button.setTitleColor(.darkGray, for: .normal)
         button.setTitleColor(.lightGray, for: .disabled)
         button.setTitleColor(.darkGray, for: .highlighted)

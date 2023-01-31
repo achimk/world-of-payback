@@ -14,10 +14,12 @@ class PrimaryButton: UIView {
         button.clipsToBounds = true
         button.addTarget(self, action: #selector(buttonSelected), for: .touchUpInside)
         // TODO: Theme!
+        let theme = ThemeManager.currentTheme()
+        let backgroundColor = theme.colors.buttonPrimaryBackground
         button.titleLabel?.font = .systemFont(ofSize: 14)
-        button.setBackgroundWithColor(.systemPink, for: .normal)
-        button.setBackgroundWithColor(.systemPink, for: .disabled)
-        button.setBackgroundWithColor(.systemPink, for: .highlighted)
+        button.setBackgroundWithColor(backgroundColor, for: .normal)
+        button.setBackgroundWithColor(backgroundColor, for: .disabled)
+        button.setBackgroundWithColor(backgroundColor, for: .highlighted)
         button.setTitleColor(.white, for: .normal)
         button.setTitleColor(.white, for: .disabled)
         button.setTitleColor(.white, for: .highlighted)

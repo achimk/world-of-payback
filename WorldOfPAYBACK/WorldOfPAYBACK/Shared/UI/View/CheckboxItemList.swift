@@ -29,6 +29,7 @@ class CheckboxItemList: UIView {
     private lazy var checkboxImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
+        imageView.tintColor = ThemeManager.currentTheme().colors.checkmark
         return imageView
     }()
     

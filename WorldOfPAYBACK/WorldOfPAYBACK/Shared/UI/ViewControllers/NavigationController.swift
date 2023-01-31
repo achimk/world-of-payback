@@ -11,5 +11,10 @@ class NavigationController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }    
+        setupView()
+    }
+    
+    private func setupView() {
+        ThemeManager.currentTheme().applyAppearance(for: navigationBar)
+    }
 }
