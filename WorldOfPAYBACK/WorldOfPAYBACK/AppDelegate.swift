@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         ApplicationAssembly.assembleDependencies(with: .shared)
         
-        let navigationController = UINavigationController()
+        let navigationController = NavigationController()
         let coordinator = TransactionsFlowCoordinator(navigationController: navigationController)
         coordinator.startFlow()
         

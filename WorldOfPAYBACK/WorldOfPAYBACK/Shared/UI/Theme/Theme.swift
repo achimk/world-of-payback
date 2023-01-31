@@ -22,6 +22,7 @@ extension Theme {
         lazy var filter: UIImage = { image(named: "filter_alt") }()
         lazy var checkmark: UIImage = { image(named: "check") }()
         lazy var close: UIImage = { image(named: "close") }()
+        lazy var back: UIImage = { image(named: "arrow_back") }()
     }
 
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ScrollableStackViewController: UIViewController {
+class ScrollableStackViewController: ViewController {
     
     lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()

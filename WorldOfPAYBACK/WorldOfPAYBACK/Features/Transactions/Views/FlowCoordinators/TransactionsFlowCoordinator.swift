@@ -8,11 +8,11 @@
 import UIKit
 
 class TransactionsFlowCoordinator {
-    private let navigationController: UINavigationController
+    private let navigationController: NavigationController
     private var onAcceptQueryHandler: ((TransactionItemsQuery) -> Void)?
     private var presentedViewController: UIViewController?
     
-    init(navigationController: UINavigationController) {
+    init(navigationController: NavigationController) {
         self.navigationController = navigationController
     }
     
@@ -53,5 +53,5 @@ extension TransactionsFlowCoordinator: TransactionItemsQueryFlowCoordinating {
 }
 
 private func embedIntoNavigation(_ viewController: UIViewController) -> UINavigationController {
-    return UINavigationController(rootViewController: viewController)
+    return NavigationController(rootViewController: viewController)
 }

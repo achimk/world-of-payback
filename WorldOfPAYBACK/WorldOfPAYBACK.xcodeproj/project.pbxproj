@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2721B992298687A800FB68D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B991298687A800FB68D2 /* AppDelegate.swift */; };
-		2721B996298687A800FB68D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B995298687A800FB68D2 /* ViewController.swift */; };
 		2721B99B298687AA00FB68D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2721B99A298687AA00FB68D2 /* Assets.xcassets */; };
 		2721B99E298687AA00FB68D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2721B99C298687AA00FB68D2 /* LaunchScreen.storyboard */; };
 		2721B9A9298687AA00FB68D2 /* WorldOfPAYBACKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721B9A8298687AA00FB68D2 /* WorldOfPAYBACKTests.swift */; };
@@ -140,6 +139,8 @@
 		2721BB142988615A00FB68D2 /* TransactionCurrencySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB132988615A00FB68D2 /* TransactionCurrencySection.swift */; };
 		2721BB162988617100FB68D2 /* TransactionItemsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB152988617100FB68D2 /* TransactionItemsSection.swift */; };
 		2721BB1829892AF300FB68D2 /* ScrollableStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB1729892AF200FB68D2 /* ScrollableStackViewController.swift */; };
+		2721BB1A2989343600FB68D2 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB192989343600FB68D2 /* NavigationController.swift */; };
+		2721BB1C298936AB00FB68D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB1B298936AB00FB68D2 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,7 +163,6 @@
 /* Begin PBXFileReference section */
 		2721B98E298687A800FB68D2 /* WorldOfPAYBACK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldOfPAYBACK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2721B991298687A800FB68D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2721B995298687A800FB68D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2721B99A298687AA00FB68D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2721B99D298687AA00FB68D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2721B99F298687AA00FB68D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -297,6 +297,8 @@
 		2721BB132988615A00FB68D2 /* TransactionCurrencySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCurrencySection.swift; sourceTree = "<group>"; };
 		2721BB152988617100FB68D2 /* TransactionItemsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsSection.swift; sourceTree = "<group>"; };
 		2721BB1729892AF200FB68D2 /* ScrollableStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableStackViewController.swift; sourceTree = "<group>"; };
+		2721BB192989343600FB68D2 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		2721BB1B298936AB00FB68D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,7 +353,6 @@
 				2721B9C22986897500FB68D2 /* Application */,
 				2721B9C12986896700FB68D2 /* Features */,
 				2721B991298687A800FB68D2 /* AppDelegate.swift */,
-				2721B995298687A800FB68D2 /* ViewController.swift */,
 				2721B99A298687AA00FB68D2 /* Assets.xcassets */,
 				2721B99C298687AA00FB68D2 /* LaunchScreen.storyboard */,
 				2721B99F298687AA00FB68D2 /* Info.plist */,
@@ -1018,8 +1019,10 @@
 		2721BAE5298803D800FB68D2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				2721BACF2987F01800FB68D2 /* TableViewController.swift */,
 				2721BAD32987F2E100FB68D2 /* AlertViewController.swift */,
+				2721BB1B298936AB00FB68D2 /* ViewController.swift */,
+				2721BB192989343600FB68D2 /* NavigationController.swift */,
+				2721BACF2987F01800FB68D2 /* TableViewController.swift */,
 				2721BB1729892AF200FB68D2 /* ScrollableStackViewController.swift */,
 			);
 			path = ViewControllers;
@@ -1242,8 +1245,8 @@
 				2721BA9029872ECA00FB68D2 /* UIView+Extensions.swift in Sources */,
 				2721B9FE2986934200FB68D2 /* TransactionCategory.swift in Sources */,
 				2721BA312986C2D200FB68D2 /* TransactionItemsViewInterface.swift in Sources */,
-				2721B996298687A800FB68D2 /* ViewController.swift in Sources */,
 				2721BABC2987B1FB00FB68D2 /* DefaultDateFormatter.swift in Sources */,
+				2721BB1A2989343600FB68D2 /* NavigationController.swift in Sources */,
 				2721BAAA2987361200FB68D2 /* TransactionItemsMapper.swift in Sources */,
 				2721B9EE29868F7800FB68D2 /* Amount.swift in Sources */,
 				2721BA442986D96800FB68D2 /* TransactionItemsQueryEventHandling.swift in Sources */,
@@ -1328,6 +1331,7 @@
 				2721BA7B29872B6A00FB68D2 /* TransactionDetailsViewData.swift in Sources */,
 				2721BA8E29872E3100FB68D2 /* TransactionDetailsViewController.swift in Sources */,
 				2721B9DC29868D2200FB68D2 /* AsyncTransformBlock.swift in Sources */,
+				2721BB1C298936AB00FB68D2 /* ViewController.swift in Sources */,
 				2721BAD42987F2E100FB68D2 /* AlertViewController.swift in Sources */,
 				2721BA482986D99000FB68D2 /* TransactionItemsQueryPresenter.swift in Sources */,
 				2721BAB02987A84700FB68D2 /* TransactionItemsQueryViewFactory.swift in Sources */,

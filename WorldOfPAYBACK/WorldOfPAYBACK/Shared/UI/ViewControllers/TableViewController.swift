@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TableViewController: UIViewController {
+class TableViewController: ViewController {
     let refreshControl = UIRefreshControl()
     let tableView: UITableView
     
