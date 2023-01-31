@@ -16,6 +16,7 @@ class TransactionDetailsViewController: ScrollableStackViewController {
         label.textColor = .black
         label.font = .boldSystemFont(ofSize: 24)
         label.textAlignment = .natural
+        label.numberOfLines = 0
         return label
     }()
     
@@ -25,12 +26,17 @@ class TransactionDetailsViewController: ScrollableStackViewController {
         label.textColor = .black
         label.font = .systemFont(ofSize: 18)
         label.textAlignment = .natural
+        label.numberOfLines = 0
         return label
     }()
     
-    init(eventHandler: TransactionDetailsEventHandling) {
+    init(
+        eventHandler: TransactionDetailsEventHandling,
+        localisation: TransactionDetailsLocalisation
+    ) {
         self.eventHandler = eventHandler
         super.init()
+        title = localisation.transactionDetailsTitle()
     }
     
     required init?(coder: NSCoder) {

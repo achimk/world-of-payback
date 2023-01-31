@@ -23,6 +23,8 @@ extension Theme {
         lazy var checkmark: UIImage = { image(named: "check") }()
         lazy var close: UIImage = { image(named: "close") }()
         lazy var back: UIImage = { image(named: "arrow_back") }()
+        lazy var error: UIImage = { image(named: "error") }()
+        lazy var warning: UIImage = { image(named: "warning") }()
     }
 
 }

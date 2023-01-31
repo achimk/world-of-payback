@@ -14,15 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        ApplicationAssembly.assembleDependencies(with: .shared)
-        
-        let navigationController = NavigationController()
-        let coordinator = TransactionsFlowCoordinator(navigationController: navigationController)
-        coordinator.startFlow()
-        
-        window = UIWindow()
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible()
+        ApplicationAssembly.assembleDependencies()
+        MainApplicationFlowCoordinator.shared.startFlow()
+        window = MainApplicationFlowCoordinator.shared.currentWindow
         
         return true
     }

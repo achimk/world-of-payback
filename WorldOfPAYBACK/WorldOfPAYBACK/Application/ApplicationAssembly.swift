@@ -9,7 +9,7 @@ import Foundation
 
 class ApplicationAssembly {
     
-    static func assembleDependencies(with container: Container) {
+    static func assembleDependencies(with container: Container = .shared) {
         
         // Register core functionalities
         assembleUtilityDependencies(with: container)
@@ -28,9 +28,11 @@ class ApplicationAssembly {
         
         // Register localisations
         let localisation = ApplicationLocalisation.shared
+        container.register(MainApplicationLocalisation.self, value: localisation)
         container.register(AlertLocalisation.self, value: localisation)
         container.register(TransactionItemsLocalisation.self, value: localisation)
         container.register(TransactionItemsQueryLocalisation.self, value: localisation)
+        container.register(TransactionDetailsLocalisation.self, value: localisation)
         
         // Reachability
         container.register(ReachabilityService.self, value: DeviceReachibilityService())

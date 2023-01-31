@@ -13,8 +13,9 @@ struct TransactionDetailsViewFactory {
         transactionItem: TransactionItem,
         container: Container = .shared) -> UIViewController
     {
+        let localisation = container.resolve(TransactionDetailsLocalisation.self)
         let presenter = TransactionDetailsPresenter(transactionItem: transactionItem)
-        let view = TransactionDetailsViewController(eventHandler: presenter)
+        let view = TransactionDetailsViewController(eventHandler: presenter, localisation: localisation)
         presenter.attach(view)
         return view
     }

@@ -148,6 +148,23 @@
 		2721BB2929894EAF00FB68D2 /* ReachabilityServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB2829894EAF00FB68D2 /* ReachabilityServiceError.swift */; };
 		2721BB2B29894ECE00FB68D2 /* ReachabilityStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB2A29894ECE00FB68D2 /* ReachabilityStatus.swift */; };
 		2721BB2F298954E900FB68D2 /* DeviceReachibilityServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB2E298954E900FB68D2 /* DeviceReachibilityServiceTests.swift */; };
+		2721BB392989686700FB68D2 /* MainApplicationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB382989686700FB68D2 /* MainApplicationFlowCoordinator.swift */; };
+		2721BB3B2989687900FB68D2 /* MainApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB3A2989687900FB68D2 /* MainApplicationViewController.swift */; };
+		2721BB3F298974FD00FB68D2 /* MainApplicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB3E298974FD00FB68D2 /* MainApplicationPresenter.swift */; };
+		2721BB42298978E000FB68D2 /* MainApplicationScreenState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB41298978E000FB68D2 /* MainApplicationScreenState.swift */; };
+		2721BB4429897AAD00FB68D2 /* MainApplicationViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB4329897AAD00FB68D2 /* MainApplicationViewInterface.swift */; };
+		2721BB4629897AC500FB68D2 /* MainApplicationEventHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB4529897AC500FB68D2 /* MainApplicationEventHandling.swift */; };
+		2721BB4829897AD800FB68D2 /* MainApplicationFlowCoordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB4729897AD800FB68D2 /* MainApplicationFlowCoordinating.swift */; };
+		2721BB4A29897B0200FB68D2 /* MainApplicationResoreReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB4929897B0200FB68D2 /* MainApplicationResoreReason.swift */; };
+		2721BB4C29897B6700FB68D2 /* MainApplicationLocalisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB4B29897B6700FB68D2 /* MainApplicationLocalisation.swift */; };
+		2721BB4E29897C0300FB68D2 /* ApplicationLocalisation+MainApplicationLocalisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB4D29897C0300FB68D2 /* ApplicationLocalisation+MainApplicationLocalisation.swift */; };
+		2721BB5029897CEB00FB68D2 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB4F29897CEA00FB68D2 /* LoadingViewController.swift */; };
+		2721BB532989817600FB68D2 /* MainApplicationViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB522989817600FB68D2 /* MainApplicationViewFactory.swift */; };
+		2721BB55298985CC00FB68D2 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB54298985CC00FB68D2 /* InfoViewController.swift */; };
+		2721BB5729898C8F00FB68D2 /* TransactionDetailsLocalisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB5629898C8E00FB68D2 /* TransactionDetailsLocalisation.swift */; };
+		2721BB5929898CE000FB68D2 /* ApplicationLocalisation+TransactionDetailsLocalisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB5829898CE000FB68D2 /* ApplicationLocalisation+TransactionDetailsLocalisation.swift */; };
+		2721BB5D29898DBC00FB68D2 /* MainApplicationPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB5C29898DBC00FB68D2 /* MainApplicationPresenterTests.swift */; };
+		2721BB5F29898E3900FB68D2 /* MockReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB5E29898E3900FB68D2 /* MockReachabilityService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -313,6 +330,23 @@
 		2721BB2829894EAF00FB68D2 /* ReachabilityServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityServiceError.swift; sourceTree = "<group>"; };
 		2721BB2A29894ECE00FB68D2 /* ReachabilityStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityStatus.swift; sourceTree = "<group>"; };
 		2721BB2E298954E900FB68D2 /* DeviceReachibilityServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceReachibilityServiceTests.swift; sourceTree = "<group>"; };
+		2721BB382989686700FB68D2 /* MainApplicationFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplicationFlowCoordinator.swift; sourceTree = "<group>"; };
+		2721BB3A2989687900FB68D2 /* MainApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplicationViewController.swift; sourceTree = "<group>"; };
+		2721BB3E298974FD00FB68D2 /* MainApplicationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplicationPresenter.swift; sourceTree = "<group>"; };
+		2721BB41298978E000FB68D2 /* MainApplicationScreenState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplicationScreenState.swift; sourceTree = "<group>"; };
+		2721BB4329897AAD00FB68D2 /* MainApplicationViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplicationViewInterface.swift; sourceTree = "<group>"; };
+		2721BB4529897AC500FB68D2 /* MainApplicationEventHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplicationEventHandling.swift; sourceTree = "<group>"; };
+		2721BB4729897AD800FB68D2 /* MainApplicationFlowCoordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplicationFlowCoordinating.swift; sourceTree = "<group>"; };
+		2721BB4929897B0200FB68D2 /* MainApplicationResoreReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplicationResoreReason.swift; sourceTree = "<group>"; };
+		2721BB4B29897B6700FB68D2 /* MainApplicationLocalisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplicationLocalisation.swift; sourceTree = "<group>"; };
+		2721BB4D29897C0300FB68D2 /* ApplicationLocalisation+MainApplicationLocalisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationLocalisation+MainApplicationLocalisation.swift"; sourceTree = "<group>"; };
+		2721BB4F29897CEA00FB68D2 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		2721BB522989817600FB68D2 /* MainApplicationViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplicationViewFactory.swift; sourceTree = "<group>"; };
+		2721BB54298985CC00FB68D2 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		2721BB5629898C8E00FB68D2 /* TransactionDetailsLocalisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsLocalisation.swift; sourceTree = "<group>"; };
+		2721BB5829898CE000FB68D2 /* ApplicationLocalisation+TransactionDetailsLocalisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationLocalisation+TransactionDetailsLocalisation.swift"; sourceTree = "<group>"; };
+		2721BB5C29898DBC00FB68D2 /* MainApplicationPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplicationPresenterTests.swift; sourceTree = "<group>"; };
+		2721BB5E29898E3900FB68D2 /* MockReachabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockReachabilityService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -366,7 +400,6 @@
 				2721B9C32986897F00FB68D2 /* Shared */,
 				2721B9C22986897500FB68D2 /* Application */,
 				2721B9C12986896700FB68D2 /* Features */,
-				2721B991298687A800FB68D2 /* AppDelegate.swift */,
 				2721B99A298687AA00FB68D2 /* Assets.xcassets */,
 				2721B99C298687AA00FB68D2 /* LaunchScreen.storyboard */,
 				2721B99F298687AA00FB68D2 /* Info.plist */,
@@ -406,7 +439,7 @@
 			isa = PBXGroup;
 			children = (
 				2721BADA2987FB5100FB68D2 /* Capabilities */,
-				2721B9E729868F4000FB68D2 /* Models */,
+				2721BB40298977C600FB68D2 /* Main */,
 				2721B9E429868E7E00FB68D2 /* ApplicationAssembly.swift */,
 			);
 			path = Application;
@@ -416,6 +449,7 @@
 			isa = PBXGroup;
 			children = (
 				2721BACE2987F00900FB68D2 /* UI */,
+				2721BB312989651F00FB68D2 /* Domain */,
 				2721B9C52986898C00FB68D2 /* Extensions */,
 				2721B9C42986898500FB68D2 /* Utilities */,
 			);
@@ -515,9 +549,9 @@
 		2721B9EF2986907800FB68D2 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				2721BB5A29898DA000FB68D2 /* Main */,
 				2721BA7129871A8E00FB68D2 /* Mocks */,
 				2721B9F02986909100FB68D2 /* Capabilities */,
-				2721B9F12986909A00FB68D2 /* Models */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -800,6 +834,7 @@
 			children = (
 				2721BA7229871AA300FB68D2 /* MockDateFormatter.swift */,
 				2721BA7429871B0900FB68D2 /* MockCurrencyFormatter.swift */,
+				2721BB5E29898E3900FB68D2 /* MockReachabilityService.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -808,6 +843,7 @@
 			isa = PBXGroup;
 			children = (
 				2721BA7A29872B6A00FB68D2 /* TransactionDetailsViewData.swift */,
+				2721BB5629898C8E00FB68D2 /* TransactionDetailsLocalisation.swift */,
 				2721BA7C29872B7B00FB68D2 /* TransactionDetailsEventHandling.swift */,
 				2721BA7E29872B8800FB68D2 /* TransactionDetailsViewInterface.swift */,
 				2721BA7829872A0F00FB68D2 /* TransactionDetailsPresenter.swift */,
@@ -969,6 +1005,7 @@
 		2721BAC52987E51C00FB68D2 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2721BB322989653300FB68D2 /* Domain */,
 				2721BAC62987E52200FB68D2 /* Utilities */,
 			);
 			path = Shared;
@@ -1025,9 +1062,11 @@
 			isa = PBXGroup;
 			children = (
 				2721BADC2987FB7400FB68D2 /* ApplicationLocalisation.swift */,
+				2721BB4D29897C0300FB68D2 /* ApplicationLocalisation+MainApplicationLocalisation.swift */,
 				2721BADE2987FC1E00FB68D2 /* ApplicationLocalisation+AlertLocalisation.swift */,
 				2721BAE02987FD4F00FB68D2 /* ApplicationLocalisation+TransactionItemsLocalisation.swift */,
 				2721BAE22987FDFD00FB68D2 /* ApplicationLocalisation+TransactionItemsQueryLocalisation.swift */,
+				2721BB5829898CE000FB68D2 /* ApplicationLocalisation+TransactionDetailsLocalisation.swift */,
 			);
 			path = Localisation;
 			sourceTree = "<group>";
@@ -1040,6 +1079,8 @@
 				2721BB192989343600FB68D2 /* NavigationController.swift */,
 				2721BACF2987F01800FB68D2 /* TableViewController.swift */,
 				2721BB1729892AF200FB68D2 /* ScrollableStackViewController.swift */,
+				2721BB4F29897CEA00FB68D2 /* LoadingViewController.swift */,
+				2721BB54298985CC00FB68D2 /* InfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1137,6 +1178,80 @@
 				2721BB2E298954E900FB68D2 /* DeviceReachibilityServiceTests.swift */,
 			);
 			path = Reachability;
+			sourceTree = "<group>";
+		};
+		2721BB30298964ED00FB68D2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2721BB41298978E000FB68D2 /* MainApplicationScreenState.swift */,
+				2721BB4929897B0200FB68D2 /* MainApplicationResoreReason.swift */,
+				2721BB4B29897B6700FB68D2 /* MainApplicationLocalisation.swift */,
+				2721BB4729897AD800FB68D2 /* MainApplicationFlowCoordinating.swift */,
+				2721BB4329897AAD00FB68D2 /* MainApplicationViewInterface.swift */,
+				2721BB4529897AC500FB68D2 /* MainApplicationEventHandling.swift */,
+				2721BB3E298974FD00FB68D2 /* MainApplicationPresenter.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2721BB312989651F00FB68D2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2721B9E729868F4000FB68D2 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		2721BB322989653300FB68D2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2721B9F12986909A00FB68D2 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		2721BB362989684500FB68D2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2721BB382989686700FB68D2 /* MainApplicationFlowCoordinator.swift */,
+				2721BB3A2989687900FB68D2 /* MainApplicationViewController.swift */,
+				2721BB522989817600FB68D2 /* MainApplicationViewFactory.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2721BB40298977C600FB68D2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2721BB30298964ED00FB68D2 /* Presentation */,
+				2721BB362989684500FB68D2 /* UI */,
+				2721BB512989803400FB68D2 /* Infrastructure */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2721BB512989803400FB68D2 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				2721B991298687A800FB68D2 /* AppDelegate.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		2721BB5A29898DA000FB68D2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2721BB5B29898DA900FB68D2 /* Presentation */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2721BB5B29898DA900FB68D2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2721BB5C29898DBC00FB68D2 /* MainApplicationPresenterTests.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1273,6 +1388,7 @@
 			files = (
 				2721BA9929872FF100FB68D2 /* NetworkBasedTransactionItemRepository.swift in Sources */,
 				2721BA072986946C00FB68D2 /* SumOfAllTransactionsHandler.swift in Sources */,
+				2721BB3B2989687900FB68D2 /* MainApplicationViewController.swift in Sources */,
 				2721BA8C29872E1300FB68D2 /* TransactionItemsQueryViewController.swift in Sources */,
 				2721BA9229872EFC00FB68D2 /* UIViewController+Extensions.swift in Sources */,
 				2721B9EC29868F6B00FB68D2 /* Currency.swift in Sources */,
@@ -1290,6 +1406,7 @@
 				2721BA442986D96800FB68D2 /* TransactionItemsQueryEventHandling.swift in Sources */,
 				2721B9F62986921E00FB68D2 /* Result+Extensions.swift in Sources */,
 				2721BA6D2987181000FB68D2 /* TransactionsFlowCoordinator.swift in Sources */,
+				2721BB4829897AD800FB68D2 /* MainApplicationFlowCoordinating.swift in Sources */,
 				2721BB2129893B4A00FB68D2 /* Reachability.swift in Sources */,
 				2721BA69298713CA00FB68D2 /* CurrencyTransactionItemsViewDataBuilder.swift in Sources */,
 				2721B9DD29868D2200FB68D2 /* AsyncTransformable+Pipeline.swift in Sources */,
@@ -1301,6 +1418,7 @@
 				2721BAD72987F82B00FB68D2 /* Reusable.swift in Sources */,
 				2721BAEA29880B7900FB68D2 /* TransactionItemView.swift in Sources */,
 				2721BA7F29872B8800FB68D2 /* TransactionDetailsViewInterface.swift in Sources */,
+				2721BB4629897AC500FB68D2 /* MainApplicationEventHandling.swift in Sources */,
 				2721BADF2987FC1E00FB68D2 /* ApplicationLocalisation+AlertLocalisation.swift in Sources */,
 				2721BAE12987FD4F00FB68D2 /* ApplicationLocalisation+TransactionItemsLocalisation.swift in Sources */,
 				2721BAAC29873BC800FB68D2 /* TransactionItemsViewFactory.swift in Sources */,
@@ -1312,6 +1430,8 @@
 				2721BA052986943300FB68D2 /* SumOfAllTransactionsHandling.swift in Sources */,
 				2721B9DF29868D2200FB68D2 /* CancelableBag.swift in Sources */,
 				2721BB112988578C00FB68D2 /* TitleValueItemList.swift in Sources */,
+				2721BB3F298974FD00FB68D2 /* MainApplicationPresenter.swift in Sources */,
+				2721BB4C29897B6700FB68D2 /* MainApplicationLocalisation.swift in Sources */,
 				2721B9DE29868D2200FB68D2 /* Cancelable.swift in Sources */,
 				2721BB1829892AF300FB68D2 /* ScrollableStackViewController.swift in Sources */,
 				2721BAB62987ADE300FB68D2 /* TransactionsAssembly.swift in Sources */,
@@ -1329,21 +1449,26 @@
 				2721BA6B298716F900FB68D2 /* TransactionItemsLocalisation.swift in Sources */,
 				2721BAA5298731A800FB68D2 /* DecimalDecoder.swift in Sources */,
 				2721BAB42987A99100FB68D2 /* TransactionCategoryMapper.swift in Sources */,
+				2721BB5929898CE000FB68D2 /* ApplicationLocalisation+TransactionDetailsLocalisation.swift in Sources */,
 				2721BA2D2986C2B200FB68D2 /* TransactionItemsFlowCoordinating.swift in Sources */,
 				2721BAD92987F88C00FB68D2 /* UITableVIew+Reusable.swift in Sources */,
 				2721BABA2987B1E300FB68D2 /* DefaultCurrencyFormatter.swift in Sources */,
 				2721BAF72988212C00FB68D2 /* SwitchItemList.swift in Sources */,
 				2721BA7D29872B7B00FB68D2 /* TransactionDetailsEventHandling.swift in Sources */,
+				2721BB42298978E000FB68D2 /* MainApplicationScreenState.swift in Sources */,
 				2721B9E929868F5100FB68D2 /* Money.swift in Sources */,
 				2721BA4F2986E03800FB68D2 /* TransactionItemsQueryFlowCoordinating.swift in Sources */,
 				2721B9CA29868AC300FB68D2 /* Support.swift in Sources */,
 				2721BA0B298694ED00FB68D2 /* FetchAndSumTransactionsHandling.swift in Sources */,
 				2721BAFB2988274D00FB68D2 /* TransactionItemsQueryDataSource.swift in Sources */,
 				2721BB142988615A00FB68D2 /* TransactionCurrencySection.swift in Sources */,
+				2721BB55298985CC00FB68D2 /* InfoViewController.swift in Sources */,
 				2721BA422986D94900FB68D2 /* TransactionItemsQueryViewInterface.swift in Sources */,
 				2721B9E529868E7E00FB68D2 /* ApplicationAssembly.swift in Sources */,
+				2721BB5029897CEB00FB68D2 /* LoadingViewController.swift in Sources */,
 				2721BA1E2986B74200FB68D2 /* Optional+Extensions.swift in Sources */,
 				2721BAD02987F01800FB68D2 /* TableViewController.swift in Sources */,
+				2721BB392989686700FB68D2 /* MainApplicationFlowCoordinator.swift in Sources */,
 				2721BA112986963000FB68D2 /* TransactionsSumByCurrencyCalculator.swift in Sources */,
 				2721BAE32987FDFD00FB68D2 /* ApplicationLocalisation+TransactionItemsQueryLocalisation.swift in Sources */,
 				2721BA4A2986DB4200FB68D2 /* TransactionItemsQueryViewDataBuilder.swift in Sources */,
@@ -1361,9 +1486,11 @@
 				2721BA2F2986C2C100FB68D2 /* TransactionItemsEventHandling.swift in Sources */,
 				2721BA8A29872DF800FB68D2 /* TransactionItemsViewController.swift in Sources */,
 				2721BA342986C34500FB68D2 /* TransactionItemViewDataBuilder.swift in Sources */,
+				2721BB532989817600FB68D2 /* MainApplicationViewFactory.swift in Sources */,
 				2721BAFD298828BC00FB68D2 /* PrimaryButton.swift in Sources */,
 				2721B992298687A800FB68D2 /* AppDelegate.swift in Sources */,
 				2721BAFF29882C5E00FB68D2 /* UIButton+Extensions.swift in Sources */,
+				2721BB4429897AAD00FB68D2 /* MainApplicationViewInterface.swift in Sources */,
 				2721BB0A2988396700FB68D2 /* TransactionItemsQueryFiltersSection.swift in Sources */,
 				2721BA7929872A0F00FB68D2 /* TransactionDetailsPresenter.swift in Sources */,
 				2721BB0229882FC600FB68D2 /* TableViewDataSource.swift in Sources */,
@@ -1383,7 +1510,10 @@
 				2721BA0F298695A000FB68D2 /* FetchAndSumTransactionsHandler.swift in Sources */,
 				2721BB0429882FF000FB68D2 /* TableDataSourceSection.swift in Sources */,
 				2721B9D829868D2200FB68D2 /* AsyncTransformer.swift in Sources */,
+				2721BB4A29897B0200FB68D2 /* MainApplicationResoreReason.swift in Sources */,
 				2721BA3D2986C71D00FB68D2 /* TransactionItemsQueryBuilder.swift in Sources */,
+				2721BB5729898C8F00FB68D2 /* TransactionDetailsLocalisation.swift in Sources */,
+				2721BB4E29897C0300FB68D2 /* ApplicationLocalisation+MainApplicationLocalisation.swift in Sources */,
 				2721BA9729872FD200FB68D2 /* JSONFileBasedTransactionItemRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1392,11 +1522,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2721BB5D29898DBC00FB68D2 /* MainApplicationPresenterTests.swift in Sources */,
 				2721BA252986BB4D00FB68D2 /* TransactionItemQueryTests.swift in Sources */,
 				2721B9F4298690B200FB68D2 /* MoneyTests.swift in Sources */,
 				2721BA232986BA2A00FB68D2 /* TransactionsSumByCurrencyCalculatorTests.swift in Sources */,
 				2721BACD2987E9D000FB68D2 /* CurrencyMapperTests.swift in Sources */,
 				2721BA552986E80100FB68D2 /* MockTransactionItemsQueryLocalisation.swift in Sources */,
+				2721BB5F29898E3900FB68D2 /* MockReachabilityService.swift in Sources */,
 				2721BB2F298954E900FB68D2 /* DeviceReachibilityServiceTests.swift in Sources */,
 				2721BA7529871B0900FB68D2 /* MockCurrencyFormatter.swift in Sources */,
 				2721BA7329871AA300FB68D2 /* MockDateFormatter.swift in Sources */,
