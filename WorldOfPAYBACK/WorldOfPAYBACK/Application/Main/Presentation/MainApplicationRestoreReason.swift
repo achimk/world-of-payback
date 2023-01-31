@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum MainApplicationResoreReason {
+enum MainApplicationRestoreReason {
     case networkReachable
 }

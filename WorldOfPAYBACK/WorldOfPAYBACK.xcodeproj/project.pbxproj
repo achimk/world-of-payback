@@ -155,7 +155,7 @@
 		2721BB4429897AAD00FB68D2 /* MainApplicationViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB4329897AAD00FB68D2 /* MainApplicationViewInterface.swift */; };
 		2721BB4629897AC500FB68D2 /* MainApplicationEventHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB4529897AC500FB68D2 /* MainApplicationEventHandling.swift */; };
 		2721BB4829897AD800FB68D2 /* MainApplicationFlowCoordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB4729897AD800FB68D2 /* MainApplicationFlowCoordinating.swift */; };
-		2721BB4A29897B0200FB68D2 /* MainApplicationResoreReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB4929897B0200FB68D2 /* MainApplicationResoreReason.swift */; };
+		2721BB4A29897B0200FB68D2 /* MainApplicationRestoreReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB4929897B0200FB68D2 /* MainApplicationRestoreReason.swift */; };
 		2721BB4C29897B6700FB68D2 /* MainApplicationLocalisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB4B29897B6700FB68D2 /* MainApplicationLocalisation.swift */; };
 		2721BB4E29897C0300FB68D2 /* ApplicationLocalisation+MainApplicationLocalisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB4D29897C0300FB68D2 /* ApplicationLocalisation+MainApplicationLocalisation.swift */; };
 		2721BB5029897CEB00FB68D2 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB4F29897CEA00FB68D2 /* LoadingViewController.swift */; };
@@ -341,7 +341,7 @@
 		2721BB4329897AAD00FB68D2 /* MainApplicationViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplicationViewInterface.swift; sourceTree = "<group>"; };
 		2721BB4529897AC500FB68D2 /* MainApplicationEventHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplicationEventHandling.swift; sourceTree = "<group>"; };
 		2721BB4729897AD800FB68D2 /* MainApplicationFlowCoordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplicationFlowCoordinating.swift; sourceTree = "<group>"; };
-		2721BB4929897B0200FB68D2 /* MainApplicationResoreReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplicationResoreReason.swift; sourceTree = "<group>"; };
+		2721BB4929897B0200FB68D2 /* MainApplicationRestoreReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplicationRestoreReason.swift; sourceTree = "<group>"; };
 		2721BB4B29897B6700FB68D2 /* MainApplicationLocalisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApplicationLocalisation.swift; sourceTree = "<group>"; };
 		2721BB4D29897C0300FB68D2 /* ApplicationLocalisation+MainApplicationLocalisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationLocalisation+MainApplicationLocalisation.swift"; sourceTree = "<group>"; };
 		2721BB4F29897CEA00FB68D2 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -1196,7 +1196,7 @@
 			isa = PBXGroup;
 			children = (
 				2721BB41298978E000FB68D2 /* MainApplicationScreenState.swift */,
-				2721BB4929897B0200FB68D2 /* MainApplicationResoreReason.swift */,
+				2721BB4929897B0200FB68D2 /* MainApplicationRestoreReason.swift */,
 				2721BB4B29897B6700FB68D2 /* MainApplicationLocalisation.swift */,
 				2721BB4729897AD800FB68D2 /* MainApplicationFlowCoordinating.swift */,
 				2721BB4329897AAD00FB68D2 /* MainApplicationViewInterface.swift */,
@@ -1526,7 +1526,7 @@
 				2721BA0F298695A000FB68D2 /* FetchAndSumTransactionsHandler.swift in Sources */,
 				2721BB0429882FF000FB68D2 /* TableDataSourceSection.swift in Sources */,
 				2721B9D829868D2200FB68D2 /* AsyncTransformer.swift in Sources */,
-				2721BB4A29897B0200FB68D2 /* MainApplicationResoreReason.swift in Sources */,
+				2721BB4A29897B0200FB68D2 /* MainApplicationRestoreReason.swift in Sources */,
 				2721BA3D2986C71D00FB68D2 /* TransactionItemsQueryBuilder.swift in Sources */,
 				2721BB5729898C8F00FB68D2 /* TransactionDetailsLocalisation.swift in Sources */,
 				2721BB4E29897C0300FB68D2 /* ApplicationLocalisation+MainApplicationLocalisation.swift in Sources */,

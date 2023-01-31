@@ -47,6 +47,7 @@ extension MainApplicationPresenter: ReachabilityObserving {
     
     func reachabilityService(_ reachabilityService: ReachabilityService, didFailureWith error: ReachabilityServiceError) {
         screenState = .presentError
+        coordinator.storeAndDismissCurrentView()
         view?.presentApplicationError(errorMessage: localisation.applicationSetupErrorMessage())
     }
     
@@ -62,6 +63,7 @@ extension MainApplicationPresenter: ReachabilityObserving {
             coordinator.restoreAndPresentCurrentView(restoreReason: .networkReachable, completion: completion)
         case .unreachable:
             screenState = .presentWarning
+            coordinator.storeAndDismissCurrentView()
             view?.presentApplicationWarning(warningMessage: localisation.applicationNetworkNotReachableErrorMessage())
         }
     }

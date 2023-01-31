@@ -37,7 +37,7 @@ class ApplicationAssembly {
         // Reachability
         #if targetEnvironment(simulator)
         let reachabilityService = SimulatorReachabilityService()
-        reachabilityService.setUnreachable(every: 5, duration: 5)
+        reachabilityService.setUnreachable(every: 60, duration: 3)
         container.register(ReachabilityService.self, value: reachabilityService)
         #else
         container.register(ReachabilityService.self, value: DeviceReachabilityService())

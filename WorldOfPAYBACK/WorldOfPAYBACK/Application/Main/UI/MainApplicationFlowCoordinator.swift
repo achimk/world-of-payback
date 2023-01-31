@@ -40,7 +40,11 @@ class MainApplicationFlowCoordinator {
 
 extension MainApplicationFlowCoordinator: MainApplicationFlowCoordinating {
     
-    func restoreAndPresentCurrentView(restoreReason: MainApplicationResoreReason, completion: @escaping (UIViewController) -> Void) {
+    func storeAndDismissCurrentView() {
+        navigationController.presentedViewController?.dismiss(animated: true, completion: nil)
+    }
+    
+    func restoreAndPresentCurrentView(restoreReason: MainApplicationRestoreReason, completion: @escaping (UIViewController) -> Void) {
         completion(navigationController)
     }
 }

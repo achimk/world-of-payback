@@ -8,5 +8,6 @@
 import UIKit
 
 protocol MainApplicationFlowCoordinating {
-    func restoreAndPresentCurrentView(restoreReason: MainApplicationResoreReason, completion: @escaping (UIViewController) -> Void)
+    func storeAndDismissCurrentView()
+    func restoreAndPresentCurrentView(restoreReason: MainApplicationRestoreReason, completion: @escaping (UIViewController) -> Void)
 }

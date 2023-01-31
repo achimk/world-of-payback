@@ -73,9 +73,14 @@ extension MainApplicationPresenterTests {
 // MARK: - Mocks
 
 class MockMainApplicationFlowCoordinator: MainApplicationFlowCoordinating {
+    private(set) var storeAndDismissCurrentViewInvoked = false
     private(set) var restoreAndPresentCurrentViewInvoked = false
     
-    func restoreAndPresentCurrentView(restoreReason: MainApplicationResoreReason, completion: @escaping (UIViewController) -> Void) {
+    func storeAndDismissCurrentView() {
+        storeAndDismissCurrentViewInvoked = true
+    }
+    
+    func restoreAndPresentCurrentView(restoreReason: MainApplicationRestoreReason, completion: @escaping (UIViewController) -> Void) {
         restoreAndPresentCurrentViewInvoked = true
         completion(UIViewController())
     }
