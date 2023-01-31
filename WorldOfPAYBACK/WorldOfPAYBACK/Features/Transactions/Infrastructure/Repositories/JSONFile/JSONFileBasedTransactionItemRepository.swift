@@ -29,7 +29,6 @@ class JSONFileBasedTransactionItemRepository: TransactionItemRepository {
     }
     
     func allTransactionItems(completion: @escaping Completion<[TransactionItem]>) -> Cancelable {
-        // TODO: Apply error condition!
         return makeDelay(timeInterval: timeInterval)
             .then(rateLimiter)
             .then(loadAndCache)

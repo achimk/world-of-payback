@@ -9,6 +9,12 @@ import Foundation
 
 @propertyWrapper
 struct DecimalDecoder: Codable {
+    private static let numberFormatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.decimalSeparator = "."
+        return formatter
+    }()
+    
     var wrappedValue: Decimal?
     
     init(wrappedValue: Decimal?) {
@@ -19,9 +25,8 @@ struct DecimalDecoder: Codable {
         let container = try decoder.singleValueContainer()
         if let value = try? container.decode(Int.self) {
             wrappedValue = Decimal(value)
-        } else if let _ = try? container.decode(String.self) {
-            // TODO: provide String decoder!
-            wrappedValue = nil
+        } else if let value = try? container.decode(String.self) {
+            wrappedValue = DecimalDecoder.numberFormatter.number(from: value)?.decimalValue
         } else if let _ = try? container.decode(Double.self) {
             print("Double decoding for decimal should be forbidden!")
             wrappedValue = nil
