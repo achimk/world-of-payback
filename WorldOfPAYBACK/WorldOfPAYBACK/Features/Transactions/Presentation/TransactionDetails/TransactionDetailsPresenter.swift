@@ -11,10 +11,10 @@ class TransactionDetailsPresenter {
     private let viewData: TransactionDetailsViewData
     private weak var view: TransactionDetailsViewInterface?
     
-    init(itemViewData: TransactionItemViewData) {
+    init(transactionItem: TransactionItem) {
         viewData = TransactionDetailsViewData(
-            partnerName: itemViewData.partnerName,
-            summary: itemViewData.summary)
+            partnerName: transactionItem.partnerName,
+            summary: transactionItem.summary)
     }
 }
 

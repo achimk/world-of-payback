@@ -139,6 +139,7 @@
 		2721BB112988578C00FB68D2 /* TitleValueItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB102988578C00FB68D2 /* TitleValueItemList.swift */; };
 		2721BB142988615A00FB68D2 /* TransactionCurrencySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB132988615A00FB68D2 /* TransactionCurrencySection.swift */; };
 		2721BB162988617100FB68D2 /* TransactionItemsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB152988617100FB68D2 /* TransactionItemsSection.swift */; };
+		2721BB1829892AF300FB68D2 /* ScrollableStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB1729892AF200FB68D2 /* ScrollableStackViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -295,6 +296,7 @@
 		2721BB102988578C00FB68D2 /* TitleValueItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleValueItemList.swift; sourceTree = "<group>"; };
 		2721BB132988615A00FB68D2 /* TransactionCurrencySection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCurrencySection.swift; sourceTree = "<group>"; };
 		2721BB152988617100FB68D2 /* TransactionItemsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemsSection.swift; sourceTree = "<group>"; };
+		2721BB1729892AF200FB68D2 /* ScrollableStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableStackViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1018,6 +1020,7 @@
 			children = (
 				2721BACF2987F01800FB68D2 /* TableViewController.swift */,
 				2721BAD32987F2E100FB68D2 /* AlertViewController.swift */,
+				2721BB1729892AF200FB68D2 /* ScrollableStackViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1267,6 +1270,7 @@
 				2721B9DF29868D2200FB68D2 /* CancelableBag.swift in Sources */,
 				2721BB112988578C00FB68D2 /* TitleValueItemList.swift in Sources */,
 				2721B9DE29868D2200FB68D2 /* Cancelable.swift in Sources */,
+				2721BB1829892AF300FB68D2 /* ScrollableStackViewController.swift in Sources */,
 				2721BAB62987ADE300FB68D2 /* TransactionsAssembly.swift in Sources */,
 				2721BA00298693B400FB68D2 /* TransactionItemRepository.swift in Sources */,
 				2721BB0C2988398400FB68D2 /* TransactionItemsQueryButtonsSection.swift in Sources */,

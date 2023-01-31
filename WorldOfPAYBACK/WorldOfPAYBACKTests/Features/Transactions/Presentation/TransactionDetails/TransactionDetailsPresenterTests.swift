@@ -12,14 +12,14 @@ import XCTest
 class TransactionDetailsPresenterTests: XCTestCase {
     
     func test_viewLoaded_shouldPresentViewData() {
-        let itemViewData = TransactionItemViewData(
-            bookingDate: "date",
+        let transactionItem = TransactionItem(
             partnerName: "partnerName",
+            category: .savings,
             summary: "summary",
-            amount: "amount",
-            onSelectHandler: { })
+            bookingDate: Date(),
+            amount: Money(amount: 1, currency: .EUR))
         
-        let presenter = TransactionDetailsPresenter(itemViewData: itemViewData)
+        let presenter = TransactionDetailsPresenter(transactionItem: transactionItem)
         let view = MockTransactionDetailsView()
         presenter.attach(view)
         

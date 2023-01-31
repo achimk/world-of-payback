@@ -33,7 +33,8 @@ extension TransactionsFlowCoordinator: TransactionItemsFlowCoordinating {
     }
     
     func presentTransactionDetails(for item: TransactionItem) {
-        // TODO: Implement!
+        let viewController = TransactionDetailsViewFactory.make(transactionItem: item)
+        navigationController.pushViewController(viewController, animated: true)
     }
 }
 

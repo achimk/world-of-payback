@@ -9,8 +9,13 @@ import UIKit
 
 struct TransactionDetailsViewFactory {
     
-    static func make(container: Container = .shared) -> UIViewController {
-        // TODO: Implement!
-        fatalError()
+    static func make(
+        transactionItem: TransactionItem,
+        container: Container = .shared) -> UIViewController
+    {
+        let presenter = TransactionDetailsPresenter(transactionItem: transactionItem)
+        let view = TransactionDetailsViewController(eventHandler: presenter)
+        presenter.attach(view)
+        return view
     }
 }
