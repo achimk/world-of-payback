@@ -141,6 +141,13 @@
 		2721BB1829892AF300FB68D2 /* ScrollableStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB1729892AF200FB68D2 /* ScrollableStackViewController.swift */; };
 		2721BB1A2989343600FB68D2 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB192989343600FB68D2 /* NavigationController.swift */; };
 		2721BB1C298936AB00FB68D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB1B298936AB00FB68D2 /* ViewController.swift */; };
+		2721BB1F29893AF800FB68D2 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB1E29893AF800FB68D2 /* ReachabilityService.swift */; };
+		2721BB2129893B4A00FB68D2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB2029893B4A00FB68D2 /* Reachability.swift */; };
+		2721BB2529894E6000FB68D2 /* DeviceReachibilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB2429894E6000FB68D2 /* DeviceReachibilityService.swift */; };
+		2721BB2729894E8200FB68D2 /* ReachabilityObserving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB2629894E8200FB68D2 /* ReachabilityObserving.swift */; };
+		2721BB2929894EAF00FB68D2 /* ReachabilityServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB2829894EAF00FB68D2 /* ReachabilityServiceError.swift */; };
+		2721BB2B29894ECE00FB68D2 /* ReachabilityStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB2A29894ECE00FB68D2 /* ReachabilityStatus.swift */; };
+		2721BB2F298954E900FB68D2 /* DeviceReachibilityServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2721BB2E298954E900FB68D2 /* DeviceReachibilityServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -299,6 +306,13 @@
 		2721BB1729892AF200FB68D2 /* ScrollableStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableStackViewController.swift; sourceTree = "<group>"; };
 		2721BB192989343600FB68D2 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		2721BB1B298936AB00FB68D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2721BB1E29893AF800FB68D2 /* ReachabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
+		2721BB2029893B4A00FB68D2 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		2721BB2429894E6000FB68D2 /* DeviceReachibilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceReachibilityService.swift; sourceTree = "<group>"; };
+		2721BB2629894E8200FB68D2 /* ReachabilityObserving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityObserving.swift; sourceTree = "<group>"; };
+		2721BB2829894EAF00FB68D2 /* ReachabilityServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityServiceError.swift; sourceTree = "<group>"; };
+		2721BB2A29894ECE00FB68D2 /* ReachabilityStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityStatus.swift; sourceTree = "<group>"; };
+		2721BB2E298954E900FB68D2 /* DeviceReachibilityServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceReachibilityServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -502,17 +516,18 @@
 			isa = PBXGroup;
 			children = (
 				2721BA7129871A8E00FB68D2 /* Mocks */,
-				2721B9F02986909100FB68D2 /* Core */,
+				2721B9F02986909100FB68D2 /* Capabilities */,
+				2721B9F12986909A00FB68D2 /* Models */,
 			);
 			path = Application;
 			sourceTree = "<group>";
 		};
-		2721B9F02986909100FB68D2 /* Core */ = {
+		2721B9F02986909100FB68D2 /* Capabilities */ = {
 			isa = PBXGroup;
 			children = (
-				2721B9F12986909A00FB68D2 /* Models */,
+				2721BB2D298954CA00FB68D2 /* Reachability */,
 			);
-			path = Core;
+			path = Capabilities;
 			sourceTree = "<group>";
 		};
 		2721B9F12986909A00FB68D2 /* Models */ = {
@@ -1000,6 +1015,7 @@
 		2721BADA2987FB5100FB68D2 /* Capabilities */ = {
 			isa = PBXGroup;
 			children = (
+				2721BB1D29893ADC00FB68D2 /* Reachability */,
 				2721BADB2987FB6600FB68D2 /* Localisation */,
 			);
 			path = Capabilities;
@@ -1100,6 +1116,27 @@
 				2721BB152988617100FB68D2 /* TransactionItemsSection.swift */,
 			);
 			path = DataSource;
+			sourceTree = "<group>";
+		};
+		2721BB1D29893ADC00FB68D2 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				2721BB2029893B4A00FB68D2 /* Reachability.swift */,
+				2721BB2A29894ECE00FB68D2 /* ReachabilityStatus.swift */,
+				2721BB2829894EAF00FB68D2 /* ReachabilityServiceError.swift */,
+				2721BB2629894E8200FB68D2 /* ReachabilityObserving.swift */,
+				2721BB1E29893AF800FB68D2 /* ReachabilityService.swift */,
+				2721BB2429894E6000FB68D2 /* DeviceReachibilityService.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		2721BB2D298954CA00FB68D2 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				2721BB2E298954E900FB68D2 /* DeviceReachibilityServiceTests.swift */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1240,6 +1277,7 @@
 				2721BA9229872EFC00FB68D2 /* UIViewController+Extensions.swift in Sources */,
 				2721B9EC29868F6B00FB68D2 /* Currency.swift in Sources */,
 				2721BA4D2986DFBD00FB68D2 /* TransactionItemsQueryLocalisation.swift in Sources */,
+				2721BB2729894E8200FB68D2 /* ReachabilityObserving.swift in Sources */,
 				2721B9E329868DB500FB68D2 /* Completion.swift in Sources */,
 				2721BA402986D92D00FB68D2 /* TransactionItemsQueryViewData.swift in Sources */,
 				2721BA9029872ECA00FB68D2 /* UIView+Extensions.swift in Sources */,
@@ -1252,9 +1290,11 @@
 				2721BA442986D96800FB68D2 /* TransactionItemsQueryEventHandling.swift in Sources */,
 				2721B9F62986921E00FB68D2 /* Result+Extensions.swift in Sources */,
 				2721BA6D2987181000FB68D2 /* TransactionsFlowCoordinator.swift in Sources */,
+				2721BB2129893B4A00FB68D2 /* Reachability.swift in Sources */,
 				2721BA69298713CA00FB68D2 /* CurrencyTransactionItemsViewDataBuilder.swift in Sources */,
 				2721B9DD29868D2200FB68D2 /* AsyncTransformable+Pipeline.swift in Sources */,
 				2721BAAE2987A80100FB68D2 /* TransactionDetailsViewFactory.swift in Sources */,
+				2721BB2929894EAF00FB68D2 /* ReachabilityServiceError.swift in Sources */,
 				2721BA3A2986C57B00FB68D2 /* CurrencyFormatting.swift in Sources */,
 				2721BA292986BDF700FB68D2 /* TransactionItemsPresenter.swift in Sources */,
 				2721BAF2298819C000FB68D2 /* ThemeManager.swift in Sources */,
@@ -1285,6 +1325,7 @@
 				2721BAA72987330F00FB68D2 /* Bundle+Current.swift in Sources */,
 				2721BA5B298702AB00FB68D2 /* OneTransactionCategoryQueryBuilder.swift in Sources */,
 				2721BB072988376D00FB68D2 /* ContainerTableViewCell.swift in Sources */,
+				2721BB2529894E6000FB68D2 /* DeviceReachibilityService.swift in Sources */,
 				2721BA6B298716F900FB68D2 /* TransactionItemsLocalisation.swift in Sources */,
 				2721BAA5298731A800FB68D2 /* DecimalDecoder.swift in Sources */,
 				2721BAB42987A99100FB68D2 /* TransactionCategoryMapper.swift in Sources */,
@@ -1310,6 +1351,7 @@
 				2721B9FC2986931300FB68D2 /* TransactionItem.swift in Sources */,
 				2721BAA22987315400FB68D2 /* TransactionItemsResponse.swift in Sources */,
 				2721B9DA29868D2200FB68D2 /* MapTrasformer.swift in Sources */,
+				2721BB1F29893AF800FB68D2 /* ReachabilityService.swift in Sources */,
 				2721BAF92988273600FB68D2 /* TransactionItemsDataSource.swift in Sources */,
 				2721BA9B298730AD00FB68D2 /* JSONFileLoader.swift in Sources */,
 				2721BAB22987A88A00FB68D2 /* CurrencyMapper.swift in Sources */,
@@ -1333,6 +1375,7 @@
 				2721B9DC29868D2200FB68D2 /* AsyncTransformBlock.swift in Sources */,
 				2721BB1C298936AB00FB68D2 /* ViewController.swift in Sources */,
 				2721BAD42987F2E100FB68D2 /* AlertViewController.swift in Sources */,
+				2721BB2B29894ECE00FB68D2 /* ReachabilityStatus.swift in Sources */,
 				2721BA482986D99000FB68D2 /* TransactionItemsQueryPresenter.swift in Sources */,
 				2721BAB02987A84700FB68D2 /* TransactionItemsQueryViewFactory.swift in Sources */,
 				2721BA592987029400FB68D2 /* MultiTransactionCategoriesQueryBuilder.swift in Sources */,
@@ -1354,6 +1397,7 @@
 				2721BA232986BA2A00FB68D2 /* TransactionsSumByCurrencyCalculatorTests.swift in Sources */,
 				2721BACD2987E9D000FB68D2 /* CurrencyMapperTests.swift in Sources */,
 				2721BA552986E80100FB68D2 /* MockTransactionItemsQueryLocalisation.swift in Sources */,
+				2721BB2F298954E900FB68D2 /* DeviceReachibilityServiceTests.swift in Sources */,
 				2721BA7529871B0900FB68D2 /* MockCurrencyFormatter.swift in Sources */,
 				2721BA7329871AA300FB68D2 /* MockDateFormatter.swift in Sources */,
 				2721BA5E2987030000FB68D2 /* MultiTransactionCategoriesQueryBuilderTests.swift in Sources */,

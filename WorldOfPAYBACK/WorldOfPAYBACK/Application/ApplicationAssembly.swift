@@ -31,5 +31,8 @@ class ApplicationAssembly {
         container.register(AlertLocalisation.self, value: localisation)
         container.register(TransactionItemsLocalisation.self, value: localisation)
         container.register(TransactionItemsQueryLocalisation.self, value: localisation)
+        
+        // Reachability
+        container.register(ReachabilityService.self, value: DeviceReachibilityService())
     }
 }

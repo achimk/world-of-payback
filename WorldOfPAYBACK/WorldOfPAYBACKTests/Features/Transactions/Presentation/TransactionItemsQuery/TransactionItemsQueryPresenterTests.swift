@@ -150,6 +150,13 @@ class TransactionItemsQueryPresenterTests: XCTestCase {
         XCTAssertTrue(components.coordinator.presentTransactionItemsInvoked)
         XCTAssertEqual(components.coordinator.lastQuery, expectation)
     }
+    
+    func test_cancelQueryChanges_shouldNotifyCoordinator() {
+        let components = makeTestComponents()
+        components.presenter.viewLoaded()
+        components.presenter.cancel()
+        XCTAssertTrue(components.coordinator.dismissTransactionItemsQueryInvoked)
+    }
 }
 
 extension TransactionItemsQueryPresenterTests {
@@ -197,11 +204,16 @@ extension TransactionItemsQueryPresenterTests {
 
 private class MockTransactionItemsQueryFlowCoordinator: TransactionItemsQueryFlowCoordinating {
     private(set) var presentTransactionItemsInvoked = false
+    private(set) var dismissTransactionItemsQueryInvoked = false
     private(set) var lastQuery: TransactionItemsQuery?
     
     func presentTransactionItems(for query: TransactionItemsQuery) {
         presentTransactionItemsInvoked = true
         lastQuery = query
+    }
+    
+    func dismissTransactionItemsQuery() {
+        dismissTransactionItemsQueryInvoked = true
     }
 }
 
